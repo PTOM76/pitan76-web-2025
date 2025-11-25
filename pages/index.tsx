@@ -1,7 +1,7 @@
 import styles from '../styles/top.module.css'
 import { Icon } from "@iconify/react";
 
-export default function Top() {
+export default function TopPage() {
   return (
     <div className={styles.container}>
         <div className={styles.profileContainer}>
@@ -70,15 +70,9 @@ export default function Top() {
                     </p>
                 </a>
             </div>
-            <div className={styles.footer}>
-                <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a> | <a href="/changelog">Change Log</a>
-                <br />
-                Copyright © 2021-2025 Pitan | E-mail admin@pitan76.net
-                <br />
-                <div className={styles.yearLinks}>
-                    <a href="https://2023.pitan76.net" target="_blank" rel="noopener noreferrer">≪ 2023</a>        
-                    <span>2027...? ≫</span>
-                </div>
+            <div className={styles.yearLinks}>
+                <a href="https://2023.pitan76.net" target="_blank" rel="noopener noreferrer">≪ 2023</a>        
+                <span>2027...? ≫</span>
             </div>
         </div>
     </div>
