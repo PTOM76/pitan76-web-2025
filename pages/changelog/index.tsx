@@ -6,7 +6,7 @@ export default function ChangelogPage() {
         <h1 className={styles.title}>$changelog</h1>
         
         <span className={styles.breadcrumb}>
-            <a href="/">Home</a> / Change Log
+            <a href="/">Top</a> / Change Log
         </span>
 
         <div className={styles.cardlist}>
@@ -24,7 +24,7 @@ export default function ChangelogPage() {
                 <h2>2023 - [<a href="https://2023.pitan76.net/">2023.pitan76.net</a>]</h2>
                 HTML/CSS/JavaScript のみのノンフレームワークの2000年代レトロな個人サイト、GitHub Pages上でホスティング
                 <br /><br />
-                <img src="/2023-pitan76net.png" alt="2023.pitan76.net スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                <img src="/image/2023-pitan76net.png" alt="2023.pitan76.net スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
                 <ul>
                     <li>2025.11.25 - pitan76.net から 2023.pitan76.net へ移転</li>
                     <li>2025.04.21 - Copyrightを2025年に更新</li>
@@ -43,7 +43,7 @@ export default function ChangelogPage() {
                 <h2>2022 - [<a href="https://2020.pitan76.net/">2020.pitan76.net</a>]</h2>
                 初代の個人サイトを2022年にデザインを変更したもの、他は引き継ぎ同様、無料のVPS上でホスティング
                 <br /><br />
-                <img src="/2022-pitan76net.png" alt="Pitan's Note スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                <img src="/image/2022-pitan76net.png" alt="Pitan's Note スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
                 <ul>
                     <li>2025.11.25 - pkom.pitan76.net から 2023.pitan76.net へ移転</li>
                     <li>2023.07.03 - pkom.ml の廃止に基づき、pkom.pitan76.net へ移転</li>
@@ -56,7 +56,7 @@ export default function ChangelogPage() {
                 <h2>2020 - [<a href="https://web.archive.org/web/20201024122447/http://pkom.ml/">archive.org</a>]</h2>
                 PukiWikiで構築した初代の個人サイト、PukiWikiプラグイン等を配布していた。
                 <br /><br />
-                <img src="/2020-pitan76net.png" alt="Pitan's Note スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                <img src="/image/2020-pitan76net.png" alt="Pitan's Note スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
                 <ul>
                     <li>2020.11.19 - K's Note に改名</li>
                     <li>2020.08.09 - Kの自己満研究 として公開</li>

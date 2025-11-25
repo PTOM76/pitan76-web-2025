@@ -56,7 +56,17 @@ a {
 }
 
 h2 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.35rem;
+  border-left: 4px solid #a0faffdf;
+  color: #a6faffdf;
+  text-shadow: 0 0 4px #00ffff;
+  padding-left: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 a:hover {
@@ -74,4 +84,9 @@ div.footer {
   font-size: 0.9rem;
   color: #25ddffdf;
   text-shadow: 0 0 4px #00cccc;
+}
+
+ul {
+  list-style:circle;
+  margin-left: 1.5rem;
 }

@@ -39,7 +39,7 @@ export default function TopPage() {
                     <p>
                         今までつくったものを紹介します。
                         <br />
-                        <img src="/advanced_reborn.png" alt="works-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <img src="/image/advanced_reborn.png" alt="works-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
                         <br />
                         主にマイクラMOD/プラグインやWebサービス、ツールなど。
                         <br />
