@@ -17,16 +17,16 @@ export default function Top() {
 
                 <div className={styles.links}>
                     <a href="https://twitter.com/PitaQ_Modding" target="_blank" rel="noopener noreferrer">
-                        <Icon icon="mdi:twitter" width="40" height="40" style={{ color: "#ffffff", filter: "drop-shadow(0 0 6px #2fafff)" }} />
+                        <Icon icon="mdi:twitter" width="40" height="40" style={{ color: "#ffffff", "--glow": "#2ca2eb" }} />
                     </a>
                     <a href="https://youtube.com/@pitaq8539" target="_blank" rel="noopener noreferrer">
-                        <Icon icon="mdi:youtube" width="40" height="40" style={{ color: "#ffffff", filter: "drop-shadow(0 0 6px #ff2f2f)" }} />
+                        <Icon icon="mdi:youtube" width="40" height="40" style={{ color: "#ffffff", "--glow": "#f12d2d" }} />
                     </a>
                     <a href="https://github.com/PTOM76/" target="_blank" rel="noopener noreferrer">
-                        <Icon icon="mdi:github" width="40" height="40" style={{ color: "#ffffff", filter: "drop-shadow(0 0 6px #ffffff)" }} />
+                        <Icon icon="mdi:github" width="40" height="40" style={{ color: "#ffffff", "--glow": "#eeecec" }} />
                     </a>
                     <a href="https://pitan76.tumblr.com/links" target="_blank" rel="noopener noreferrer">
-                        <Icon icon="mdi:tumblr" width="40" height="40" style={{ color: "#ffffff", filter: "drop-shadow(0 0 6px #417dff)" }} />
+                        <Icon icon="mdi:tumblr" width="40" height="40" style={{ color: "#ffffff", "--glow": "#447bf1" }} />
                     </a>
                 </div>
             </div>
@@ -71,7 +71,7 @@ export default function Top() {
                 </a>
             </div>
             <div className={styles.footer}>
-                <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a>
+                <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a> | <a href="/changelog">Change Log</a>
                 <br />
                 Copyright © 2021-2025 Pitan | E-mail admin@pitan76.net
                 <br />

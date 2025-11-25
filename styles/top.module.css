@@ -78,6 +78,16 @@ div.links {
     justify-content: center;
 }
 
+div.links a svg {
+    transition: all 0.25s ease;
+    filter: drop-shadow(0 0 5px var(--glow));
+}
+
+div.links a:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px var(--glow)) saturate(200%) brightness(1.5);
+}
+
 div.description {
     margin: 10px;
 }
