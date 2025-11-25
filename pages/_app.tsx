@@ -42,6 +42,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <Head>
       <title>Pitan76.NET</title>
       <meta name="description" content="Pitan76's website" />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
 
     {loading && <div className={`loading${fadeOut ? ' fade-out' : ''}`}></div>}
