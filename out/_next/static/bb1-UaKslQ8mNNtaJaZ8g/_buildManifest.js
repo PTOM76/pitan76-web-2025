@@ -6,13 +6,13 @@ self.__BUILD_MANIFEST = {
     "static/chunks/03bedd6da327da8b.js"
   ],
   "/changelog": [
-    "static/chunks/6464dc2e6496ae27.js"
+    "static/chunks/5d10206d7f8727b4.js"
   ],
   "/links": [
-    "static/chunks/fd60880559d10583.js"
+    "static/chunks/8e6b9e4338f2093a.js"
   ],
   "/works": [
-    "static/chunks/afe95718df43f0ff.js"
+    "static/chunks/f8a65efccd847532.js"
   ],
   "__rewrites": {
     "afterFiles": [],
