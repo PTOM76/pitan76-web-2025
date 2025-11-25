@@ -17,16 +17,16 @@ export default function TopPage() {
 
                 <div className={styles.links}>
                     <a href="https://twitter.com/PitaQ_Modding" target="_blank" rel="noopener noreferrer">
-                        <Icon icon="mdi:twitter" width="40" height="40" style={{ color: "#ffffff", "--glow": "#2ca2eb" }} />
+                        <Icon icon="mdi:twitter" width="40" height="40" style={{ color: "#ffffff", "--glow": "#2ca2eb" } as any } />
                     </a>
                     <a href="https://youtube.com/@pitaq8539" target="_blank" rel="noopener noreferrer">
-                        <Icon icon="mdi:youtube" width="40" height="40" style={{ color: "#ffffff", "--glow": "#f12d2d" }} />
+                        <Icon icon="mdi:youtube" width="40" height="40" style={{ color: "#ffffff", "--glow": "#f12d2d" } as any } />
                     </a>
                     <a href="https://github.com/PTOM76/" target="_blank" rel="noopener noreferrer">
-                        <Icon icon="mdi:github" width="40" height="40" style={{ color: "#ffffff", "--glow": "#eeecec" }} />
+                        <Icon icon="mdi:github" width="40" height="40" style={{ color: "#ffffff", "--glow": "#eeecec" } as any } />
                     </a>
                     <a href="https://pitan76.tumblr.com/links" target="_blank" rel="noopener noreferrer">
-                        <Icon icon="mdi:tumblr" width="40" height="40" style={{ color: "#ffffff", "--glow": "#447bf1" }} />
+                        <Icon icon="mdi:tumblr" width="40" height="40" style={{ color: "#ffffff", "--glow": "#447bf1" } as any } />
                     </a>
                 </div>
             </div>
