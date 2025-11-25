@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "export": "next export",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "npm run build && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@iconify/react": "^6.0.2",
