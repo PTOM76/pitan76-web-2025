@@ -1,8 +1,10 @@
 div.container {
-    margin: 24px;
+    margin: 24px auto;
+    padding: 0 24px;
     border:#afcfffe6 1px solid;
-    border-radius: none;
+    border-radius: 0;
     background-color: #001fff20;
+    max-width: 1200px;
 }
 
 span.breadcrumb {
