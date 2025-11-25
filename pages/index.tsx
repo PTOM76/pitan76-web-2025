@@ -37,24 +37,49 @@ export default function Top() {
                 <a href="/works" className={styles.card}>
                     <h2>Works</h2>
                     <p>
-                        今までつくったものを紹介します
+                        今までつくったものを紹介します。
+                        <br />
+                        <img src="/advanced_reborn.png" alt="works-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <br />
+                        主にマイクラMOD/プラグインやWebサービス、ツールなど。
+                        <br />
+                        その他PukiWikiプラグインやソフトウェアの拡張機能などもこちらから。
                     </p>
                 </a>
 
-                <a href="/blog" className={styles.card}>
-                    <h2>Blog</h2>
+                <a href="https://blog.pitan76.net/" className={styles.card}>
+                    <h2>Notes</h2>
                     <p>
-                        技術系を中心に記事を書いています
+                        さまざまなジャンルの記事を書いているぴたぶろぐです。
+                        <br />
+                        <img src="/pitablog.png" alt="blog-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <br />
+                        現時点で運用しているブログですが、バラバラになっているのであまり更新できていません。
                     </p>
                 </a>
+
                 <a href="/links" className={styles.card}>
                     <h2>Links</h2>
                     <p>
-                        SNSや運営サイトなど関連リンク集です
+                        各種SNSや運営サイトなど関連リンク集です。
+                        <br />
+                        <img src="/modwiki.png" alt="links-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <br />
+                        X、Misskeyなどのアカウントを記載しています。<br />
+                        また、WikiChree.COMといったウィキのホスティングサービスも運営しています。
                     </p>
                 </a>
             </div>
-            Copyright © 2021-2025 Pitan | E-mail admin@pitan76.net
+            <div className={styles.footer}>
+                <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a>
+                <br />
+                Copyright © 2021-2025 Pitan | E-mail admin@pitan76.net
+                <br />
+                <div className={styles.yearLinks}>
+                    <a href="https://2023.pitan76.net" target="_blank" rel="noopener noreferrer">≪ 2023</a>        
+                    <span>2027...? ≫</span>
+                </div>
+            </div>
         </div>
     </div>
   )

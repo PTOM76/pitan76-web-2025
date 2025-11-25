@@ -78,15 +78,23 @@ div.links {
     justify-content: center;
 }
 
+div.description {
+    margin: 10px;
+}
+
 div.cardlist {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a.card {
-    width: 60%;
+    width: 75%;
+    max-width: 650px;
     padding: 1.5rem;
     text-align: left;
     color: inherit;
@@ -128,4 +136,34 @@ a.card p {
     font-size: 1.1rem;
     color: #25ddffdf;
     text-shadow: 0 0 4px #00cccc;
+}
+
+div.footer {
+    margin-top: 4rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #25ddffdf;
+    text-shadow: 0 0 4px #00cccc;
+}
+
+div.yearLinks {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1000px) {
+    a.card {
+        width: 70%;
+    }
+}
+
+@media (max-width: 640px) {
+    a.card {
+        width: 100%;
+    }
 }
