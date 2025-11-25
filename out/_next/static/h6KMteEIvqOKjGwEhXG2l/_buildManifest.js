@@ -8,6 +8,9 @@ self.__BUILD_MANIFEST = {
   "/changelog": [
     "static/chunks/8088f23bb40d0089.js"
   ],
+  "/links": [
+    "static/chunks/87f7c21be23d5f40.js"
+  ],
   "/works": [
     "static/chunks/da6a84f9316ce1bb.js"
   ],
@@ -21,6 +24,7 @@ self.__BUILD_MANIFEST = {
     "/_app",
     "/_error",
     "/changelog",
+    "/links",
     "/works"
   ]
 };self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
