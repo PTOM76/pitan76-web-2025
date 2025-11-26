@@ -1,44 +1,13 @@
 // pages/_app.tsx
-import '../styles/globals.css'
+import { useLightbox } from '@/hooks/useLightbox';
+import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react'
-
-import Lightbox, { Slide } from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
+import Lightbox from 'yet-another-react-lightbox';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-
-  // 画像拡大
-  const [lightbox, setLightbox] = useState<{open: boolean, slides: Slide[], index: number }>({
-    open: false, 
-    slides: [],
-    index: 0,
-  });
-
-  useEffect(() => {
-    const images = Array.from(document.querySelectorAll<HTMLImageElement>('img:not([data-lightbox="false"])'));
-    const slides = images.map(img => ({ src: img.currentSrc || img.src }));
-    setLightbox(prev => ({ ...prev, slides }));
-
-    const cleanups = images.map((img, i) => {
-      const onClick = (e: MouseEvent) => {
-        e.preventDefault();
-        setLightbox({ open: true, slides, index: i });
-      };
-      img.style.cursor = 'zoom-in';
-      img.addEventListener('click', onClick);
-      return () => {
-        img.removeEventListener('click', onClick);
-        img.style.removeProperty('cursor');
-      };
-    });
-    return () => cleanups.forEach(dispose => dispose());
-  }, [router.asPath]);
-
-
+  const { lightbox, setLightbox } = useLightbox();
 
   // ロード画面
   const [loading, setLoading] = useState(true)
