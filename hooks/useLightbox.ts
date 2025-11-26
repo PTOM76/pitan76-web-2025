@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Lightbox, { Slide } from 'yet-another-react-lightbox';
+import { Slide } from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
 export const useLightbox = () => {
