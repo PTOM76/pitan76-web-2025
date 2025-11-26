@@ -8,7 +8,7 @@ export default function TopPage() {
             <div className={styles.background}></div>
             <div className={styles.profile}>
                 <h1>Pitan</h1>
-                <img src="/profile-icon.jpg" alt="Profile Icon" />
+                <img src="/image/profile-icon.jpg" alt="Profile Icon" />
                 <p>
                     Bug-Creator のぴたんです<br />
                     MODやWebなどを開発しており、機械弱者ですが、技術系が好きです<br />
@@ -52,7 +52,7 @@ export default function TopPage() {
                     <p>
                         さまざまなジャンルの記事を書いているぴたぶろぐです。
                         <br />
-                        <img src="/pitablog.png" alt="blog-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <img src="/image/pitablog.png" alt="blog-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
                         <br />
                         現時点で運用しているブログですが、バラバラになっているのであまり更新できていません。
                     </p>
@@ -63,7 +63,7 @@ export default function TopPage() {
                     <p>
                         各種SNSや運営サイトなど関連リンク集です。
                         <br />
-                        <img src="/modwiki.png" alt="links-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <img src="/image/modwiki.png" alt="links-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
                         <br />
                         X、Misskeyなどのアカウントを記載しています。<br />
                         また、WikiChree.COMといったウィキのホスティングサービスも運営しています。
