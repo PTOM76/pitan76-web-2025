@@ -12,9 +12,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const { lightbox, setLightbox } = useLightbox();
   const { loading, fadeOut } = useLoadingScreen();
 
+  let title = "Pitan76.NET";
+  if (pageProps?.title) {
+    title = `${pageProps.title} | ${title}`;
+  }
+
   return <>
     <Head>
-      <title>Pitan76.NET</title>
+      <title>{title}</title>
       <meta name="description" content="Pitan76's website" />
       <link rel="icon" href="/favicon.ico" />
     </Head>

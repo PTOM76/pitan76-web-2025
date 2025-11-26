@@ -65,4 +65,12 @@ export default function ChangelogPage() {
         </div>
     </div>
   )
-};
+}
+
+export async function getStaticProps() {
+    return {
+        props: {
+            title: 'Changelog'
+        }
+    };
+}

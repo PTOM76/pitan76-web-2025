@@ -66,4 +66,12 @@ export default function TermsPage() {
         </div>
     </div>
   )
-};
+}
+
+export async function getStaticProps() {
+    return {
+        props: {
+            title: 'Terms of Service & Privacy Policy'
+        }
+    };
+}
