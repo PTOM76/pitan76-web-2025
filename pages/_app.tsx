@@ -27,7 +27,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       slides={lightbox.slides} index={lightbox.index} />
 
     <div className={"footer"}>
-    <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a> | <a href="/changelog">Change Log</a>
+    <a href="/terms/">Terms of Service & Privacy Policy</a> | <a href="/changelog/">Change Log</a>
       <br />
       Copyright © 2020-2025 Pitan | E-mail admin@pitan76.net
     </div>

@@ -34,7 +34,7 @@ export default function TopPage() {
 
         <div className={styles.description}>
             <div className={styles.cardlist}>
-                <a href="/works" className={styles.card}>
+                <a href="/works/" className={styles.card}>
                     <h2>Works</h2>
                     <p>
                         今までつくったものを紹介します。
@@ -58,7 +58,7 @@ export default function TopPage() {
                     </p>
                 </a>
 
-                <a href="/links" className={styles.card}>
+                <a href="/links/" className={styles.card}>
                     <h2>Links</h2>
                     <p>
                         各種SNSや運営サイトなど関連リンク集です。
@@ -82,7 +82,7 @@ export default function TopPage() {
                 </a>
             </div>
             <div className={styles.yearLinks}>
-                <a href="https://2023.pitan76.net" target="_blank" rel="noopener noreferrer">≪ 2023</a>        
+                <a href="https://2023.pitan76.net/" target="_blank" rel="noopener noreferrer">≪ 2023</a>        
                 <span>2027...? ≫</span>
             </div>
         </div>
