@@ -132,9 +132,10 @@ a.card h2 {
 }
 
 a.card h2::after {
-    content: " ▶";
+    content: " ->";
     font-size: 1.2rem;
     color: #a0faffdf;
+    font-weight: bold;
     text-shadow: 0 0 6px #00ffff;
 }
 
