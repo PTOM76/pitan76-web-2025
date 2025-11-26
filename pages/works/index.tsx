@@ -1,4 +1,4 @@
-import styles from '@/styles/page.module.css'
+import styles from '@/styles/page.module.css';
 
 export default function WorksPage() {
   return (
@@ -148,4 +148,4 @@ export default function WorksPage() {
         </div>
     </div>
   )
-}
+};

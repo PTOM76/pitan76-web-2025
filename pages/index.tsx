@@ -69,6 +69,17 @@ export default function TopPage() {
                         また、WikiChree.COMといったウィキのホスティングサービスも運営しています。
                     </p>
                 </a>
+
+                <a href="https://2023.pitan76.net/distribution/" className={styles.card}>
+                    <h2>Distribution</h2>
+                    <p>
+                        配布しているプラグイン、ソフトウェアなどの一覧です。
+                        <br />
+                        <img src="/image/distribution.png" alt="distribution-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <br />
+                        私が開発したもの、主にPukiWikiプラグインやマイクラMOD、プラグイン、MMDプラグイン、その他ツールなどの配布ページをまとめたものです。
+                    </p>
+                </a>
             </div>
             <div className={styles.yearLinks}>
                 <a href="https://2023.pitan76.net" target="_blank" rel="noopener noreferrer">≪ 2023</a>        
@@ -77,4 +88,4 @@ export default function TopPage() {
         </div>
     </div>
   )
-}
+};

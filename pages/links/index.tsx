@@ -1,4 +1,4 @@
-import styles from '@/styles/page.module.css'
+import styles from '@/styles/page.module.css';
 
 export default function LinksPage() {
   return (
@@ -88,4 +88,4 @@ export default function LinksPage() {
         </div>
     </div>
   )
-}
+};

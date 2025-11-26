@@ -65,4 +65,4 @@ export default function ChangelogPage() {
         </div>
     </div>
   )
-}
+};
