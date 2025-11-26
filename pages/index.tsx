@@ -2,6 +2,16 @@ import styles from '../styles/top.module.css'
 import { Icon } from "@iconify/react";
 
 export default function TopPage() {
+  const onClickDownArrow = () => {
+    const descEle = document.querySelector(`.${styles.description}`);
+    if (descEle) {
+        const rect = descEle.getBoundingClientRect();
+        const offset = window.pageYOffset || document.documentElement.scrollTop;
+        const top = rect.top + offset - 20;
+        window.scrollTo({ top, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className={styles.container}>
         <div className={styles.profileContainer}>
@@ -16,30 +26,37 @@ export default function TopPage() {
                 </p>
 
                 <div className={styles.links}>
-                    <a href="https://twitter.com/PitaQ_Modding" target="_blank" rel="noopener noreferrer">
+                    <a href="https://twitter.com/PitaQ_Modding" target="_blank" rel="noopener noreferrer" title="Twitter">
                         <Icon icon="mdi:twitter" width="40" height="40" style={{ color: "#ffffff", "--glow": "#2ca2eb" } as any } />
                     </a>
-                    <a href="https://youtube.com/@pitaq8539" target="_blank" rel="noopener noreferrer">
+                    <a href="https://youtube.com/@pitaq8539" target="_blank" rel="noopener noreferrer" title="YouTube">
                         <Icon icon="mdi:youtube" width="40" height="40" style={{ color: "#ffffff", "--glow": "#f12d2d" } as any } />
                     </a>
-                    <a href="https://github.com/PTOM76/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/PTOM76/" target="_blank" rel="noopener noreferrer" title="GitHub">
                         <Icon icon="mdi:github" width="40" height="40" style={{ color: "#ffffff", "--glow": "#eeecec" } as any } />
                     </a>
-                    <a href="https://pitan76.tumblr.com/links" target="_blank" rel="noopener noreferrer">
+                    <a href="https://pitan76.tumblr.com/" target="_blank" rel="noopener noreferrer" title="Tumblr">
                         <Icon icon="mdi:tumblr" width="40" height="40" style={{ color: "#ffffff", "--glow": "#447bf1" } as any } />
                     </a>
+                    <a href="/links/" title="More Links">
+                        <Icon icon="mdi:dots-horizontal" width="40" height="40" style={{ color: "#ffffff", "--glow": "#aaaaaa" } as any } />
+                    </a>
                 </div>
+            </div>
+
+            <div className={styles.downArrow} onClick={onClickDownArrow}>
+                <Icon icon="mdi:chevron-down" width="48" height="48" style={{ color: "#ffffff8f" } as any } />
             </div>
         </div>
 
         <div className={styles.description}>
             <div className={styles.cardlist}>
-                <a href="/works/" className={styles.card}>
+                <a href="/works/" className={styles.card} title="Works (作品ページ)">
                     <h2>Works</h2>
                     <p>
                         今までつくったものを紹介します。
                         <br />
-                        <img src="/image/advanced_reborn.png" alt="works-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <img src="/image/advanced_reborn.png" alt="works-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} data-lightbox="false" />
                         <br />
                         主にマイクラMOD/プラグインやWebサービス、ツールなど。
                         <br />
@@ -47,35 +64,35 @@ export default function TopPage() {
                     </p>
                 </a>
 
-                <a href="https://blog.pitan76.net/" className={styles.card}>
+                <a href="https://blog.pitan76.net/" className={styles.card} title="Notes (ブログ)">
                     <h2>Notes</h2>
                     <p>
                         さまざまなジャンルの記事を書いているぴたぶろぐです。
                         <br />
-                        <img src="/image/pitablog.png" alt="blog-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <img src="/image/pitablog.png" alt="blog-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} data-lightbox="false" />
                         <br />
                         現時点で運用しているブログですが、バラバラになっているのであまり更新できていません。
                     </p>
                 </a>
 
-                <a href="/links/" className={styles.card}>
+                <a href="/links/" className={styles.card} title="Links (各種リンク集)">
                     <h2>Links</h2>
                     <p>
                         各種SNSや運営サイトなど関連リンク集です。
                         <br />
-                        <img src="/image/modwiki.png" alt="links-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <img src="/image/modwiki.png" alt="links-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} data-lightbox="false" />
                         <br />
                         X、Misskeyなどのアカウントを記載しています。<br />
                         また、WikiChree.COMといったウィキのホスティングサービスも運営しています。
                     </p>
                 </a>
 
-                <a href="https://2023.pitan76.net/distribution/" className={styles.card}>
+                <a href="https://2023.pitan76.net/distribution/" className={styles.card} title="Distribution (配布ページ一覧)">
                     <h2>Distribution</h2>
                     <p>
                         配布しているプラグイン、ソフトウェアなどの一覧です。
                         <br />
-                        <img src="/image/distribution.png" alt="distribution-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} />
+                        <img src="/image/distribution.png" alt="distribution-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} data-lightbox="false" />
                         <br />
                         私が開発したもの、主にPukiWikiプラグインやマイクラMOD、プラグイン、MMDプラグイン、その他ツールなどの配布ページをまとめたものです。
                     </p>
