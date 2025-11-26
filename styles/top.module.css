@@ -193,7 +193,14 @@ div.downArrow {
     100% { transform: translateX(-50%) translateY(0); }
 }
 
-
+@keyframes spinIcon {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
 
 @media (max-width: 1000px) {
     a.card {

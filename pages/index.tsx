@@ -12,13 +12,31 @@ export default function TopPage() {
     }
   };
 
+  let angle = 0;
+    const rotateProfileImage = () => {
+        const img = document.getElementById('profile-image');
+        if (!img) return;
+
+        angle += 360;
+
+        img.style.transition = 'transform 1s ease-in-out, filter 1s ease-in-out';
+
+        img.style.transform = `rotateZ(${angle}deg)`;
+        // 黄色をかける
+        img.style.filter = 'sepia(1) hue-rotate(45deg) saturate(5)';
+
+        setTimeout(() => {
+            img.style.filter = 'none';
+        }, 500);
+    };
+
   return (
     <div className={styles.container}>
         <div className={styles.profileContainer}>
             <div className={styles.background}></div>
             <div className={styles.profile}>
                 <h1>Pitan</h1>
-                <img src="/image/profile-icon.jpg" alt="Profile Icon" />
+                <img id="profile-image" src="/image/profile-icon.jpg" alt="Profile Icon" onClick={ rotateProfileImage } data-lightbox="false" />
                 <p>
                     Bug-Creator のぴたんです<br />
                     MODやWebなどを開発しており、機械弱者ですが、技術系が好きです<br />
