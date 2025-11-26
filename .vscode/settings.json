@@ -1,0 +1,34 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always",
+        "source.organizeImports": "always"
+    },
+    "files.exclude": {
+        "**/.next": true,
+        "**/node_modules": true,
+        "**/out": true,
+        "**/.turbo": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/.next": true,
+        "**/out": true
+    },
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/.next/**": true
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact"
+    },
+    "editor.semanticHighlighting.enabled": true,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "explorer.confirmDragAndDrop": false
+}
