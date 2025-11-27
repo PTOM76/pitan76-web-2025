@@ -174,15 +174,15 @@ div.downArrow {
 }
 
 @keyframes bounce {
-    0%   { transform: translateX(-50%) translateY(0); }
+    0%     { transform: translateX(-50%) translateY(0); }
     6.25%  { transform: translateX(-50%) translateY(-4.6px); }
     12.5%  { transform: translateX(-50%) translateY(-8.5px); }
     18.75% { transform: translateX(-50%) translateY(-11.3px); }
-    25%   { transform: translateX(-50%) translateY(-12px); }
+    25%    { transform: translateX(-50%) translateY(-12px); }
     31.25% { transform: translateX(-50%) translateY(-11.3px); }
     37.5%  { transform: translateX(-50%) translateY(-8.5px); }
     43.75% { transform: translateX(-50%) translateY(-4.6px); }
-    50%  { transform: translateX(-50%) translateY(0); }
+    50%    { transform: translateX(-50%) translateY(0); }
     56.25% { transform: translateX(-50%) translateY(4.6px); }
     62.5%  { transform: translateX(-50%) translateY(8.5px); }
     68.75% { transform: translateX(-50%) translateY(11.3px); }
@@ -190,7 +190,7 @@ div.downArrow {
     81.25% { transform: translateX(-50%) translateY(11.3px); }
     87.5%  { transform: translateX(-50%) translateY(8.5px); }
     93.75% { transform: translateX(-50%) translateY(4.6px); }
-    100% { transform: translateX(-50%) translateY(0); }
+    100%   { transform: translateX(-50%) translateY(0); }
 }
 
 @keyframes spinIcon {
