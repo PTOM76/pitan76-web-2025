@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "npm run build && gh-pages -d out",
-    "publish": "gh-pages -d out"
+    "deploy": "npm run build && git checkout --orphan temp-deploy && git --work-tree=out add --all && git --work-tree=out commit -m 'Deploy' && git push origin HEAD:gh-pages --force && git checkout main && git branch -D temp-deploy",
+    "publish": "git checkout --orphan temp-deploy && git --work-tree=out add --all && git --work-tree=out commit -m 'Deploy' && git push origin HEAD:gh-pages --force && git checkout main && git branch -D temp-deploy"
   },
   "dependencies": {
     "@iconify/react": "^6.0.2",
