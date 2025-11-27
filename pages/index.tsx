@@ -20,9 +20,7 @@ export default function TopPage() {
         angle += 360;
 
         img.style.transition = 'transform 1s ease-in-out, filter 1s ease-in-out';
-
         img.style.transform = `rotateZ(${angle}deg)`;
-        // 黄色をかける
         img.style.filter = 'sepia(1) hue-rotate(45deg) saturate(5)';
 
         setTimeout(() => {

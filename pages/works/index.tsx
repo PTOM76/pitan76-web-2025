@@ -30,21 +30,36 @@ export default function WorksPage() {
                 <br />
                 <img src="/image/item_alchemy.png" alt="Item Alchemy スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
 
-                {/* TODO: リンクをアイコンに変更する */}
-                <a href="https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric" target="_blank" rel="noopener noreferrer">CurseForge</a>&nbsp;|&nbsp;
-                <a href="https://modrinth.com/mod/item-alchemy" target="_blank" rel="noopener noreferrer">Modrinth</a>&nbsp;|&nbsp;
-                <a href="https://wikichree.com/pitan76/?Item+Alchemy" target="_blank" rel="noopener noreferrer">Wiki</a>&nbsp;|&nbsp;
-                <a href="https://github.com/Pitan76/item-alchemy" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.curseforgeIcon} title='CurseForge'></div>
+                </a>
+                <a href="https://modrinth.com/mod/item-alchemy" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.modrinthIcon} title='Modrinth'></div>
+                </a>
+                <a href="https://wikichree.com/pitan76/?Item+Alchemy" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.wikichreeIcon} title='ウィキ'></div>
+                </a>
+                <a href="https://github.com/Pitan76/item-alchemy" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.githubIcon} title='ソースコード'></div>
+                </a>
 
                 <h3>Advanced Reborn</h3>
                 Tech Rebornのアドオンで数個のマシンと充電パッドなど僕がほしいなと思ったものを追加しています。<br />
                 <br />
                 <img src="/image/advanced_reborn.png" alt="Advanced Reborn スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
 
-                <a href="https://www.curseforge.com/minecraft/mc-mods/advancedreborn" target="_blank" rel="noopener noreferrer">CurseForge</a>&nbsp;|&nbsp;
-                <a href="https://modrinth.com/mod/advanced-reborn" target="_blank" rel="noopener noreferrer">Modrinth</a>&nbsp;|&nbsp;
-                <a href="https://wikichree.com/pitan76/?Advanced+Reborn" target="_blank" rel="noopener noreferrer">Wiki</a>&nbsp;|&nbsp;
-                <a href="https://github.com/Pitan76/AdvancedReborn" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/advancedreborn" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.curseforgeIcon} title='CurseForge'></div>
+                </a>
+                <a href="https://modrinth.com/mod/advanced-reborn" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.modrinthIcon} title='Modrinth'></div>
+                </a>
+                <a href="https://wikichree.com/pitan76/?Advanced+Reborn" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.wikichreeIcon} title='ウィキ'></div>
+                </a>
+                <a href="https://github.com/Pitan76/AdvancedReborn" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.githubIcon} title='ソースコード'></div>
+                </a>
 
                 <h3>一覧</h3>
                 <ul>

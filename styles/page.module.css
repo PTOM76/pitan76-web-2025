@@ -76,6 +76,51 @@ h1.title {
     margin-left: -40px;
 }
 
+/* アイコン */
+.curseforgeIcon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('/image/svg/curseforge.svg');
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+}
+
+.modrinthIcon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('/image/svg/modrinth.svg');
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+}
+
+.wikichreeIcon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('/image/wikic.png');
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+}
+
+.githubIcon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('/image/svg/github.svg');
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+}
+
 @media (max-width: 1000px) {
     span.card {
         width: 70%;
