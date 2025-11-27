@@ -1,10 +1,8 @@
 # Pitan76.NET
 
-## Deploy to GitHub Pages
-
-```bash
-npm run deploy
-```
+## GitHub Pages へのデプロイ
+push時にGitHub Actionsで自動的にgh-pagesブランチへデプロイされます。<br>
+コミットメッセージに`[no-deploy]`を含めるとデプロイをスキップします。
 
 
 
