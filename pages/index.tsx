@@ -54,20 +54,20 @@ export default function TopPage() {
                     <a href="https://pitan76.tumblr.com/" target="_blank" rel="noopener noreferrer" title="Tumblr">
                         <Icon icon="mdi:tumblr" width="40" height="40" style={{ color: "#ffffff", "--glow": "#447bf1" } as any } />
                     </a>
-                    <a href="/links/" title="More Links">
+                    <a href="/links/" title="各種リンク">
                         <Icon icon="mdi:dots-horizontal" width="40" height="40" style={{ color: "#ffffff", "--glow": "#aaaaaa" } as any } />
                     </a>
                 </div>
             </div>
 
-            <div className={styles.downArrow} onClick={onClickDownArrow}>
+            <div className={styles.downArrow} onClick={onClickDownArrow} title='下にスクロールする'>
                 <Icon icon="mdi:chevron-down" width="48" height="48" style={{ color: "#ffffff8f" } as any } />
             </div>
         </div>
 
         <div className={styles.description}>
             <div className={styles.cardlist}>
-                <a href="/works/" className={styles.card} title="Works (作品ページ)">
+                <a href="/works/" className={styles.card} title="作品ページ">
                     <h2>Works</h2>
                     <p>
                         今までつくったものを紹介します。
@@ -80,7 +80,7 @@ export default function TopPage() {
                     </p>
                 </a>
 
-                <a href="https://blog.pitan76.net/" className={styles.card} title="Notes (ブログ)">
+                <a href="https://blog.pitan76.net/" className={styles.card} title="ブログサイト">
                     <h2>Notes</h2>
                     <p>
                         さまざまなジャンルの記事を書いているぴたぶろぐです。
@@ -91,7 +91,7 @@ export default function TopPage() {
                     </p>
                 </a>
 
-                <a href="/links/" className={styles.card} title="Links (各種リンク集)">
+                <a href="/links/" className={styles.card} title="各種リンク">
                     <h2>Links</h2>
                     <p>
                         各種SNSや運営サイトなど関連リンク集です。
@@ -103,7 +103,7 @@ export default function TopPage() {
                     </p>
                 </a>
 
-                <a href="https://2023.pitan76.net/distribution/" className={styles.card} title="Distribution (配布ページ一覧)">
+                <a href="https://2023.pitan76.net/distribution/" className={styles.card} title="配布ページ一覧">
                     <h2>Distribution</h2>
                     <p>
                         配布しているプラグイン、ソフトウェアなどの一覧です。

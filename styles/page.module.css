@@ -125,11 +125,35 @@ h1.title {
     filter: drop-shadow(0 0 3px #eeecec);
 }
 
-.curseforgeIcon, .modrinthIcon, .wikichreeIcon, .githubIcon {
+.thunderstoreIcon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('/image/svg/thunderstore.svg');
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+    filter: drop-shadow(0 0 3px #4dafff);
+}
+
+.nexusmodsIcon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('/image/svg/nexusmod.svg');
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+    filter: drop-shadow(0 0 3px #ff934b);
+}
+
+.curseforgeIcon, .modrinthIcon, .wikichreeIcon, .githubIcon, .thunderstoreIcon, .nexusmodsIcon {
     transition: all 0.25s ease;
 }
 
-.curseforgeIcon:hover, .modrinthIcon:hover, .wikichreeIcon:hover, .githubIcon:hover {
+.curseforgeIcon:hover, .modrinthIcon:hover, .wikichreeIcon:hover, .githubIcon:hover, .thunderstoreIcon:hover, .nexusmodsIcon:hover {
     transform: scale(1.1);
 }
 

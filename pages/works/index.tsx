@@ -25,7 +25,9 @@ export default function WorksPage() {
                 <br />
                 ※かなり数が多いため、ここでは記載されていないModもあります。<br />
 
-                <h3>Item Alchemy</h3>
+                <h3>Item Alchemy&nbsp;
+                    <img src="/image/fabric.png" style={{display:'inline', width:30, height:30, marginTop:-5}} title='FabricMC' data-lightbox="false"></img>
+                </h3>
                 このMODはFabric用にProjectEのようなEMCシステムと等価交換できる賢者の石などを追加します。<br />
                 <br />
                 <img src="/image/item_alchemy.png" alt="Item Alchemy スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
@@ -43,7 +45,10 @@ export default function WorksPage() {
                     <div className={styles.githubIcon} title='ソースコード'></div>
                 </a>
 
-                <h3>Advanced Reborn</h3>
+                <h3>
+                    Advanced Reborn&nbsp;
+                    <img src="/image/fabric.png" style={{display:'inline', width:30, height:30, marginTop:-5}} title='FabricMC' data-lightbox="false"></img>
+                </h3>
                 Tech Rebornのアドオンで数個のマシンと充電パッドなど僕がほしいなと思ったものを追加しています。<br />
                 <br />
                 <img src="/image/advanced_reborn.png" alt="Advanced Reborn スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
@@ -120,6 +125,18 @@ export default function WorksPage() {
 
             <span className={styles.card}>
                 <h2>その他Mod/プラグイン/拡張機能など</h2>
+                <h3>Chat Duration Plus (R.E.P.O)</h3>
+                R.E.P.O向けのチャットの表示時間を15秒(設定可能)に延長するMod。
+                <br />
+                <img src="/image/repo_chatdurationplus.png" alt="Chat Duration Plus スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                <a href="https://thunderstore.io/c/repo/p/PTOM76/ChatDurationPlus/" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.thunderstoreIcon} title='Thunderstore'></div>
+                </a>
+                <a href="https://www.nexusmods.com/repo/mods/150" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.nexusmodsIcon} title='Nexus'></div>
+                </a>
+
+                <h3>一覧</h3>
                 <ul>
                     <li>
                         <strong><a href="https://thunderstore.io/c/repo/p/PTOM76/ChatDurationPlus/" target="_blank" rel="noopener noreferrer">ChatDurationPlus</a></strong><br />
