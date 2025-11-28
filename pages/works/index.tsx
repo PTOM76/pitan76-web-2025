@@ -135,6 +135,9 @@ export default function WorksPage() {
                 <a href="https://www.nexusmods.com/repo/mods/150" target="_blank" rel="noopener noreferrer">
                     <div className={styles.nexusmodsIcon} title='Nexus'></div>
                 </a>
+                <a href="https://github.com/PTOM76/REPO-ChatDurationPlus" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.githubIcon} title='GitHub'></div>
+                </a>
 
                 <h3>一覧</h3>
                 <ul>
