@@ -15,7 +15,7 @@ self.__BUILD_MANIFEST = {
     "static/chunks/2f3b4065c75fcc30.js"
   ],
   "/works": [
-    "static/chunks/d688729dc55d845e.js"
+    "static/chunks/d3d07706a78d6b85.js"
   ],
   "__rewrites": {
     "afterFiles": [],
