@@ -411,11 +411,11 @@ export default function WorksPage() {
                 <h2>その他</h2>
                 <ul>
                     <li>
-                        <strong><a href="https://github.com/PTOM76/tuibian" target="_blank" rel="noopener noreferrer">tuibian</a></strong><br />
+                        <strong><a href="https://github.com/PTOM76/tuibian" target="_blank" rel="noopener noreferrer">Tuibian</a></strong><br />
                         TUIベースのDebian派生カスタムLinuxディストリ/TUIアプリ。
                     </li>
                     <li>
-                        <strong><a href="https://maven.pitan76.net/" target="_blank" rel="noopener noreferrer">Mavenリポジトリミラーサーバ構築スクリプト</a></strong><br />
+                        <strong><a href="https://maven.pitan76.net/" target="_blank" rel="noopener noreferrer">Mavenリポジトリ</a></strong><br />
                         私のMavenリポジトリです。
                     </li>
                     <li>
