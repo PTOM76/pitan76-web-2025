@@ -153,8 +153,7 @@ div.yearLinks {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    margin-bottom: -3.5rem;
-    
+    margin-bottom: -1.5rem;
     padding: 1rem;
     text-align: center;
     font-size: 0.9rem;
@@ -211,5 +210,8 @@ div.downArrow {
 @media (max-width: 640px) {
     a.card {
         width: 100%;
+    }
+    div.yearLinks {
+        margin-bottom: -3.5rem;
     }
 }
