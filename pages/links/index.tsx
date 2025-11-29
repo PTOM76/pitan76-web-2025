@@ -39,7 +39,7 @@ export default function LinksPage() {
                     <h2>Webサービス</h2>
                     <ul>
                         <li><a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">WikiChree.COM</a><br />
-                            無料で使えるウィキのホスティングサービス。</li>
+                            無料で使えるウィキ、PukiWikiのホスティングサービス。</li>
                         <li><a href="https://vps-search.pitan76.net/" target="_blank" rel="noopener noreferrer">ボ対検索ツール</a><br />
                             ボイパ対決という音MADに特化した検索ツール。</li>
                         <li>

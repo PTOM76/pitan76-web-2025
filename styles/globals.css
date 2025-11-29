@@ -118,6 +118,20 @@ hr {
   margin-bottom: -2.4rem;
 }
 
+pre {
+  background-color: #111111dd;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+code {
+  background-color: #222222dd;
+  padding: 2px 2px;
+  margin: 0 2px;
+  border-radius: 4px;
+}
+
 @media (max-width: 860px) {
   .banner {
     display: block;

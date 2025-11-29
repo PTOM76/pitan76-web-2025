@@ -86,6 +86,38 @@ export default function WorksPage() {
                     <div className={styles.githubIcon} title='ソースコード'></div>
                 </a>
 
+                <h3>Memory Usage Title&nbsp;
+                    <img src="/image/fabric.png" style={{display:'inline', width:30, height:30, marginTop:-5}} title='FabricMC' data-lightbox="false"></img>
+                    <img src="/image/forge.png" style={{display:'inline', width:30, height:30, marginTop:-5, marginLeft:'2px'}} title='Minecraft Forge' data-lightbox="false"></img>
+                    <img src="/image/neoforge.png" style={{display:'inline', width:30, height:30, marginTop:-5, marginLeft:'2px'}} title='NeoForge' data-lightbox="false"></img>
+                </h3>
+                メモリ使用量をタイトルバーに表示するModです。<br />
+                <br />
+                <img src="/image/memory-usage-title.png" alt="Memory Usage Title スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                <a href="https://www.curseforge.com/minecraft/mc-mods/memory-usage-title" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.curseforgeIcon} title='CurseForge'></div>
+                </a>
+                <a href="https://modrinth.com/mod/memory-usage-title" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.modrinthIcon} title='Modrinth'></div>
+                </a>
+                <a href="https://github.com/PTOM76/memory-usage-title" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.githubIcon} title='ソースコード'></div>
+                </a>
+
+                <h3>Mod Sound Volume Options</h3>
+                Modごとに音量を調整できるようにするModです。<br />
+                <br />
+                <img src="/image/mod-sound-volume-options.png" alt="Mod Sound Volume Options スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                <a href="https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.curseforgeIcon} title='CurseForge'></div>
+                </a>
+                <a href="https://modrinth.com/mod/mod-volume-options" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.modrinthIcon} title='Modrinth'></div>
+                </a>
+                <a href="https://github.com/PTOM76/mod-volume-options" target="_blank" rel="noopener noreferrer">
+                    <div className={styles.githubIcon} title='ソースコード'></div>
+                </a>
+
                 <h3>一覧</h3>
                 <ul>
                     <li>
@@ -386,11 +418,35 @@ export default function WorksPage() {
             </span>
 
             <span className={styles.card}>
-                <h2>Webツール/サービス</h2>
+                <h2>Webサービス</h2>
+
+                <h3>WikiChree.COM</h3>
+                無料で使えるPukiWikiホスティングサービス。<br />
+                <img src="/image/wikichree.png" alt="WikiChree.COM スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='WikiChree.COM'>
+                    -&gt; <a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">https://wikichree.com/</a>
+                </span>
+
+                <h3>ボ対検索ツール</h3>
+                ボイパ対決という音MADに特化した検索ツール。<br />
+                <img src="/image/vps-search.png" alt="ボ対検索ツール スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='ボ対検索ツール'>
+                    -&gt; <a href="https://vps-search.pitan76.net/" target="_blank" rel="noopener noreferrer">https://vps-search.pitan76.net/</a>
+                </span>
+
+                <h3>一覧</h3>
                 <ul>
                     <li>
                         <strong><a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">WikiChree.COM</a></strong><br />
-                        PukiWikiをホスティングできる無料のウィキレンタルサービス。
+                        無料で使えるウィキ、PukiWikiのホスティングサービス。
+                    </li>
+                    <li>
+                        <strong><a href="https://vps-search.pitan76.net/" target="_blank" rel="noopener noreferrer">ボ対検索ツール</a></strong><br />
+                        ボイパ対決という音MADに特化した検索ツール。
+                    </li>
+                    <li>
+                        <strong><a href="https://psnverse.pitan76.net/" target="_blank" rel="noopener noreferrer">Psnverseコミュニティ</a></strong><br />
+                        PlayStationの非公式掲示板コミュニティ。(2020年以来放置)
                     </li>
                     <li>
                         <strong><a href="https://2023.pitan76.net/tools/toquiz/index.html" target="_blank" rel="noopener noreferrer">匿名クイズ</a></strong><br />

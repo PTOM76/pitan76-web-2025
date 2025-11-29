@@ -4,7 +4,10 @@
 push時にGitHub Actionsで自動的にgh-pagesブランチへデプロイされます。<br>
 コミットメッセージに`[no-deploy]`を含めるとデプロイをスキップします。
 
-
+## セットアップ
+```bash
+npm install
+```
 
 # Next.js README
 

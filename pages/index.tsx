@@ -37,7 +37,8 @@ export default function TopPage() {
                 <img id="profile-image" src="/image/profile-icon.jpg" alt="Profile Icon" onClick={ rotateProfileImage } data-lightbox="false" />
                 <p>
                     Bug-Creator のぴたんです<br />
-                    MODやWebなどを開発しており、機械弱者ですが、技術系が好きです<br />
+                    MODやWebなどを開発している技術系が好きな機械弱者
+                    -&gt; <a href="/about/">[詳細]</a>
                     <br />
                 </p>
 

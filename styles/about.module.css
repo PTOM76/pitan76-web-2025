@@ -1,0 +1,54 @@
+div.profile {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "h1 p"
+        "img p";
+    gap: 4px 24px;    
+    padding: 8px;
+    width: 100%;
+    align-items: center;
+}
+
+div.profile h1 {
+    grid-area: h1;
+    margin: 0px;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #daffff00;
+    -webkit-text-stroke: 1px #a6faffdf;
+    text-shadow: 0 0 8px #00ffff;
+    text-align: center;
+}
+
+div.profile img {
+    grid-area: img;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border: #ffffffe6 2px solid;
+}
+
+div.profile p {
+    grid-area: p;
+    font-size: 1.0rem;
+    color: #25ddffdf;
+    text-shadow: 0 0 6px #00cccc;
+}
+
+div.links {
+    display: flex;
+    gap: 5px;
+}
+
+div.links a svg {
+    transition: all 0.25s ease;
+    filter: drop-shadow(0 0 5px var(--glow));
+}
+
+div.links a:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px var(--glow)) saturate(200%) brightness(1.5);
+}
