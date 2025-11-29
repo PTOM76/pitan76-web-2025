@@ -104,7 +104,11 @@ export default function WorksPage() {
                     <div className={styles.githubIcon} title='ソースコード'></div>
                 </a>
 
-                <h3>Mod Sound Volume Options</h3>
+                <h3>Mod Sound Volume Options&nbsp;
+                    <img src="/image/fabric.png" style={{display:'inline', width:30, height:30, marginTop:-5}} title='FabricMC' data-lightbox="false"></img>
+                    <img src="/image/forge.png" style={{display:'inline', width:30, height:30, marginTop:-5, marginLeft:'2px'}} title='Minecraft Forge' data-lightbox="false"></img>
+                    <img src="/image/neoforge.png" style={{display:'inline', width:30, height:30, marginTop:-5, marginLeft:'2px'}} title='NeoForge' data-lightbox="false"></img>
+                </h3>
                 Modごとに音量を調整できるようにするModです。<br />
                 <br />
                 <img src="/image/mod-sound-volume-options.png" alt="Mod Sound Volume Options スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
