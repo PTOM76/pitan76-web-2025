@@ -86,6 +86,26 @@ export default function WorksPage() {
                         <div className={styles.githubIcon} title='ソースコード'></div>
                     </a>
 
+                    <h3>Cubic Turret&nbsp;
+                        <img src="/image/fabric.png" style={{ display: 'inline', width: 30, height: 30, marginTop: -5 }} title='FabricMC' data-lightbox="false"></img>
+                    </h3>
+                    自動的にエンティティを攻撃するタレットを追加するModです。<br />
+                    ファントムを自動で打ち倒してほしいものがほしいと思い、作成しました。<br />
+                    <br />
+                    <img src="/image/mcmod/cubicturret.png" alt="Cubic Turret スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/cubicturret" target="_blank" rel="noopener noreferrer">
+                        <div className={styles.curseforgeIcon} title='CurseForge'></div>
+                    </a>
+                    <a href="https://modrinth.com/mod/cubicturret" target="_blank" rel="noopener noreferrer">
+                        <div className={styles.modrinthIcon} title='Modrinth'></div>
+                    </a>
+                    <a href="https://wikichree.com/pitan76/?Cubic+Turret" target="_blank" rel="noopener noreferrer">
+                        <div className={styles.wikichreeIcon} title='ウィキ'></div>
+                    </a>
+                    <a href="https://github.com/Pitan76/CubicTurret" target="_blank" rel="noopener noreferrer">
+                        <div className={styles.githubIcon} title='ソースコード'></div>
+                    </a>
+
                     <h3>Memory Usage Title&nbsp;
                         <img src="/image/fabric.png" style={{ display: 'inline', width: 30, height: 30, marginTop: -5 }} title='FabricMC' data-lightbox="false"></img>
                         <img src="/image/forge.png" style={{ display: 'inline', width: 30, height: 30, marginTop: -5, marginLeft: '2px' }} title='Minecraft Forge' data-lightbox="false"></img>
@@ -119,6 +139,24 @@ export default function WorksPage() {
                         <div className={styles.modrinthIcon} title='Modrinth'></div>
                     </a>
                     <a href="https://github.com/PTOM76/mod-volume-options" target="_blank" rel="noopener noreferrer">
+                        <div className={styles.githubIcon} title='ソースコード'></div>
+                    </a>
+
+                    <h3>Ordinary Crook&nbsp;
+                        <img src="/image/fabric.png" style={{ display: 'inline', width: 30, height: 30, marginTop: -5 }} title='FabricMC' data-lightbox="false"></img>
+                        <img src="/image/forge.png" style={{ display: 'inline', width: 30, height: 30, marginTop: -5, marginLeft: '2px' }} title='Minecraft Forge' data-lightbox="false"></img>
+                        <img src="/image/neoforge.png" style={{ display: 'inline', width: 30, height: 30, marginTop: -5, marginLeft: '2px' }} title='NeoForge' data-lightbox="false"></img>
+                    </h3>
+                    木の葉を効率よく回収するツールを追加するModです。<br />
+                    <br />
+                    <img src="/image/mcmod/ordinary-crook.png" alt="Ordinary Crook スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/ordinary-crook" target="_blank" rel="noopener noreferrer">
+                        <div className={styles.curseforgeIcon} title='CurseForge'></div>
+                    </a>
+                    <a href="https://modrinth.com/mod/ordinary-crook" target="_blank" rel="noopener noreferrer">
+                        <div className={styles.modrinthIcon} title='Modrinth'></div>
+                    </a>
+                    <a href="https://github.com/Pitan76/ordinary-crook" target="_blank" rel="noopener noreferrer">
                         <div className={styles.githubIcon} title='ソースコード'></div>
                     </a>
 
