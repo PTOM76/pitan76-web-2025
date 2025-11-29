@@ -269,7 +269,7 @@ export default function WorksPage() {
                     <h3>Chat Duration Plus (R.E.P.O)</h3>
                     R.E.P.O向けのチャットの表示時間を15秒(設定可能)に延長するMod。
                     <br />
-                    <img src="/image/repo_chatdurationplus.png" alt="Chat Duration Plus スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <img src="/image/repomod/chatdurationplus.png" alt="Chat Duration Plus スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
                     <a href="https://thunderstore.io/c/repo/p/PTOM76/ChatDurationPlus/" target="_blank" rel="noopener noreferrer">
                         <div className={styles.thunderstoreIcon} title='Thunderstore'></div>
                     </a>
@@ -426,14 +426,14 @@ export default function WorksPage() {
 
                     <h3>WikiChree.COM</h3>
                     無料で使えるPukiWikiホスティングサービス。<br />
-                    <img src="/image/wikichree.png" alt="WikiChree.COM スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <img src="/image/web/wikichree.png" alt="WikiChree.COM スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
                     <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='WikiChree.COM'>
                         -&gt; <a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">https://wikichree.com/</a>
                     </span>
 
                     <h3>ボ対検索ツール</h3>
                     ボイパ対決という音MADに特化した検索ツール。<br />
-                    <img src="/image/vps-search.png" alt="ボ対検索ツール スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <img src="/image/web/vps-search.png" alt="ボ対検索ツール スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
                     <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='ボ対検索ツール'>
                         -&gt; <a href="https://vps-search.pitan76.net/" target="_blank" rel="noopener noreferrer">https://vps-search.pitan76.net/</a>
                     </span>

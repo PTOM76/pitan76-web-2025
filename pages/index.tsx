@@ -86,7 +86,7 @@ export default function TopPage() {
                         <p>
                             さまざまなジャンルの記事を書いているぴたぶろぐです。
                             <br />
-                            <img src="/image/pitablog.png" alt="blog-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} data-lightbox="false" />
+                            <img src="/image/web/pitablog.png" alt="blog-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} data-lightbox="false" />
                             <br />
                             現時点で運用しているブログですが、バラバラになっているのであまり更新できていません。
                         </p>
@@ -97,7 +97,7 @@ export default function TopPage() {
                         <p>
                             各種SNSや運営サイトなど関連リンク集です。
                             <br />
-                            <img src="/image/modwiki.png" alt="links-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} data-lightbox="false" />
+                            <img src="/image/web/modwiki.png" alt="links-banner" style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }} data-lightbox="false" />
                             <br />
                             X、Misskeyなどのアカウントを記載しています。<br />
                             また、WikiChree.COMといったウィキのホスティングサービスも運営しています。
