@@ -6,19 +6,19 @@ self.__BUILD_MANIFEST = {
     "static/chunks/6b6d316869f7b701.js"
   ],
   "/about": [
-    "static/chunks/dc55b69503c1fe3f.js"
+    "static/chunks/484debeee968e9a5.js"
   ],
   "/changelog": [
-    "static/chunks/6bfba365cc9c9b17.js"
+    "static/chunks/4ba43375bb5bf347.js"
   ],
   "/links": [
-    "static/chunks/060bd106a19b8be8.js"
+    "static/chunks/c80cdce8a36cb300.js"
   ],
   "/terms": [
-    "static/chunks/9442a7e0992eca32.js"
+    "static/chunks/2a9335fa27d9eca8.js"
   ],
   "/works": [
-    "static/chunks/5e063afd3cda205d.js"
+    "static/chunks/fe0af63fd7da6ce0.js"
   ],
   "__rewrites": {
     "afterFiles": [],
