@@ -52,3 +52,19 @@ div.links a:hover svg {
     transform: scale(1.1);
     filter: drop-shadow(0 0 8px var(--glow)) saturate(200%) brightness(1.5);
 }
+
+@media (max-width: 640px) {
+    div.profile {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "h1"
+            "img"
+            "p";
+        text-align: center;
+    }
+
+    div.profile img {
+        margin: 0 auto;
+    }
+}

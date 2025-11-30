@@ -113,11 +113,6 @@ hr {
   opacity: 0;
 }
 
-.banner {
-  margin-left: 6px;
-  margin-bottom: -2.4rem;
-}
-
 pre {
   background-color: #111111dd;
   padding: 12px;
@@ -132,11 +127,30 @@ code {
   border-radius: 4px;
 }
 
-@media (max-width: 860px) {
-  .banner {
+
+/* .banner {
+  margin-left: 6px;
+  margin-bottom: -2.4rem;
+} */
+
+.banners {
+  display: flex;
+  gap: 4px;
+  margin-left: 10%;
+  margin-bottom: -1.2rem;
+}
+
+@media (max-width: 1000px) {
+  /* .banner {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+  } */
+  .banners {
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-top: -10px;
   }
 }
