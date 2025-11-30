@@ -1,0 +1,4 @@
+[submodule "public/api/works"]
+	path = public/api/works
+	url = https://github.com/PTOM76/works-info.git
+	branch = main
