@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import styles from '../styles/top.module.css';
+import { useBackgroundEffect } from "../hooks/useBackgroundEffect";
 
 export default function TopPage() {
     const onClickDownArrow = () => {
@@ -28,10 +29,13 @@ export default function TopPage() {
         }, 500);
     };
 
+    const canvasRef = useBackgroundEffect();
+
     return (
         <div className={styles.container}>
+            <canvas id="background-canvas" className={styles.background} ref={canvasRef}></canvas>
             <div className={styles.profileContainer}>
-                <div className={styles.background}></div>
+                {/* <div className={styles.background}></div> */}
                 <div className={styles.profile}>
                     <h1>Pitan</h1>
                     <img id="profile-image" src="/image/profile-icon.jpg" alt="Profile Icon" onClick={rotateProfileImage} data-lightbox="false" />
