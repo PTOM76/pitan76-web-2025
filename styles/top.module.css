@@ -9,16 +9,18 @@ div.profileContainer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 4px 20px #1d1d50;
+    /* box-shadow: 0 4px 20px #1d1d50; */
 }
 
 .background {
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    /* z-index: 1; */
+    z-index: -10;
     /* background-image: url("/background.png"); */
     /* background-size: cover; */
     /* background-position: center; */
