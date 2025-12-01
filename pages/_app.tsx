@@ -37,6 +37,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">
           <img src="/image/wikichree88x31.png" alt="Wikichree" width={88} height={31} className={"banner"} title="Wikichree" data-lightbox="false"></img>
         </a>
+        <a href="https://psnverse.pitan76.net/" target="_blank" rel="noopener noreferrer">
+          <img src="/image/psnverse88x31.png" alt="PSNVerse" width={88} height={31} className={"banner"} title="PSNVerse" data-lightbox="false"></img>
+        </a>
       </div>
       
       <a href="/terms/">Terms of Service & Privacy Policy</a> | <a href="/changelog/">Change Log</a>
