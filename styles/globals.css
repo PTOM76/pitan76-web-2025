@@ -77,6 +77,14 @@ h2 a:hover {
     text-decoration: underline;
 }
 
+h3 a {
+    text-decoration: none;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
 div.footer {
   margin-top: 0rem;
   padding: 0.5rem;
