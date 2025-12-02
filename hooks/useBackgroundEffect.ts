@@ -45,6 +45,11 @@ class StarSpaceParticleManager {
 
         window.addEventListener("resize", () => this.onResize());
         window.addEventListener("mousemove", (e: MouseEvent) => this.onMousemove(e));
+        window.addEventListener("touchmove", (e: TouchEvent) => {
+            if (e.touches.length > 0) {
+                this.onTouchmove(e);
+            }
+        });
     }
 
     renderParticle() {
@@ -116,6 +121,11 @@ class StarSpaceParticleManager {
         
         if (this.mouseTrail.length > 32) 
             this.mouseTrail.shift();
+    }
+
+    onTouchmove(e: TouchEvent) {
+        const touch = e.touches[0];
+        this.mouseTrail.push({ x: touch.clientX, y: touch.clientY, life: 1 });
     }
 
     onResize() {
