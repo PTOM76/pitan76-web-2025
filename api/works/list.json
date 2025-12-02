@@ -1299,7 +1299,8 @@
         "updateAt": "2024/02/15",
         "site": {
             "github": "https://github.com/PTOM76/Solomons-Rod",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/solomons-rod-fabric"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/solomons-rod-fabric",
+            "modrinth": "https://modrinth.com/mod/solomons-rod-fabric"
         },
         "tag": [
             "minecraft",
@@ -1310,7 +1311,8 @@
         "category": "mcmod",
         "custom": {
             "mcversion": "1.16-1.20.4",
-            "cf_projectid": 519836
+            "cf_projectid": 519836,
+            "images": ["https://www.pitan76.net/image/mcmod/solomons-rod.png"]
         }
     },
     {
@@ -1632,7 +1634,9 @@
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/bew76"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/bew76",
+            "modrinth": "https://modrinth.com/mod/bew76",
+            "github": "https://github.com/PTOM76/block-entity-wrench"
         },
         "tag": [
             "minecraft",
@@ -1642,17 +1646,20 @@
     },
     {
         "id": "legacy_item_models",
-        "name": "Legacy Item Models",
+        "name": "Legacy Itemmodels",
+        "alias": ["legacy-item-models", "legacy_itemmodels", "legacy-itemmodels"],
         "description": "1.21.4以降でもItemAssetsなしで自動的にモデルを読み込むようにItemAssetsを生成するMod。",
         "version": "",
         "category": "mcmod",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/legacyitemmodels",
-        "license": "",
+        "license": "MIT",
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/legacyitemmodels"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/legacyitemmodels",
+            "modrinth": "https://modrinth.com/mod/legacyitems",
+            "github": "https://github.com/PTOM76/legacy-itemmodels"
         },
         "tag": [
             "minecraft",
@@ -1669,11 +1676,12 @@
         "category": "mcmod",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/pukiwiki-link",
-        "license": "",
+        "license": "MIT",
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/pukiwiki-link"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/pukiwiki-link",
+            "github": "https://github.com/PTOM76/MCPukiWiki-Link"
         },
         "tag": [
             "minecraft",
@@ -1694,11 +1702,15 @@
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/modlistcmd76"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/modlistcmd76",
+            "modrinth": "https://modrinth.com/mod/modlistcmd76",
+            "github": "https://github.com/PTOM76/mods-command"
         },
         "tag": [
             "minecraft",
-            "fabric"
+            "fabric",
+            "forge",
+            "neoforge"
         ],
         "custom": {}
     },
@@ -1714,7 +1726,8 @@
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/qrblock76"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/qrblock76",
+            "github": "https://github.com/PTOM76/qrblock"
         },
         "tag": [
             "minecraft",
@@ -1737,7 +1750,11 @@
             "github": "https://github.com/PTOM76/RecipeImageExporter"
         },
         "tag": [
-            "tool"
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
         ],
         "custom": {}
     },
@@ -1753,11 +1770,15 @@
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/remove-mcrealms"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/remove-mcrealms",
+            "github": "https://github.com/PTOM76/removemcrealms"
         },
         "tag": [
             "minecraft",
-            "mod"
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
         ],
         "custom": {}
     },
@@ -1773,18 +1794,20 @@
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/rubycraft-p"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/rubycraft-p",
+            "github": "https://github.com/PTOM76/RubyCraft"
         },
         "tag": [
             "minecraft",
-            "mod"
+            "mod",
+            "fabric"
         ],
         "custom": {}
     },
     {
         "id": "simple_better_batpack",
         "name": "Simple Better BatPack",
-        "description": "さまざまなバッテリーパックを追加するTechRebornのアドオンMod。",
+        "description": "さまざまなバッテリーパックを追加するTechRebornのアドオンMod。Advanced Rebornに統合したため、開発終了。",
         "version": "",
         "category": "mcmod",
         "author": "PitaQ",
@@ -1793,7 +1816,8 @@
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-better-batpack-fabric"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-better-batpack-fabric",
+            "github": "https://github.com/PTOM76/BetterBatpack-TR-Fabric"
         },
         "tag": [
             "minecraft",
