@@ -1,5 +1,292 @@
 [
     {
+        "id": "itemalchemy",
+        "alias": ["item-alchemy", "item_alchemy", "item-alchemy-fabric", "item_alchemy_fabric"],
+        "name": "Item Alchemy",
+        "description": "このMODはFabric用にProjectEのようなEMCや等価交換できる賢者の石などを追加します。",
+        "version": "0.8.7",
+        "author": "PitaQ, mymai1208, OffsetMonkey538, anthonymendez, Murderman25, 54sda",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric",
+        "license": "MIT",
+        "createAt": "2022/11/05",
+        "updateAt": "2024/03/25",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Item+Alchemy",
+            "github": "https://github.com/Pitan76/item-alchemy",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric",
+            "modrinth": "https://modrinth.com/mod/item-alchemy"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.17-1.20.4",
+            "cf_projectid": 697926,
+            "images": ["https://www.pitan76.net/image/mcmod/item-alchemy.png"]
+        }
+    },
+    {
+        "id": "advancedreborn",
+        "name": "AdvancedReborn",
+        "description": "Tech Rebornのアドオンで数個のマシンと充電パッドなど僕がほしいなと思ったものを追加しています。",
+        "version": "1.2.8-fix",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn",
+        "license": "MIT",
+        "createAt": "2021/10/31",
+        "updateAt": "2024/03/29",
+        "site": {
+            "github": "https://github.com/Pitan76/AdvancedReborn",
+            "wiki": "https://wikichree.com/pitan76/?AdvancedReborn",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn",
+            "modrinth": "https://modrinth.com/mod/advanced-reborn"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "techreborn"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.16.5-1.20.4",
+            "cf_projectid": 543089,
+            "images": ["https://www.pitan76.net/image/mcmod/advancedreborn.png"]
+        }
+    },
+    {
+        "id": "enhancedquarries",
+        "alias": ["enhanced-quarries"],
+        "name": "Enhanced Quarries",
+        "description": "FabricにBuildCraft風のクァーリーやフィラーを追加するModです。",
+        "version": "1.4.5",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries",
+        "license": "MPLv2",
+        "createAt": "2021/09/18",
+        "updateAt": "2024/03/04",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Enhanced+Quarries",
+            "github": "https://github.com/PTOM76/EnhancedQuarries",
+            "modrinth": "https://modrinth.com/mod/enhancedquarries",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.16.5-1.20.4",
+            "cf_projectid": 528338,
+            "images": ["https://www.pitan76.net/image/mcmod/enhancedquarries.png"]
+        }
+    },
+    {
+        "id": "cubicturret",
+        "name": "Cubic Turret",
+        "description": "自動的にエンティティを攻撃するタレットを追加するMod。<br />ファントムを自動で打ち倒してほしいものがほしいと思い、作成しました。",
+        "version": "",
+        "category": "mcmod",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/cubicturret",
+        "license": "",
+        "createAt": "",
+        "updateAt": "",
+        "site": {
+            "github": "https://github.com/Pitan76/CubicTurret",
+            "wiki": "https://wikichree.com/pitan76/?Cubic+Turret",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/cubicturret",
+            "modrinth": "https://modrinth.com/mod/cubicturret"
+        },
+        "tag": [
+            "minecraft",
+            "fabric"
+        ],
+        "custom": {
+            "mcversion": "1.18.1-1.20.1",
+            "cf_projectid": 888222,
+            "images": ["https://www.pitan76.net/image/mcmod/cubicturret.png"]
+        }
+    },
+    {
+        "id": "memoryusagetitle",
+        "name": "Memory Usage Title",
+        "description": "メモリ使用量をタイトルバーに表示するModです。",
+        "version": "1.0.2",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/memory-usage-title",
+        "license": "MIT",
+        "createAt": "2024/02/12",
+        "updateAt": "2024/02/20",
+        "site": {
+            "github": "https://github.com/PTOM76/memory-usage-title",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/memory-usage-title",
+            "modrinth": "https://modrinth.com/mod/memory-usage-title"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.15-1.21.10",
+            "cf_projectid": 973764,
+            "images": ["https://www.pitan76.net/image/mcmod/memory-usage-title.png"]
+        }
+    },
+    {
+        "id": "sound_volume_options",
+        "name": "Mod Sound Volume Options",
+        "description": "Modごとに音量を調整できるようにするModです。",
+        "version": "1.0.2",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options",
+        "license": "MIT",
+        "createAt": "2024/03/02",
+        "updateAt": "2024/03/04",
+        "site": {
+            "github": "https://github.com/PTOM76/mod-volume-options",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options",
+            "modrinth": "https://modrinth.com/mod/mod-volume-options"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.16.4-1.20.4",
+            "cf_projectid": 981874,
+            "images": ["https://www.pitan76.net/image/mcmod/mod-sound-volume-options.png"]
+        }
+    },
+    {
+        "id": "ordinarycrook",
+        "alias": ["ordinary-crook"],
+        "name": "Ordinary Crook",
+        "description": "ExNihiloAdscensioのCrookだけを再現したもの<br />木の葉を壊すための杖を追加する",
+        "version": "1.0.6",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook",
+        "license": "MIT",
+        "createAt": "2022/10/01",
+        "updateAt": "2024/02/15",
+        "site": {
+            "github": "https://github.com/Pitan76/ordinary-crook",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook",
+            "modrinth": "https://modrinth.com/mod/ordinary-crook"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.16.4-1.20.4",
+            "cf_projectid": 683097,
+            "images": ["https://www.pitan76.net/image/mcmod/ordinary-crook.png"]
+        }
+    },
+
+
+
+
+    {
+        "id": "commentplus_plugin",
+        "name": "CommentPlus",
+        "description": "絵文字などの機能を加えたコメントの機能拡張プラグインです。<br />(Origin: Comment)",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/commentplus.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom": "https://pkom.pitan76.net/?プラグイン/commentplus.inc.php",
+            "pukiwiki-official": "https://pukiwiki.sourceforge.io/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/commentplus.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ],
+        "category": "pukiwiki",
+        "custom": {
+            "images": ["https://www.pitan76.net/image/pukiwiki/commentplus.png"]
+        }
+    },
+    {
+        "id": "ctrlcmt_plugin",
+        "name": "CtrlCmt",
+        "description": "管理画面で設定できる機能拡張版コメントプラグイン<br />(Origin: comment)",
+        "version": "1.02",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/ctrlcmt.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom": "https://pkom.pitan76.net/?%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/ctrlcmt.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ],
+        "category": "pukiwiki",
+        "custom": {
+            "images": ["https://www.pitan76.net/image/pukiwiki/ctrlcmt.png"]
+        }
+    },
+    {
+        "id": "easyedit_plugin",
+        "name": "EasyEdit",
+        "description": "CKEditor4を使用してWYSIWYG編集するPukiWikiプラグインです。PukiWiki初心者の方でも簡単に編集できます。<br />(Origin: edit, guiedit)",
+        "version": "1.0.9",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/easyedit.zip",
+        "license": "GPLv3",
+        "site": {
+            "pkom": "https://pkom.pitan76.net/?%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/easyedit.inc.php",
+            "pukiwiki-official": "https://pukiwiki.sourceforge.io/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/easyedit.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ],
+        "category": "pukiwiki",
+        "custom": {
+            "images": ["https://www.pitan76.net/image/pukiwiki/easyedit.png"]
+        }
+    },
+    {
+        "id": "bot_plugin",
+        "name": "PukiBot API",
+        "description": "PukiWiki上でBot APIを提供するためのプラグイン",
+        "version": "1.3",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bot.inc.php",
+        "license": "LGPLv2.1",
+        "site": {
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bot.inc.php",
+            "gist": "https://gist.github.com/PTOM76/c618a7ca97c7da3510970f7d0764a765",
+            "pukiwiki-official": "https://pukiwiki.sourceforge.io/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/bot.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ],
+        "category": "pukiwiki",
+        "custom": {}
+    },
+    {
         "id": "accordion_plugin",
         "name": "Accordion",
         "description": "見出し版折りたたみプラグイン",
@@ -109,25 +396,6 @@
         "custom": {}
     },
     {
-        "id": "bot_plugin",
-        "name": "PukiBot API",
-        "description": "PukiWiki上でBot APIを提供するためのプラグイン",
-        "version": "1.3",
-        "author": "PitaQ",
-        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bot.inc.php",
-        "license": "LGPLv2.1",
-        "site": {
-            "pkom": "https://pkom.pitan76.net/?プラグイン/bot.inc.php",
-            "解説": "https://gist.github.com/PTOM76/c618a7ca97c7da3510970f7d0764a765"
-        },
-        "tag": [
-            "pukiwiki",
-            "plugin"
-        ],
-        "category": "pukiwiki",
-        "custom": {}
-    },
-    {
         "id": "pukibot_py",
         "name": "PukiBot Py",
         "description": "PukiWiki上でBotを動かすためのPython3用フレームワーク",
@@ -195,60 +463,6 @@
         "license": "GPLv3",
         "site": {
             "pkom": "https://pkom.pitan76.net/?プラグイン/checkarea.inc.php"
-        },
-        "tag": [
-            "pukiwiki",
-            "plugin"
-        ],
-        "category": "pukiwiki",
-        "custom": {}
-    },
-    {
-        "id": "commentplus_plugin",
-        "name": "CommentPlus",
-        "description": "コメントの機能拡張プラグイン<br />(Origin: Comment)",
-        "version": "1.0",
-        "author": "PitaQ",
-        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/commentplus.inc.php",
-        "license": "GPLv3",
-        "site": {
-            "pkom": "https://pkom.pitan76.net/?プラグイン/commentplus.inc.php"
-        },
-        "tag": [
-            "pukiwiki",
-            "plugin"
-        ],
-        "category": "pukiwiki",
-        "custom": {}
-    },
-    {
-        "id": "ctrlcmt_plugin",
-        "name": "CtrlCmt",
-        "description": "管理画面で設定できる機能拡張版コメントプラグイン<br />(Origin: comment)",
-        "version": "1.02",
-        "author": "PitaQ",
-        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/ctrlcmt.inc.php",
-        "license": "GPLv3",
-        "site": {
-            "pkom": "https://pkom.pitan76.net/?プラグイン/ctrlcmt.inc.php"
-        },
-        "tag": [
-            "pukiwiki",
-            "plugin"
-        ],
-        "category": "pukiwiki",
-        "custom": {}
-    },
-    {
-        "id": "easyedit_plugin",
-        "name": "EasyEdit",
-        "description": "CKEditor版編集プラグイン<br />(Origin: edit, guiedit)",
-        "version": "1.0.9",
-        "author": "PitaQ",
-        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/easyedit.zip",
-        "license": "GPLv3",
-        "site": {
-            "pkom": "https://pkom.pitan76.net/?プラグイン/easyedit.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -720,7 +934,7 @@
         "id": "simple_uncraftingtable",
         "alias": ["simple-uncrafting-table", "simpleuncraftingtable", "uncraftingtable", "uncrafting-table", "uncraftingtable76"],
         "name": "Simple Uncrafting Table",
-        "description": "アイテムを分解するための簡単な分解テーブル<br />前提MOD: MCPitanLib",
+        "description": "アイテムを分解するための簡単な分解テーブル",
         "version": "1.3.4",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric",
@@ -773,35 +987,9 @@
         }
     },
     {
-        "id": "advancedreborn",
-        "name": "AdvancedReborn",
-        "description": "TechRebornに便利なアイテム、マシンなどを追加するアドオンMOD<br />前提MOD: MCPitanLib, TechReborn",
-        "version": "1.2.8-fix",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn",
-        "license": "MIT",
-        "createAt": "2021/10/31",
-        "updateAt": "2024/03/29",
-        "site": {
-            "wiki": "https://wikichree.com/pitan76/?AdvancedReborn",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric",
-            "techreborn"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.16.5-1.20.4",
-            "cf_projectid": 543089
-        }
-    },
-    {
         "id": "spacecube",
         "name": "Space Cube",
-        "description": "Compact Machinesのようなポケットディメンションを追加するMOD<br />前提MOD: MCPitanLib",
+        "description": "Compact Machinesのようなポケットディメンションを追加するMOD",
         "version": "0.9.6",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/spacecube",
@@ -824,64 +1012,10 @@
         }
     },
     {
-        "id": "enhancedquarries",
-        "alias": ["enhanced-quarries"],
-        "name": "Enhanced Quarries",
-        "description": "クァーリー、フィラーなどを追加するMOD<br />前提MOD: MCPitanLib",
-        "version": "1.4.5",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries",
-        "license": "MPLv2",
-        "createAt": "2021/09/18",
-        "updateAt": "2024/03/04",
-        "site": {
-            "wiki": "https://wikichree.com/pitan76/?Enhanced+Quarries",
-            "github": "https://github.com/PTOM76/EnhancedQuarries",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.16.5-1.20.4",
-            "cf_projectid": 528338
-        }
-    },
-    {
-        "id": "itemalchemy",
-        "alias": ["item-alchemy", "item_alchemy", "item-alchemy-fabric", "item_alchemy_fabric"],
-        "name": "Item Alchemy",
-        "description": "ProjectE/EEのようなEMCや変換テーブルなどを追加するMOD<br />前提MOD: MCPitanLib",
-        "version": "0.8.7",
-        "author": "PitaQ, mymai1208, OffsetMonkey538",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric",
-        "license": "MIT",
-        "createAt": "2022/11/05",
-        "updateAt": "2024/03/25",
-        "site": {
-            "wiki": "https://wikichree.com/pitan76/?Item+Alchemy",
-            "github": "https://github.com/Pitan76/item-alchemy",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.17-1.20.4",
-            "cf_projectid": 697926
-        }
-    },
-    {
         "id": "yamatogunmod",
         "alias": ["yamato-gun-mod", "yamato_gun_mod", "yamato-gun", "yamato_gun", "yamatogun"],
         "name": "Yamato Gun Mod",
-        "description": "大和砲MOD<br />前提MOD: MCPitanLib",
+        "description": "大和砲MOD",
         "version": "0.0.10",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/yamato-gun",
@@ -896,7 +1030,8 @@
             "minecraft",
             "mod",
             "fabric",
-            "forge"
+            "forge",
+            "neoforge"
         ],
         "category": "mcmod",
         "custom": {
@@ -907,7 +1042,7 @@
     {
         "id": "pipeplus",
         "name": "PipePlus",
-        "description": "パイプMOD<br />前提MOD: MCPitanLib, Simple Pipes",
+        "description": "パイプMOD, Simple Pipes",
         "version": "1.1.4-fix.1",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/pipeplus",
@@ -933,7 +1068,7 @@
     {
         "id": "bedrocktools76",
         "name": "Bedrock Tools76",
-        "description": "岩盤ツールと黒曜石ツールを追加するMOD<br />前提MOD: MCPitanLib",
+        "description": "岩盤ツールと黒曜石ツールを追加するMOD",
         "version": "1.0.4",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/bedrock-tools76",
@@ -958,7 +1093,7 @@
     {
         "id": "ignischat",
         "name": "Ignis Chat",
-        "description": "LunaChatのローマ字/漢字かな変換と色機能をFabricに移植したもの<br />前提MOD: MCPitanLib",
+        "description": "LunaChatのローマ字/漢字かな変換と色機能をFabricに移植したもの",
         "version": "1.0.3",
         "author": "PitaQ, mymai1208",
         "url": "https://www.curseforge.com/minecraft/mc-mods/ignischat",
@@ -983,8 +1118,8 @@
     },
     {
         "id": "materialisation",
-        "name": "Materialisation (PitaQフォーク版)",
-        "description": "shedaniel氏のMaterialisationを1.17以降へ移植したものです。<br />前提MOD: MCPitanLib (1.20-)",
+        "name": "Materialisation (フォーク)",
+        "description": "shedaniel氏のMaterialisationを1.17以降へ移植したものです。 (1.20-)",
         "version": "3.2.0",
         "author": "PitaQ, shedaniel (original)",
         "url": "https://www.curseforge.com/minecraft/mc-mods/materialisation3",
@@ -1008,7 +1143,7 @@
     },
     {
         "id": "classicombat",
-        "name": "Classicombat (PitaQフォーク版)",
+        "name": "Classicombat (フォーク)",
         "description": "1.8.9/1.7.10の戦闘システムをFabric用に移植したMOD",
         "version": "1.0.6",
         "author": "PitaQ, one_point_o (original)",
@@ -1035,7 +1170,7 @@
         "id": "techhammers",
         "alias": ["tech-hammers", "tech_hammers", "techexcavators", "tech-excavators", "tech_excavators", "tech_hammers_excavators", "tech-hammers-excavators"],
         "name": "Tech Hammers & Excavators",
-        "description": "Vanilla Hammers/Excavators、TRのアドオンMOD<br />ルビー、電動などの3x3採掘ツールを追加します。<br />前提MOD: MCPitanLib, Tech Reborn, Vanilla Hammers/Excavators",
+        "description": "Vanilla Hammers/Excavators、TRのアドオンMOD<br />ルビー、電動などの3x3採掘ツールを追加します。, Tech Reborn, Vanilla Hammers/Excavators",
         "version": "1.0.5",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
@@ -1058,37 +1193,10 @@
         }
     },
     {
-        "id": "ordinarycrook",
-        "alias": ["ordinary-crook"],
-        "name": "Ordinary Crook",
-        "description": "ExNihiloAdscensioのCrookだけを再現したもの<br />木の葉を壊すための杖を追加する<br />前提MOD: MCPitanLib",
-        "version": "1.0.6",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook",
-        "license": "MIT",
-        "createAt": "2022/10/01",
-        "updateAt": "2024/02/15",
-        "site": {
-            "github": "https://github.com/Pitan76/ordinary-crook",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric",
-            "forge"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.16.4-1.20.4",
-            "cf_projectid": 683097
-        }
-    },
-    {
         "id": "additionalsmallstairs",
         "alias": ["additional-small-stairs"],
         "name": "Additional Small Stairs",
-        "description": "Small Stairs (PitaQフォーク版)のアドオンです。<br />最新バージョンで追加された階段の小階段を追加します。<br />前提MOD: MCPitanLib, Small Stairs",
+        "description": "Small Stairs (フォーク)のアドオンです。<br />最新バージョンで追加された階段の小階段を追加します。, Small Stairs",
         "version": "1.0.3",
         "author": "PitaQ",
         "createAt": "2023/12/02",
@@ -1116,7 +1224,7 @@
         "id": "endercane",
         "alias": ["ender-cane"],
         "name": "Ender Cane",
-        "description": "エンダーパールを消費してテレポートすることができる杖を追加するMOD<br />前提MOD: MCPitanLib",
+        "description": "エンダーパールを消費してテレポートすることができる杖を追加するMOD",
         "version": "1.0.6",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/ender-cane",
@@ -1144,7 +1252,7 @@
         "id": "solomons_rod",
         "alias": ["solomonsrod", "solomons-rod"],
         "name": "Solomons Rod (PitaQ再現版)",
-        "description": "さよ様の「ソロモンの杖」の再現のようなものです<br />前提MOD: MCPitanLib",
+        "description": "さよ様の「ソロモンの杖」の再現のようなものです",
         "version": "1.1.1",
         "author": "PitaQ, takanasayo (original)",
         "url": "https://www.curseforge.com/minecraft/mc-mods/solomons-rod-fabric",
@@ -1170,7 +1278,7 @@
     {
         "id": "compatdatapacks",
         "name": "CompatDataPacks",
-        "description": "データパック互換性MOD<br />前提MOD: MCPitanLib",
+        "description": "データパックのバージョン互換を追加するMod。",
         "version": "1.0.6",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/compatdatapacks",
@@ -1195,36 +1303,9 @@
         }
     },
     {
-        "id": "memoryusagetitle",
-        "name": "Memory Usage Title",
-        "description": "メモリ使用量をタイトルバーに表示するだけのMOD<",
-        "version": "1.0.0",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/memory-usage-title",
-        "license": "MIT",
-        "createAt": "2024/02/12",
-        "updateAt": "2024/02/20",
-        "site": {
-            "github": "https://github.com/PTOM76/memory-usage-title",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/memory-usage-title"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric",
-            "forge",
-            "neoforge"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.15-1.20.4",
-            "cf_projectid": 973764
-        }
-    },
-    {
         "id": "smallstairs",
         "name": "Small Stairs (PitaQ再現版)",
-        "description": "さよ様の「SmallStairs125 小階段MOD」の再現です<br />前提MOD: MCPitanLib",
+        "description": "さよ様の「SmallStairs125 小階段MOD」の再現です",
         "version": "1.1.4",
         "author": "PitaQ, takanasayo (original)",
         "url": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119",
@@ -1246,33 +1327,6 @@
         "custom": {
             "mcversion": "1.18.1-1.20.4",
             "cf_projectid": 687162
-        }
-    },
-    {
-        "id": "sound_volume_options",
-        "name": "Mod Sound Volume Options",
-        "description": "MODのサウンド音量を調整するMOD<br />前提MOD: MCPitanLib",
-        "version": "1.0.2",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options",
-        "license": "MIT",
-        "createAt": "2024/03/02",
-        "updateAt": "2024/03/04",
-        "site": {
-            "github": "https://github.com/PTOM76/mod-volume-options",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric",
-            "forge",
-            "neoforge"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.16.4-1.20.4",
-            "cf_projectid": 981874
         }
     },
     {
@@ -1302,7 +1356,7 @@
     },
     {
         "id": "install_manager",
-        "name": "MMD Plugin Install Manager (PitaQフォーク版)",
+        "name": "MMD Plugin Install Manager (フォーク)",
         "description": "MMD Plugin Install Managerを現時点で最新のv9.32対応に対応させたフォーク版",
         "version": "v0.03",
         "author": "PitaQ, oigami (original)",
@@ -1315,7 +1369,7 @@
             "mmd",
             "tool"
         ],
-        "category": "mmdplugin",
+        "category": "other",
         "custom": {}
     },
     {
@@ -1338,7 +1392,7 @@
     },
     {
         "id": "mmdutility",
-        "name": "MMDUtility (PitaQフォーク版)",
+        "name": "MMDUtility (フォーク)",
         "description": "oigami氏の便利プラグインであるMMDUtilityを最新のv9.32に対応させたフォーク版<br />前提プラグイン: MMDPlugin",
         "version": "v0.12.1",
         "author": "PitaQ, oigami (original)",
@@ -1356,7 +1410,7 @@
     },
     {
         "id": "mmdplugindll",
-        "name": "MMDPluginDLL (PitaQフォーク版)",
+        "name": "MMDPluginDLL (フォーク)",
         "description": "Soul-chan氏のMMDPluginDLLを最新のv9.32に対応させたフォーク版<br />前提プラグイン: MMDPlugin",
         "version": "1.0.0.1",
         "author": "PitaQ, Soul-chan (original)",
@@ -1547,26 +1601,6 @@
         "custom": {}
     },
     {
-        "id": "cubicturret",
-        "name": "Cubic Turret",
-        "description": "自動的にエンティティを攻撃するタレットを追加するMod。(ファントムを倒すのに便利)",
-        "version": "",
-        "category": "mcmod",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/cubicturret",
-        "license": "",
-        "createAt": "",
-        "updateAt": "",
-        "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/cubicturret"
-        },
-        "tag": [
-            "minecraft",
-            "fabric"
-        ],
-        "custom": {}
-    },
-    {
         "id": "legacy_item_models",
         "name": "Legacy Item Models",
         "description": "1.21.4以降でもItemAssetsなしで自動的にモデルを読み込むようにItemAssetsを生成するMod。",
@@ -1603,7 +1637,8 @@
         },
         "tag": [
             "minecraft",
-            "mod"
+            "mod",
+            "fabric"
         ],
         "custom": {}
     },
@@ -1643,7 +1678,9 @@
         },
         "tag": [
             "minecraft",
-            "mod"
+            "mod",
+            "fabric",
+            "neoforge"
         ],
         "custom": {}
     },
@@ -1708,7 +1745,7 @@
     },
     {
         "id": "rubycraft_p",
-        "name": "RubyCraft-P",
+        "name": "RubyCraft",
         "description": "既に開発終了である、初期あたりに試作でつくったMod。",
         "version": "",
         "category": "mcmod",
@@ -1828,21 +1865,27 @@
     },
     {
         "id": "chatdurationplus",
-        "name": "ChatDurationPlus",
+        "name": "Chat Duration Plus",
         "description": "R.E.P.O向けのチャットの表示時間を延長するMod。",
-        "version": "",
+        "version": "0.0.2",
         "category": "repomod",
         "author": "PitaQ",
         "url": "https://thunderstore.io/c/repo/p/PTOM76/ChatDurationPlus/",
-        "license": "",
-        "createAt": "",
-        "updateAt": "",
-        "site": {},
+        "license": "MIT",
+        "createAt": "2025/8/13",
+        "updateAt": "2025/8/15",
+        "site": {
+            "thunderstore": "https://thunderstore.io/c/repo/p/PTOM76/ChatDurationPlus/",
+            "nexusmods": "https://www.nexusmods.com/repo/mods/150",
+            "github": "https://github.com/PTOM76/REPO-ChatDurationPlus"
+        },
         "tag": [
             "r-e-p-o",
             "mod"
         ],
-        "custom": {}
+        "custom": {
+            "images": ["https://www.pitan76.net/image/repomod/chatdurationplus.png"]
+        }
     },
     {
         "id": "reaper_video_script",
@@ -1956,7 +1999,7 @@
         "name": "Cleaskin",
         "description": "ブログとして使えそうな明るいPukiWikiスキン。",
         "version": "",
-        "category": "other",
+        "category": "pukiwikiskin",
         "author": "PitaQ",
         "url": "https://github.com/PTOM76/pukiwiki-cleaskin",
         "license": "",
@@ -1969,7 +2012,9 @@
             "pukiwiki",
             "skin"
         ],
-        "custom": {}
+        "custom": {
+            "images": ["https://www.pitan76.net/image/pukiwiki/cleaskin.png"]
+        }
     },
     {
         "id": "wikichree_dev_plugins",
@@ -2122,10 +2167,12 @@
             "pukiwiki",
             "hosting"
         ],
-        "custom": {}
+        "custom": {
+            "images": ["https://www.pitan76.net/image/web/wikichree.png"]
+        }
     },
     {
-        "id": "bota_search_tool",
+        "id": "vps-search",
         "name": "ボ対検索ツール",
         "description": "ボイパ対決という音MADに特化した検索ツール。",
         "version": "",
@@ -2142,10 +2189,12 @@
             "web",
             "webapp"
         ],
-        "custom": {}
+        "custom": {
+            "images": ["https://www.pitan76.net/image/web/vps-search.png"]
+        }
     },
     {
-        "id": "psnverse_community",
+        "id": "psnverse",
         "name": "Psnverseコミュニティ",
         "description": "PlayStationの非公式掲示板コミュニティ。(2020年以来放置)",
         "version": "",

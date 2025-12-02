@@ -1,0 +1,577 @@
+[
+    {
+        "id": "accordion_plugin",
+        "name": "Accordion",
+        "description": "見出し版折りたたみプラグイン"
+    },
+    {
+        "id": "alert_plugin",
+        "name": "Alert",
+        "description": "JavaScriptのalert()関数を用いたダイアログ表示プラグイン"
+    },
+    {
+        "id": "blink_plugin",
+        "name": "BlogLink",
+        "description": "ブログ風なページのリンクを設置するプラグイン"
+    },
+    {
+        "id": "bcontents_plugin",
+        "name": "BlogContents",
+        "description": "折りたたみ機能付き目次プラグイン"
+    },
+    {
+        "id": "bgcolor_plugin",
+        "name": "BGColor",
+        "description": "背景色を変更するプラグイン"
+    },
+    {
+        "id": "brecent_plugin",
+        "name": "BlogRecent",
+        "description": "ブログ風更新したページ一覧表示するプラグイン<br />(Origin: recent)"
+    },
+    {
+        "id": "bot_plugin",
+        "name": "PukiBot API",
+        "description": "PukiWiki上でBot APIを提供するためのプラグイン"
+    },
+    {
+        "id": "pukibot_py",
+        "name": "PukiBot Py",
+        "description": "PukiWiki上でBotを動かすためのPython3用フレームワーク"
+    },
+    {
+        "id": "button_plugin",
+        "name": "Button",
+        "description": "ボタン(Button)プラグイン (1.5.X対応版)"
+    },
+    {
+        "id": "submit_plugin",
+        "name": "Submit",
+        "description": "ボタン(Submit)プラグイン (1.5.X対応版)"
+    },
+    {
+        "id": "checkarea_plugin",
+        "name": "CheckArea",
+        "description": "チェックボックスプラグイン"
+    },
+    {
+        "id": "commentplus_plugin",
+        "name": "CommentPlus",
+        "description": "コメントの機能拡張プラグイン<br />(Origin: Comment)"
+    },
+    {
+        "id": "ctrlcmt_plugin",
+        "name": "CtrlCmt",
+        "description": "管理画面で設定できる機能拡張版コメントプラグイン<br />(Origin: comment)"
+    },
+    {
+        "id": "easyedit_plugin",
+        "name": "EasyEdit",
+        "description": "CKEditor版編集プラグイン<br />(Origin: edit, guiedit)"
+    },
+    {
+        "id": "exrules2_plugin",
+        "name": "exrules2",
+        "description": "ページ内でユーザ定義ルールを設定<br />(Origin: exrules)"
+    },
+    {
+        "id": "footer_plugin",
+        "name": "Footer",
+        "description": "PukiWiki Plus!のようなフッターを追加するプラグイン"
+    },
+    {
+        "id": "header_plugin",
+        "name": "Header",
+        "description": "PukiWiki Plus!のようなヘッダーを追加するプラグイン"
+    },
+    {
+        "id": "google_plugin",
+        "name": "Google search",
+        "description": "Google検索プラグイン"
+    },
+    {
+        "id": "heading5_plugin",
+        "name": "Heading5",
+        "description": "リクエストされてつくった見出し(h5)プラグイン"
+    },
+    {
+        "id": "html_cache_plugin",
+        "name": "HTML Cache",
+        "description": "ページを一時的に保存して少しだけ処理を軽量化するプラグイン"
+    },
+    {
+        "id": "iplog_plugin",
+        "name": "IPLog",
+        "description": "IPアドレスを記録するプラグイン"
+    },
+    {
+        "id": "mlcomment_plugin",
+        "name": "Mluti-lineComment",
+        "description": "リクエストされてつくった複数行コメントプラグイン<br />(Origin: comment)"
+    },
+    {
+        "id": "mlarticle_plugin",
+        "name": "Mluti-lineComment's Article",
+        "description": "複数行コメント版掲示板プラグイン<br />(Origin: article)"
+    },
+    {
+        "id": "mytools_plugin",
+        "name": "MyTools",
+        "description": "PHPファイル(evalでの実行)をPukiWikiに埋め込むプラグイン"
+    },
+    {
+        "id": "nicovideo_player_plugin",
+        "name": "NicoVideoPlayer",
+        "description": "ニコニコ動画の埋め込みプラグイン"
+    },
+    {
+        "id": "pluglist_plugin",
+        "name": "PlugList",
+        "description": "プラグイン一覧を表示するプラグイン<br />(Origin: versionlist)"
+    },
+    {
+        "id": "pukistatic_plugin",
+        "name": "PukiStatic",
+        "description": "PukiWikiを静的化してHTMLを生成するプラグイン"
+    },
+    {
+        "id": "manageform_plugin",
+        "name": "PukiWikiManageForm",
+        "description": "GUIで設定できるプラグイン"
+    },
+    {
+        "id": "region2_plugin",
+        "name": "Region.v2",
+        "description": "折りたたみプラグイン<br />(Origin: region)"
+    },
+    {
+        "id": "select_navi_plugin",
+        "name": "SelectNavi",
+        "description": "ナビバーにセレクトボックスを追加し、<br />Configでカスタマイズできるプラグイン"
+    },
+    {
+        "id": "tex2_plugin",
+        "name": "TeX2",
+        "description": "数式プラグイン"
+    },
+    {
+        "id": "timestamp_plugin",
+        "name": "TimeStamp",
+        "description": "ページのタイムスタンプ書き換えプラグイン"
+    },
+    {
+        "id": "timestamp_backup_plugin",
+        "name": "TimeStampBackup",
+        "description": "PukiWikiの引っ越し用タイムスタンプバックアッププラグイン"
+    },
+    {
+        "id": "viewedit_plugin",
+        "name": "ViewEdit",
+        "description": "機能拡張リアルタイムプレビュー編集プラグイン<br />(Origin: edit)"
+    },
+    {
+        "id": "yahoojp_plugin",
+        "name": "Yahoo! Japan search",
+        "description": "Yahoo! Japan (日本版) 検索プラグイン"
+    },
+    {
+        "id": "yahoo_plugin",
+        "name": "Yahoo! search",
+        "description": "Yahoo! (海外版) 検索プラグイン"
+    },
+    {
+        "id": "youtube_plugin",
+        "name": "YouTubeK",
+        "description": "YouTubeの動画埋め込みプラグイン"
+    },
+    {
+        "id": "youtube_sr_plugin",
+        "name": "YouTube search",
+        "description": "YouTubeの検索ボックス設置プラグイン"
+    },
+    {
+        "id": "storagebox_for_fabric",
+        "name": "StorageBox for Fabric",
+        "description": "Fabric用のStorageBox"
+    },
+    {
+        "id": "simple_uncraftingtable",
+        "name": "Simple Uncrafting Table",
+        "description": "アイテムを分解するための簡単な分解テーブル<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "mcpitanlib",
+        "name": "MCPitanLib",
+        "description": "自分用MOD開発ライブラリ<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)"
+    },
+    {
+        "id": "advancedreborn",
+        "name": "AdvancedReborn",
+        "description": "TechRebornに便利なアイテム、マシンなどを追加するアドオンMOD<br />前提MOD: MCPitanLib, TechReborn"
+    },
+    {
+        "id": "spacecube",
+        "name": "Space Cube",
+        "description": "Compact Machinesのようなポケットディメンションを追加するMOD<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "enhancedquarries",
+        "name": "Enhanced Quarries",
+        "description": "クァーリー、フィラーなどを追加するMOD<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "itemalchemy",
+        "name": "Item Alchemy",
+        "description": "ProjectE/EEのようなEMCや変換テーブルなどを追加するMOD<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "yamatogunmod",
+        "name": "Yamato Gun Mod",
+        "description": "大和砲MOD<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "pipeplus",
+        "name": "PipePlus",
+        "description": "パイプMOD<br />前提MOD: MCPitanLib, Simple Pipes"
+    },
+    {
+        "id": "bedrocktools76",
+        "name": "Bedrock Tools76",
+        "description": "岩盤ツールと黒曜石ツールを追加するMOD<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "ignischat",
+        "name": "Ignis Chat",
+        "description": "LunaChatのローマ字/漢字かな変換と色機能をFabricに移植したもの<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "materialisation",
+        "name": "Materialisation (PitaQフォーク版)",
+        "description": "shedaniel氏のMaterialisationを1.17以降へ移植したものです。<br />前提MOD: MCPitanLib (1.20-)"
+    },
+    {
+        "id": "classicombat",
+        "name": "Classicombat (PitaQフォーク版)",
+        "description": "1.8.9/1.7.10の戦闘システムをFabric用に移植したMOD"
+    },
+    {
+        "id": "techhammers",
+        "name": "Tech Hammers & Excavators",
+        "description": "Vanilla Hammers/Excavators、TRのアドオンMOD<br />ルビー、電動などの3x3採掘ツールを追加します。<br />前提MOD: MCPitanLib, Tech Reborn, Vanilla Hammers/Excavators"
+    },
+    {
+        "id": "ordinarycrook",
+        "name": "Ordinary Crook",
+        "description": "ExNihiloAdscensioのCrookだけを再現したもの<br />木の葉を壊すための杖を追加する<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "additionalsmallstairs",
+        "name": "Additional Small Stairs",
+        "description": "Small Stairs (PitaQフォーク版)のアドオンです。<br />最新バージョンで追加された階段の小階段を追加します。<br />前提MOD: MCPitanLib, Small Stairs"
+    },
+    {
+        "id": "endercane",
+        "name": "Ender Cane",
+        "description": "エンダーパールを消費してテレポートすることができる杖を追加するMOD<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "solomons_rod",
+        "name": "Solomons Rod (PitaQ再現版)",
+        "description": "さよ様の「ソロモンの杖」の再現のようなものです<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "compatdatapacks",
+        "name": "CompatDataPacks",
+        "description": "データパック互換性MOD<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "memoryusagetitle",
+        "name": "Memory Usage Title",
+        "description": "メモリ使用量をタイトルバーに表示するだけのMOD<"
+    },
+    {
+        "id": "smallstairs",
+        "name": "Small Stairs (PitaQ再現版)",
+        "description": "さよ様の「SmallStairs125 小階段MOD」の再現です<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "sound_volume_options",
+        "name": "Mod Sound Volume Options",
+        "description": "MODのサウンド音量を調整するMOD<br />前提MOD: MCPitanLib"
+    },
+    {
+        "id": "clearvehicle",
+        "name": "ClearVehicle",
+        "description": "乗り物（トロッコ、ボート）の数をConfigで制限するSpigotプラグイン<br />※1.12.2以外のバージョンでの動作確認はしていません"
+    },
+    {
+        "id": "install_manager",
+        "name": "MMD Plugin Install Manager (PitaQフォーク版)",
+        "description": "MMD Plugin Install Managerを現時点で最新のv9.32対応に対応させたフォーク版"
+    },
+    {
+        "id": "discordrpc",
+        "name": "MMDDiscordRPC",
+        "description": "DiscordにMMDのRPCを表示するプラグイン<br />前提プラグイン: MMDPlugin"
+    },
+    {
+        "id": "mmdutility",
+        "name": "MMDUtility (PitaQフォーク版)",
+        "description": "oigami氏の便利プラグインであるMMDUtilityを最新のv9.32に対応させたフォーク版<br />前提プラグイン: MMDPlugin"
+    },
+    {
+        "id": "mmdplugindll",
+        "name": "MMDPluginDLL (PitaQフォーク版)",
+        "description": "Soul-chan氏のMMDPluginDLLを最新のv9.32に対応させたフォーク版<br />前提プラグイン: MMDPlugin"
+    },
+    {
+        "id": "exampleplugin",
+        "name": "ExamplePlugin",
+        "description": "MMDPlugin用のプラグイン開発用テンプレート"
+    },
+    {
+        "id": "git_account_manager",
+        "name": "Git Account Manager",
+        "description": "Gitアカウントを複数管理するためのWindows向けの支援ツール。"
+    },
+    {
+        "id": "discord_turnstile_verify_bot",
+        "name": "Turnstile Verify",
+        "description": "TurnstileでDiscordのユーザー認証を行うためのDiscord用Bot<br />PHPのソースコードのみなので各自で環境を用意してください"
+    },
+    {
+        "id": "paper_mc_downloader",
+        "name": "PaperMC Downloader",
+        "description": "PaperMCのビルドをダウンロードするための支援ツール<br />Java 8以上が必要"
+    },
+    {
+        "id": "md2pkwk",
+        "name": "MD2PKWK (PHP/CLI)",
+        "description": "MarkdownをPukiWiki記法に変換するツール<br />CLIで動作するPHPスクリプトです。"
+    },
+    {
+        "id": "png-to-8bit-png-converter",
+        "name": "PNG to 8bit PNG Converter",
+        "description": "PNG画像を8bit PNG画像に変換するツール<br />サーバーはLinux推奨です。"
+    },
+    {
+        "id": "my-tools-tool",
+        "name": "Pkwk mytools plugin's tools",
+        "description": "PukiWikiのmytoolsプラグインで動くツールの詰め合わせ"
+    },
+    {
+        "id": "mcsemegui",
+        "name": "McSEmeGUI",
+        "description": "Minecraft Spigot ServerのコンソールをGUIで操作するSpigotプラグイン<br /><strike>正直昔作ったものなので使い物にならないゴミ</strike>"
+    },
+    {
+        "id": "block_entity_wrench",
+        "name": "Block Entity Wrench",
+        "description": "ブロックエンティティを持つブロックをNBTごと回収できる、回転もできるレンチを追加するMod。"
+    },
+    {
+        "id": "cubicturret",
+        "name": "Cubic Turret",
+        "description": "自動的にエンティティを攻撃するタレットを追加するMod。(ファントムを倒すのに便利)"
+    },
+    {
+        "id": "legacy_item_models",
+        "name": "Legacy Item Models",
+        "description": "1.21.4以降でもItemAssetsなしで自動的にモデルを読み込むようにItemAssetsを生成するMod。"
+    },
+    {
+        "id": "pukiwiki_link",
+        "name": "PukiWiki Link",
+        "description": "MinecraftとPukiWikiを連携させるMod。"
+    },
+    {
+        "id": "modlistcmd76",
+        "name": "ModList Command",
+        "description": "Mod一覧を表示、出力するコマンドを追加するMod。"
+    },
+    {
+        "id": "more_harnesses",
+        "name": "More Harnesses",
+        "description": "ハッピーガスト用の新しいハーネスを追加するMod。"
+    },
+    {
+        "id": "qrblock",
+        "name": "QRBlock",
+        "description": "QRコードのブロックを追加するMod。"
+    },
+    {
+        "id": "recipe_image_exporter",
+        "name": "Recipe Image Exporter",
+        "description": "クラフトレシピをmodごとに一括で画像エクスポートするツールMod。"
+    },
+    {
+        "id": "remove_mcrealms",
+        "name": "Remove MCRealms",
+        "description": "タイトル画面からMinecraft Realmsボタンを削除するMod。"
+    },
+    {
+        "id": "rubycraft_p",
+        "name": "RubyCraft-P",
+        "description": "既に開発終了である、初期あたりに試作でつくったMod。"
+    },
+    {
+        "id": "simple_better_batpack",
+        "name": "Simple Better BatPack",
+        "description": "さまざまなバッテリーパックを追加するTechRebornのアドオンMod。"
+    },
+    {
+        "id": "speedy_path",
+        "name": "Speedy Path",
+        "description": "特定のブロック上での移動速度を向上させるMod。"
+    },
+    {
+        "id": "storagebox_adapter",
+        "name": "StorageBox Adapter",
+        "description": "StorageBox用のアダプターを追加するStorageBoxのアドオンMod。"
+    },
+    {
+        "id": "tech_hammers",
+        "name": "Tech Hammers & Excavators",
+        "description": "ルビーハンマーや電動ハンマーなどを追加するTech RebornとVanilla Hammers/ExcavatorsのアドオンMod。"
+    },
+    {
+        "id": "universal_wrench",
+        "name": "Universal Wrench",
+        "description": "さまざまなレンチを統合できるUniversal Wrenchを追加するMod。"
+    },
+    {
+        "id": "chatdurationplus",
+        "name": "ChatDurationPlus",
+        "description": "R.E.P.O向けのチャットの表示時間を延長するMod。"
+    },
+    {
+        "id": "reaper_video_script",
+        "name": "Reaper Video Script",
+        "description": "REAPER動画プロセッサ用JSFXスクリプト。"
+    },
+    {
+        "id": "mcpitanlib_intellij_plugin",
+        "name": "MCPitanLib IntelliJ Plugin",
+        "description": "MCPitanLib用のテンプレから自動でModの開発環境を構築するIntelliJプラグイン。"
+    },
+    {
+        "id": "ellipsisk",
+        "name": "ellipsiSk",
+        "description": "試しにつくったSkriptプラグイン。"
+    },
+    {
+        "id": "skvaniject",
+        "name": "SkVaniject",
+        "description": "Skellettで代用できるらしいです、Objective操作のSkriptプラグイン。"
+    },
+    {
+        "id": "skript_scripts",
+        "name": "Skriptのスクリプト群",
+        "description": "作成したSkriptのスクリプト集。"
+    },
+    {
+        "id": "cleaskin",
+        "name": "Cleaskin",
+        "description": "ブログとして使えそうな明るいPukiWikiスキン。"
+    },
+    {
+        "id": "wikichree_dev_plugins",
+        "name": "WikiChree.COM開発プラグイン群",
+        "description": "WikiChree.COMオリジナルのPukiWikiプラグイン群。"
+    },
+    {
+        "id": "pukiwiki_bot",
+        "name": "PukiWiki-Bot",
+        "description": "PukiWikiのボットとやり取りするためのPukiWikiプラグイン。"
+    },
+    {
+        "id": "mini_pukibot_py",
+        "name": "Mini-PukiBot-Py",
+        "description": "PukiBot-Pyの軽量版ライブラリ。"
+    },
+    {
+        "id": "pukibot_java",
+        "name": "PukiBot-Java",
+        "description": "PukiWikiのボットを作成するためのJavaライブラリ。"
+    },
+    {
+        "id": "playerrealms_server_checker",
+        "name": "PlayerRealms Server Checker",
+        "description": "Player Realmsの各サーバー情報を取得して表示するDiscordのボット。"
+    },
+    {
+        "id": "myblogs",
+        "name": "MyBlogs",
+        "description": "PHP製のシンプルなブログシステム。"
+    },
+    {
+        "id": "wikichree_com",
+        "name": "WikiChree.COM",
+        "description": "無料で使えるウィキ、PukiWikiのホスティングサービス。"
+    },
+    {
+        "id": "vps-search",
+        "name": "ボ対検索ツール",
+        "description": "ボイパ対決という音MADに特化した検索ツール。"
+    },
+    {
+        "id": "psnverse",
+        "name": "Psnverseコミュニティ",
+        "description": "PlayStationの非公式掲示板コミュニティ。(2020年以来放置)"
+    },
+    {
+        "id": "anonymous_quiz",
+        "name": "匿名クイズ",
+        "description": "匿名でクイズを作成できるWebツール。"
+    },
+    {
+        "id": "tools_2023_pitan76",
+        "name": "2023.pitan76.net/tools/",
+        "description": "2023年に作成したWebツールのまとめページ。"
+    },
+    {
+        "id": "tools_2020_pkom",
+        "name": "2020.pitan76.net/?Webツール",
+        "description": "2020年に作成したWebツールのまとめページ。"
+    },
+    {
+        "id": "tuibian",
+        "name": "Tuibian",
+        "description": "TUIベースのDebian派生カスタムLinuxディストリ/TUIアプリ。"
+    },
+    {
+        "id": "maven_repository",
+        "name": "Mavenリポジトリ",
+        "description": "私のMavenリポジトリです。"
+    },
+    {
+        "id": "github_pitan76_star_counter",
+        "name": "GitHub Star Counter",
+        "description": "GitHubアカウントの合計スター数のカウンタ画像を出力するPHP製ツール。"
+    },
+    {
+        "id": "my-html-vault",
+        "name": "HTML置き場",
+        "description": "私だけがアップロードできるHTMLファイル置き場。"
+    },
+    {
+        "id": "my-mod-development-status-checker",
+        "name": "自作MOD開発状況チェッカー",
+        "description": "AIに生成してもらった自作MODの開発状況チェッカー。"
+    },
+    {
+        "id": "html-viewer",
+        "name": "HTML Viewer",
+        "description": "HTMLビューワー"
+    },
+    {
+        "id": "docs_generated_by_ai",
+        "name": "Gemini AIが生成したHTML資料群",
+        "description": "教材、資料などのHTMLファイル一覧"
+    },
+    {
+        "id": "tuibian-menu",
+        "name": "Tuibian Menu",
+        "description": "TUIで作られたTuibian用ランチャーメニュー。"
+    }
+]
