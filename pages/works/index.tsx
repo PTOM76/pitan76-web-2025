@@ -17,9 +17,8 @@ export default function WorksPage() {
         const images: string[] = (custom.images as string[]) ?? [];
 
         images.forEach((url: string, index: number) => {
-            if (url.startsWith('https://www.pitan76.net/image/')) {
-                images[index] = url.replace('https://www.pitan76.net/image/', '/image/');
-            }
+            if (!url.startsWith('https://www.pitan76.net/image/')) return;
+            images[index] = url.replace('https://www.pitan76.net/image/', '/image/');
         });
     });
 
@@ -48,10 +47,10 @@ export default function WorksPage() {
                     ※かなり数が多いため、ここでは記載されていないModもあります。<br />
 
                     {mcmods.map((data, index) => {
-                        const custom = data.custom || {};
-                        const images = custom.images || [];
-                        const tag = data.tag || [];
-                        const links: any = data.site || {};
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const tag: string[] = data.tag ?? [];
+                        const links: any = data.site ?? {};
                         
                         return (
                             <div key={index}>
@@ -102,10 +101,10 @@ export default function WorksPage() {
                     <h2>その他Mod/プラグイン/拡張機能など</h2>
 
                     {repomods.map((data, index) => {
-                        const custom = data.custom || {};
-                        const images = custom.images || [];
-                        const tag = data.tag || [];
-                        const links: any = data.site || {};
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const tag: string[] = data.tag ?? [];
+                        const links: any = data.site ?? {};
                         return (
                             <div key={index}>
                                 <h3>
@@ -182,9 +181,9 @@ export default function WorksPage() {
                     </a>
                     
                     {pukiwikiplugins.map((data, index) => {
-                        const custom = data.custom || {};
-                        const images = custom.images || [];
-                        const links: any = data.site || {};
+                        const custom = data.custom?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
 
                         return (
                             <div key={index}>
@@ -215,9 +214,9 @@ export default function WorksPage() {
                     })}
 
                     {pukiwikiskins.map((data, index) => {
-                        const custom = data.custom || {};
-                        const images = custom.images || [];
-                        const links: any = data.site || {};
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
                         return (
                             <div key={index}>
                                 <h3>
@@ -269,9 +268,10 @@ export default function WorksPage() {
                     ほとんどのMMDプラグインはMMDPluginを前提とします。<br />
 
                     {mmdplugins.map((data, index) => {
-                        const custom = data.custom || {};
-                        const images = custom.images || [];
-                        const links: any = data.site || {};
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
+
                         return (
                             <div key={index}>
                                 <h3>
