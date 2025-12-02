@@ -7,6 +7,20 @@ div.container {
     max-width: min(1200px, 100% - 48px);
 }
 
+div.container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    z-index: -1;
+    @supports (-webkit-backdrop-filter: blur(1px)) {
+        -webkit-backdrop-filter: blur(1px);
+    }
+}
+
 span.breadcrumb {
     display: inline;
     margin: 8px;

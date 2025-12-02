@@ -7,15 +7,14 @@ import Lightbox from 'yet-another-react-lightbox';
 
 import { useLightbox } from '@/hooks/useLightbox';
 import { useLoadingScreen } from '@/hooks/useLoadingScreen';
+import { useBackgroundEffect } from "../hooks/useBackgroundEffect";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const { lightbox, setLightbox } = useLightbox();
   const { loading, fadeOut } = useLoadingScreen();
+  const canvasRef = useBackgroundEffect();
 
-  let title = "Pitan76.NET";
-  if (pageProps?.title) {
-    title = `${pageProps.title} | ${title}`;
-  }
+  const title = pageProps?.title ? `${pageProps.title} | Pitan76.NET` : "Pitan76.NET";
 
   return <>
     <Head>
@@ -25,6 +24,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     </Head>
 
     {loading && <div className={`loading${fadeOut ? ' fade-out' : ''}`}></div>}
+
+    <canvas id="background-canvas" className={"background-canvas"} ref={canvasRef}></canvas>
 
     <Component {...pageProps} />
 

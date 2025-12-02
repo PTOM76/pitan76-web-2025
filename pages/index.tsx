@@ -1,6 +1,5 @@
 import { Icon } from "@iconify/react";
 import styles from '../styles/top.module.css';
-import { useBackgroundEffect } from "../hooks/useBackgroundEffect";
 
 export default function TopPage() {
     const onClickDownArrow = () => {
@@ -29,11 +28,8 @@ export default function TopPage() {
         }, 500);
     };
 
-    const canvasRef = useBackgroundEffect();
-
     return (
         <div className={styles.container}>
-            <canvas id="background-canvas" className={styles.background} ref={canvasRef}></canvas>
             <div className={styles.profileContainer}>
                 {/* <div className={styles.background}></div> */}
                 <div className={styles.profile}>
@@ -119,10 +115,10 @@ export default function TopPage() {
                         </p>
                     </a>
                 </div>
-                <div className={styles.yearLinks}>
-                    <a href="https://2023.pitan76.net/" target="_blank" rel="noopener noreferrer">≪ 2023</a>
-                    <span>2027...? ≫</span>
-                </div>
+            </div>
+            <div className={styles.yearLinks}>
+                <a href="https://2023.pitan76.net/" target="_blank" rel="noopener noreferrer">≪ 2023</a>
+                <span>2027...? ≫</span>
             </div>
         </div>
     )
