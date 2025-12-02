@@ -175,7 +175,7 @@
         "id": "ordinarycrook",
         "alias": ["ordinary-crook"],
         "name": "Ordinary Crook",
-        "description": "ExNihiloAdscensioのCrookだけを再現したもの<br />木の葉を壊すための杖を追加する",
+        "description": "ExNihiloAdscensioのCrookだけを再現したもの<br />木の葉を効率よく回収するツールを追加する。",
         "version": "1.0.6",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook",
@@ -198,6 +198,174 @@
             "mcversion": "1.16.4-1.20.4",
             "cf_projectid": 683097,
             "images": ["https://www.pitan76.net/image/mcmod/ordinary-crook.png"]
+        }
+    },
+    {
+        "id": "spacecube",
+        "name": "Space Cube",
+        "description": "Compact Machinesのようなポケットディメンションを追加するMOD",
+        "version": "0.9.16",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/spacecube",
+        "license": "MIT",
+        "createAt": "2024/01/20",
+        "updateAt": "2024/03/26",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Space+Cube",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/spacecube",
+            "modrinth": "https://modrinth.com/mod/spacecube",
+            "github": "https://github.com/Pitan76/spacecube"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.18.2-1.21.10",
+            "cf_projectid": 964401,
+            "images": ["https://www.pitan76.net/image/mcmod/spacecube.png"]
+        }
+    },
+    {
+        "id": "pipeplus",
+        "name": "PipePlus",
+        "description": "挿入パイプ、自動搬出パイプなどを追加するSimple PipesのアドオンModです。",
+        "version": "1.1.4-fix.1",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/pipeplus",
+        "license": "MIT",
+        "createAt": "2021/08/11",
+        "updateAt": "2024/03/06",
+        "site": {
+            "github": "https://github.com/PTOM76/PipePlus",
+            "wiki": "https://wikichree.com/pitan76/?PipePlus",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/pipeplus",
+            "modrinth": "https://modrinth.com/mod/pipeplus"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.16.4-1.20.1",
+            "cf_projectid": 514438,
+            "images": ["https://www.pitan76.net/image/mcmod/pipeplus.png"]
+        }
+    },
+    {
+        "id": "more_harnesses",
+        "name": "More Harnesses",
+        "description": "ハッピーガスト用の新しいハーネスを追加するMod。",
+        "version": "0.0.2",
+        "category": "mcmod",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/more-harnesses",
+        "license": "MIT",
+        "createAt": "2025/08/08",
+        "updateAt": "2025/10/21",
+        "site": {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/more-harnesses",
+            "modrinth": "https://modrinth.com/mod/more-harnesses",
+            "wiki": "https://wikichree.com/pitan76/?More+Harnesses",
+            "github": "https://github.com/Pitan76/MoreHarnesses"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "neoforge"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/mcmod/more-harnesses.png"]
+        }
+    },
+    {
+        "id": "simple_uncraftingtable",
+        "alias": ["simple-uncrafting-table", "simpleuncraftingtable", "uncraftingtable", "uncrafting-table", "uncraftingtable76"],
+        "name": "Simple Uncrafting Table",
+        "description": "アイテムを分解するための簡単な分解テーブル",
+        "version": "1.3.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric",
+        "license": "MIT",
+        "createAt": "2021/09/04",
+        "updateAt": "2024/04/06",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Simple+Uncrafting+Table",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric",
+            "modrinth": "https://modrinth.com/mod/simple-uncrafting-table",
+            "github": "https://github.com/Pitan76/uncraftingtable"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "forge",
+            "neoforge",
+            "fabric"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.16.5-1.21.10",
+            "cf_projectid": 523423,
+            "images": ["https://www.pitan76.net/image/mcmod/simple-uncraftingtable.png"]
+        }
+    },
+    {
+        "id": "storagebox_for_fabric",
+        "alias": ["storagebox-for-fabric", "storageboxfabric", "storagebox-fabric"],
+        "name": "StorageBox for Fabric",
+        "description": "Fabric用のStorageBox",
+        "version": "1.4.0",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric",
+        "license": "MIT",
+        "createAt": "2021/08/19",
+        "updateAt": "2024/05/23",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Storage+Box+for+Fabric",
+            "github": "https://github.com/PTOM76/storagebox-fabric",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric",
+            "modrinth": "https://modrinth.com/mod/storagebox-fabric"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.12.2-1.21.10",
+            "cf_projectid": 517673,
+            "images": ["https://www.pitan76.net/image/mcmod/storagebox-fabric.png"]
+        }
+    },
+    {
+        "id": "storagebox_adapter",
+        "name": "StorageBox Adapter",
+        "description": "StorageBox用のアダプターを追加するStorageBoxのアドオンMod。",
+        "version": "",
+        "category": "mcmod",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/storagebox-adapter",
+        "license": "MIT",
+        "createAt": "",
+        "updateAt": "",
+        "site": {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/storagebox-adapter",
+            "modrinth": "https://modrinth.com/mod/storagebox-adapter",
+            "wiki": "https://wikichree.com/pitan76/?StorageBox+Adapter",
+            "github": "https://github.com/PTOM76/storagebox-adapter"
+        },
+        "tag": [
+            "minecraft",
+            "mod"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/mcmod/storagebox-adapter.png"]
         }
     },
 
@@ -904,114 +1072,6 @@
         "custom": {}
     },
     {
-        "id": "storagebox_for_fabric",
-        "alias": ["storagebox-for-fabric", "storageboxfabric", "storagebox-fabric"],
-        "name": "StorageBox for Fabric",
-        "description": "Fabric用のStorageBox",
-        "version": "1.4.0",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric",
-        "license": "MIT",
-        "createAt": "2021/08/19",
-        "updateAt": "2024/05/23",
-        "site": {
-            "wiki": "https://wikichree.com/pitan76/?Storage+Box+for+Fabric",
-            "github": "https://github.com/PTOM76/storagebox-fabric",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.15.2-1.20.6",
-            "cf_projectid": 517673
-        }
-    },
-    {
-        "id": "simple_uncraftingtable",
-        "alias": ["simple-uncrafting-table", "simpleuncraftingtable", "uncraftingtable", "uncrafting-table", "uncraftingtable76"],
-        "name": "Simple Uncrafting Table",
-        "description": "アイテムを分解するための簡単な分解テーブル",
-        "version": "1.3.4",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric",
-        "license": "MIT",
-        "createAt": "2021/09/04",
-        "updateAt": "2024/04/06",
-        "site": {
-            "wiki": "https://wikichree.com/pitan76/?Simple+Uncrafting+Table",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "forge",
-            "neoforge",
-            "fabric"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.16.5-1.20.4",
-            "cf_projectid": 523423
-        }
-    },
-    {
-        "id": "mcpitanlib",
-        "name": "MCPitanLib",
-        "description": "自分用MOD開発ライブラリ<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)",
-        "version": "2.2.4",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
-        "license": "MIT",
-        "createAt": "2022/09/27",
-        "updateAt": "2024/04/06",
-        "site": {
-            "github": "https://github.com/Pitan76/MCPitanLib",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "forge",
-            "neoforge",
-            "fabric",
-            "library"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.16.5-1.20.4",
-            "cf_projectid": 682213
-        }
-    },
-    {
-        "id": "spacecube",
-        "name": "Space Cube",
-        "description": "Compact Machinesのようなポケットディメンションを追加するMOD",
-        "version": "0.9.6",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/spacecube",
-        "license": "MIT",
-        "createAt": "2024/01/20",
-        "updateAt": "2024/03/26",
-        "site": {
-            "wiki": "https://wikichree.com/pitan76/?Space+Cube",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/spacecube"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.18.2-1.20.4",
-            "cf_projectid": 964401
-        }
-    },
-    {
         "id": "yamatogunmod",
         "alias": ["yamato-gun-mod", "yamato_gun_mod", "yamato-gun", "yamato_gun", "yamatogun"],
         "name": "Yamato Gun Mod",
@@ -1040,32 +1100,6 @@
         }
     },
     {
-        "id": "pipeplus",
-        "name": "PipePlus",
-        "description": "パイプMOD, Simple Pipes",
-        "version": "1.1.4-fix.1",
-        "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/pipeplus",
-        "license": "MIT",
-        "createAt": "2021/08/11",
-        "updateAt": "2024/03/06",
-        "site": {
-            "github": "https://github.com/PTOM76/PipePlus",
-            "wiki": "https://wikichree.com/pitan76/?PipePlus",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/pipeplus"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.16.4-1.20.1",
-            "cf_projectid": 514438
-        }
-    },
-    {
         "id": "bedrocktools76",
         "name": "Bedrock Tools76",
         "description": "岩盤ツールと黒曜石ツールを追加するMOD",
@@ -1076,6 +1110,8 @@
         "createAt": "2024/02/05",
         "updateAt": "2024/02/19",
         "site": {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/bedrock-tools76",
+            "wiki": "https://wikichree.com/pitan76/?Bedrock+Tools76",
             "github": "https://github.com/Pitan76/bedrock-tools76"
         },
         "tag": [
@@ -1205,7 +1241,8 @@
         "license": "MIT",
         "site": {
             "github": "https://github.com/PTOM76/additional-small-stairs",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/additional-small-stairs"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/additional-small-stairs",
+            "modrinth": "https://modrinth.com/mod/additional-small-stairs"
         },
         "tag": [
             "minecraft",
@@ -1234,7 +1271,8 @@
         "site": {
             "github": "https://github.com/PTOM76/EnderCane",
             "wiki": "https://wikichree.com/pitan76/?Ender+Cane",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ender-cane"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ender-cane",
+            "modrinth": "https://modrinth.com/mod/ender-cane"
         },
         "tag": [
             "minecraft",
@@ -1251,7 +1289,7 @@
     {
         "id": "solomons_rod",
         "alias": ["solomonsrod", "solomons-rod"],
-        "name": "Solomons Rod (PitaQ再現版)",
+        "name": "Solomons Rod (再現)",
         "description": "さよ様の「ソロモンの杖」の再現のようなものです",
         "version": "1.1.1",
         "author": "PitaQ, takanasayo (original)",
@@ -1287,7 +1325,8 @@
         "updateAt": "2024/07/04",
         "site": {
             "github": "https://github.com/Pitan76/CompatDatapacks",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/compatdatapacks"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/compatdatapacks",
+            "modrinth": "https://modrinth.com/mod/compatdatapacks"
         },
         "tag": [
             "minecraft",
@@ -1304,17 +1343,18 @@
     },
     {
         "id": "smallstairs",
-        "name": "Small Stairs (PitaQ再現版)",
+        "name": "Small Stairs Updated",
         "description": "さよ様の「SmallStairs125 小階段MOD」の再現です",
-        "version": "1.1.4",
+        "version": "1.2.1",
         "author": "PitaQ, takanasayo (original)",
         "url": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119",
         "license": "MIT",
-        "createAt": "2022/10/09",
-        "updateAt": "2024/02/20",
+        "createAt": "2022/10/10",
+        "updateAt": "2025/04/03",
         "site": {
             "github": "https://github.com/PTOM76/small-stairs119",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119",
+            "modrinth": "https://modrinth.com/mod/small-stairs119"
         },
         "tag": [
             "minecraft",
@@ -1663,28 +1703,6 @@
         "custom": {}
     },
     {
-        "id": "more_harnesses",
-        "name": "More Harnesses",
-        "description": "ハッピーガスト用の新しいハーネスを追加するMod。",
-        "version": "",
-        "category": "mcmod",
-        "author": "PitaQ",
-        "url": "https://wikichree.com/pitan76/?More+Harnesses",
-        "license": "",
-        "createAt": "",
-        "updateAt": "",
-        "site": {
-            "wiki": "https://wikichree.com/pitan76/?More+Harnesses"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric",
-            "neoforge"
-        ],
-        "custom": {}
-    },
-    {
         "id": "qrblock",
         "name": "QRBlock",
         "description": "QRコードのブロックを追加するMod。",
@@ -1791,35 +1809,17 @@
         "category": "mcmod",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/speedy-path",
-        "license": "",
+        "license": "MIT",
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/speedy-path"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/speedy-path",
+            "modrinth": "https://modrinth.com/mod/speedy-path",
+            "github": "https://github.com/PTOM76/SpeedyPath"
         },
         "tag": [
             "minecraft",
             "fabric"
-        ],
-        "custom": {}
-    },
-    {
-        "id": "storagebox_adapter",
-        "name": "StorageBox Adapter",
-        "description": "StorageBox用のアダプターを追加するStorageBoxのアドオンMod。",
-        "version": "",
-        "category": "mcmod",
-        "author": "PitaQ",
-        "url": "https://wikichree.com/pitan76/?Storage+Box+Adapter",
-        "license": "",
-        "createAt": "",
-        "updateAt": "",
-        "site": {
-            "wiki": "https://wikichree.com/pitan76/?Storage+Box+Adapter"
-        },
-        "tag": [
-            "minecraft",
-            "mod"
         ],
         "custom": {}
     },
@@ -1831,11 +1831,12 @@
         "category": "mcmod",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
-        "license": "",
+        "license": "MIT",
         "createAt": "",
         "updateAt": "",
         "site": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
+            "github": "https://github.com/PTOM76/tech-hammers"
         },
         "tag": [
             "minecraft",
@@ -1855,13 +1856,46 @@
         "createAt": "",
         "updateAt": "",
         "site": {
-            "wiki": "https://wikichree.com/pitan76/?Universal+Wrench"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/universal-wrench",
+            "modrinth": "https://modrinth.com/mod/universal-wrench",
+            "wiki": "https://wikichree.com/pitan76/?Universal+Wrench",
+            "github": "https://github.com/PTOM76/universal-wrench"
         },
         "tag": [
             "minecraft",
             "mod"
         ],
         "custom": {}
+    },
+    {
+        "id": "mcpitanlib",
+        "name": "MCPitanLib",
+        "description": "自分用MOD開発ライブラリ<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)",
+        "version": "2.2.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
+        "license": "MIT",
+        "createAt": "2022/09/27",
+        "updateAt": "2024/04/06",
+        "site": {
+            "github": "https://github.com/Pitan76/MCPitanLib",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
+            "modrinth": "https://modrinth.com/mod/mcpitanlibarch",
+            "wiki": "https://wikichree.com/pitan76/?dev/MCPitanLib"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "forge",
+            "neoforge",
+            "fabric",
+            "library"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.16.5-1.20.4",
+            "cf_projectid": 682213
+        }
     },
     {
         "id": "chatdurationplus",
