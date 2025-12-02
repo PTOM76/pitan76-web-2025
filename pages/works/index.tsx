@@ -1,10 +1,9 @@
 import styles from '@/styles/page.module.css';
-import worksData from "@/public/api/works/list.json"
+import worksDataJson from "@/public/api/works/list.json" assert { type: "json" };
 import { Icon } from '@iconify/react';
 
 export default function WorksPage() {
-    // /public/api/works/list.json から作品データを取得して表示する
-    // let worksData = fetch('/api/works/list.json');
+    let worksData: any[] = worksDataJson; // list.json
 
     const mcmods = worksData.filter(d => d.category === "mcmod");
     const repomods = worksData.filter(d => d.category === "repomod");
@@ -13,10 +12,11 @@ export default function WorksPage() {
     const mmdplugins = worksData.filter(d => d.category === "mmdplugin");
 
     // pitan76.netならば相対パスにする
-    worksData.map(data => {
-        const custom = data.custom || {};
-        const images = custom.images || [];
-        images.map((url: string, index: number) => {
+    worksData.forEach(data => {
+        const custom = data.custom ?? {};
+        const images: string[] = (custom.images as string[]) ?? [];
+
+        images.forEach((url: string, index: number) => {
             if (url.startsWith('https://www.pitan76.net/image/')) {
                 images[index] = url.replace('https://www.pitan76.net/image/', '/image/');
             }
