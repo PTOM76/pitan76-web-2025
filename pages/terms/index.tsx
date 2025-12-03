@@ -14,7 +14,7 @@ export default function TermsPage() {
             <span className={styles.card}>
                 <h2>知的財産権</h2>
                 <p>
-                    当サイト(Pitan76.NET) の<a href="https://github.com/PTOM76/pitan76net-2025" target="_blank" rel="noopener noreferrer">ソースコード</a>はMITライセンスとします。<br />
+                    当サイト(Pitan76.NET) の<a href="https://github.com/PTOM76/pitan76-web-2025" target="_blank" rel="noopener noreferrer">ソースコード</a>はMITライセンスとします。<br />
                     特別な記述がない限り、文章や画像などのコンテンツもMITライセンスが適用されます。<br />
                     ただし、悪質な転載、利用はしないでください。
                     <br />

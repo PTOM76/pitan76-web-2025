@@ -15,6 +15,10 @@ export default function ChangelogPage() {
                 TypeScript と Next.js で構築した個人サイト、GitHub Pages上でホスティング
                 <br /><br />
                 <ul>
+                    <li>2025.12.03 - <a href="/empty/">Empty</a> ページの追加</li>
+                    <li>2025.12.02 - <a href="/works/">作品</a> ページのjson化</li>
+                    <li>2025.12.02 - 背景に星空エフェクト、カーソルの軌跡エフェクトを追加</li>
+                    <li>2025.11.30 - <a href="/about/">詳細</a> ページの追加</li>
                     <li>2025.11.25 - 新規にトップページや変更履歴(changelog)などのページを作成</li>
                     <li>2025.11.25 - Pitan76.NET のリニューアル。2022年のPitan's Noteに用いていたSF風デザインを復刻</li>
                 </ul>
