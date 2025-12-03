@@ -1,6 +1,6 @@
 import styles from '@/styles/page.module.css'
 
-export default function ChangelogPage() {
+export default function EmptyPage() {
   return (
     <>
         <div className={styles.container}>
@@ -20,7 +20,8 @@ export default function ChangelogPage() {
 export async function getStaticProps() {
     return {
         props: {
-            title: 'Changelog'
+            title: 'Empty',
+            description: 'This is an empty page.',
         }
     };
 }
