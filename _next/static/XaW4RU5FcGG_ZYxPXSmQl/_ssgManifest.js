@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fabout","\u002Fchangelog","\u002Flinks","\u002Fterms"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

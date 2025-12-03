@@ -9,13 +9,16 @@ self.__BUILD_MANIFEST = {
     "static/chunks/fbf444a257d6fe7b.js"
   ],
   "/changelog": [
-    "static/chunks/15d101fd9ac1c67f.js"
+    "static/chunks/21f391d38ff6a44b.js"
+  ],
+  "/empty": [
+    "static/chunks/d7e536062f42d8e3.js"
   ],
   "/links": [
     "static/chunks/e26ca23e760d4f08.js"
   ],
   "/terms": [
-    "static/chunks/b47b737d61d34e20.js"
+    "static/chunks/6a663edee8da5268.js"
   ],
   "/works": [
     "static/chunks/54ca4d6d41d36ae7.js"
@@ -31,6 +34,7 @@ self.__BUILD_MANIFEST = {
     "/_error",
     "/about",
     "/changelog",
+    "/empty",
     "/links",
     "/terms",
     "/works"
