@@ -3,7 +3,7 @@ self.__BUILD_MANIFEST = {
     "static/chunks/1b9402aa5f9cfca6.js"
   ],
   "/_error": [
-    "static/chunks/6b6d316869f7b701.js"
+    "static/chunks/cae91950528c7542.js"
   ],
   "/about": [
     "static/chunks/fbf444a257d6fe7b.js"
@@ -16,6 +16,9 @@ self.__BUILD_MANIFEST = {
   ],
   "/links": [
     "static/chunks/e26ca23e760d4f08.js"
+  ],
+  "/sitemap": [
+    "static/chunks/93939934c487abfc.js"
   ],
   "/terms": [
     "static/chunks/6a663edee8da5268.js"
@@ -36,6 +39,7 @@ self.__BUILD_MANIFEST = {
     "/changelog",
     "/empty",
     "/links",
+    "/sitemap",
     "/terms",
     "/works"
   ]
