@@ -21,6 +21,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <title>{title}</title>
       <meta name="description" content="Pitan76's website" />
       <link rel="icon" href="/favicon.ico" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content="Pitan76's website" />
+      <meta property="og:image" content="/image/profile-icon.jpg" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
     </Head>
 
     {loading && <div className={`loading${fadeOut ? ' fade-out' : ''}`}></div>}
