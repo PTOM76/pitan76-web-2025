@@ -6,7 +6,7 @@ export default function LinksPage() {
             <h1 className={styles.title}>$links</h1>
 
             <span className={styles.breadcrumb}>
-                <a href="/">Top</a> / Links
+                <a href="/">root</a>/links
             </span>
 
             <div className={styles.cardlist}>

@@ -1,5 +1,5 @@
+import styles2 from '@/styles/about.module.css';
 import styles from '@/styles/page.module.css';
-import styles2 from '@/styles/about.module.css'
 import { Icon } from '@iconify/react';
 
 export default function AboutPage() {
@@ -8,13 +8,13 @@ export default function AboutPage() {
             <h1 className={styles.title}>$about</h1>
 
             <span className={styles.breadcrumb}>
-                <a href="/">Top</a> / About
+                <a href="/">root</a>/about
             </span>
 
             <div className={styles.cardlist}>
                 <span className={styles.card}>
                     <h2>プロフィール</h2>
-                    
+
                     <div className={styles2.profile}>
                         <h1>Pitan</h1>
                         <img id="profile-image" src="/image/profile-icon.jpg" alt="Profile Icon" data-lightbox="false" />
@@ -27,15 +27,15 @@ export default function AboutPage() {
                     </div>
 
                     <pre>
-$pitan = array(<br />
-&nbsp;&nbsp;"name" =&gt; "Pitan",<br />
-&nbsp;&nbsp;"yob" =&gt; 2005,<br />
-&nbsp;&nbsp;"sex" =&gt; MALE,<br />
-&nbsp;&nbsp;"isStudent" =&gt; true,<br />
-&nbsp;&nbsp;"lang" =&gt; JA_JP,<br />
-&nbsp;&nbsp;"proglang" =&gt; ["php", "java", "cpp"],<br />
-&nbsp;&nbsp;"game" =&gt; "minecraft"<br />
-);
+                        $pitan = array(<br />
+                        &nbsp;&nbsp;"name" =&gt; "Pitan",<br />
+                        &nbsp;&nbsp;"yob" =&gt; 2005,<br />
+                        &nbsp;&nbsp;"sex" =&gt; MALE,<br />
+                        &nbsp;&nbsp;"isStudent" =&gt; true,<br />
+                        &nbsp;&nbsp;"lang" =&gt; JA_JP,<br />
+                        &nbsp;&nbsp;"proglang" =&gt; ["php", "java", "cpp"],<br />
+                        &nbsp;&nbsp;"game" =&gt; "minecraft"<br />
+                        );
                     </pre>
 
                     <p>
@@ -47,19 +47,19 @@ $pitan = array(<br />
                     <h3>リンク</h3>
                     <div className={styles2.links}>
                         <a href="https://twitter.com/PitaQ_Modding" target="_blank" rel="noopener noreferrer" title="Twitter">
-                            <Icon icon="mdi:twitter" width="40" height="40" style={{ color: "#ffffff", "--glow": "#2ca2eb" } as any } />
+                            <Icon icon="mdi:twitter" width="40" height="40" style={{ color: "#ffffff", "--glow": "#2ca2eb" } as any} />
                         </a>
                         <a href="https://youtube.com/@pitaq8539" target="_blank" rel="noopener noreferrer" title="YouTube">
-                            <Icon icon="mdi:youtube" width="40" height="40" style={{ color: "#ffffff", "--glow": "#f12d2d" } as any } />
+                            <Icon icon="mdi:youtube" width="40" height="40" style={{ color: "#ffffff", "--glow": "#f12d2d" } as any} />
                         </a>
                         <a href="https://github.com/PTOM76/" target="_blank" rel="noopener noreferrer" title="GitHub">
-                            <Icon icon="mdi:github" width="40" height="40" style={{ color: "#ffffff", "--glow": "#eeecec" } as any } />
+                            <Icon icon="mdi:github" width="40" height="40" style={{ color: "#ffffff", "--glow": "#eeecec" } as any} />
                         </a>
                         <a href="https://pitan76.tumblr.com/" target="_blank" rel="noopener noreferrer" title="Tumblr">
-                            <Icon icon="mdi:tumblr" width="40" height="40" style={{ color: "#ffffff", "--glow": "#447bf1" } as any } />
+                            <Icon icon="mdi:tumblr" width="40" height="40" style={{ color: "#ffffff", "--glow": "#447bf1" } as any} />
                         </a>
                         <a href="/links/" title="各種リンク">
-                            <Icon icon="mdi:dots-horizontal" width="40" height="40" style={{ color: "#ffffff", "--glow": "#aaaaaa" } as any } />
+                            <Icon icon="mdi:dots-horizontal" width="40" height="40" style={{ color: "#ffffff", "--glow": "#aaaaaa" } as any} />
                         </a>
                     </div>
 
@@ -127,7 +127,7 @@ $pitan = array(<br />
                     <h2>サイトについて</h2>
                     このサイトはNext.js、GitHub Pagesを用いて構築しました。<br />
                     主に作ったものの紹介などに使おうと考えています。
-                    
+
                     <h3>バナー</h3>
                     ご自由にどうぞ、使うことはないと思いますが、昔ながらのバナーってなんだかロマンがあるのでなんとなくで作ってみました。<br /><br />
 
@@ -149,18 +149,18 @@ $pitan = array(<br />
                 <span className={styles.nonCard}>
                     banner88x31.png: <br />
                     <pre>
-&lt;a href="https://www.pitan76.net/" target="_blank"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="https://www.pitan76.net/image/banner88x31.png" /&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Pitan76.NET<br />
-&lt;/a&gt;
+                        &lt;a href="https://www.pitan76.net/" target="_blank"&gt;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="https://www.pitan76.net/image/banner88x31.png" /&gt;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;Pitan76.NET<br />
+                        &lt;/a&gt;
                     </pre>
                     <br />
                     banner200x40.png: <br />
                     <pre>
-&lt;a href="https://www.pitan76.net/" target="_blank"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="https://www.pitan76.net/image/banner200x40.png" /&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Pitan76.NET - Digital Works!<br />
-&lt;/a&gt;
+                        &lt;a href="https://www.pitan76.net/" target="_blank"&gt;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="https://www.pitan76.net/image/banner200x40.png" /&gt;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;Pitan76.NET - Digital Works!<br />
+                        &lt;/a&gt;
                     </pre>
                 </span>
 

@@ -1,5 +1,5 @@
-import styles from '@/styles/page.module.css';
 import worksDataJson from "@/public/api/works/list.json" assert { type: "json" };
+import styles from '@/styles/page.module.css';
 import { Icon } from '@iconify/react';
 
 export default function WorksPage() {
@@ -10,6 +10,7 @@ export default function WorksPage() {
     const pukiwikiplugins = worksData.filter(d => d.category === "pukiwiki");
     const pukiwikiskins = worksData.filter(d => d.category === "pukiwikiskin");
     const mmdplugins = worksData.filter(d => d.category === "mmdplugin");
+    const chromeexts = worksData.filter(d => d.category === "chrome-extension");
 
     // pitan76.netならば相対パスにする
     worksData.forEach(data => {
@@ -27,7 +28,7 @@ export default function WorksPage() {
             <h1 className={styles.title}>$works</h1>
 
             <span className={styles.breadcrumb}>
-                <a href="/">Top</a> / Works
+                <a href="/">root</a>/works
             </span>
 
             <div className={styles.noticebox}>
@@ -51,7 +52,7 @@ export default function WorksPage() {
                         const images: string[] = (custom.images as string[]) ?? [];
                         const tag: string[] = data.tag ?? [];
                         const links: any = data.site ?? {};
-                        
+
                         return (
                             <div key={index}>
                                 <h3>
@@ -60,8 +61,8 @@ export default function WorksPage() {
                                     {tag.includes('forge') && <img src="/image/forge.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px' }} title="Minecraft Forge" data-lightbox="false" ></img>}
                                     {tag.includes('neoforge') && <img src="/image/neoforge.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px' }} title="NeoForge" data-lightbox="false" ></img>}
                                 </h3>
-                                
-                                <p style={{ marginBottom: '8px' }}>{data.description}</p>
+
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
 
                                 {images.length > 0 && (
                                     <a href={images[0]} target="_blank" rel="noopener noreferrer">
@@ -111,7 +112,7 @@ export default function WorksPage() {
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
                                     {tag.includes('r-e-p-o') && <img src="/image/repo.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px' }} title="R.E.P.O" data-lightbox="false" ></img>}
                                 </h3>
-                                <p style={{ marginBottom: '8px' }}>{data.description}</p>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
                                 {images.length > 0 && (
                                     <a href={images[0]} target="_blank" rel="noopener noreferrer">
                                         <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
@@ -127,6 +128,41 @@ export default function WorksPage() {
                                         {links.nexusmods && (
                                             <a href={links.nexusmods} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.nexusmodsIcon} title='Nexus'></div>
+                                            </a>
+                                        )}
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+                    {chromeexts.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const tag: string[] = data.tag ?? [];
+                        const links: any = data.site ?? {};
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                    {tag.includes('chrome') && <img src="/image/chrome.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px' }} title="R.E.P.O" data-lightbox="false" ></img>}
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                {images.length > 0 && (
+                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
+                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                                    </a>
+                                )}
+                                {Object.keys(links).length > 0 && (
+                                    <div>
+                                        {links.chromewebstore && (
+                                            <a href={links.chromewebstore} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.chromewebstoreIcon} title='Chrome Web Store'></div>
                                             </a>
                                         )}
                                         {links.github && (
@@ -179,9 +215,9 @@ export default function WorksPage() {
                     <a href="https://github.com/PTOM76/PukiWiki-Plugins/" title="ソースコード" target="_blank" rel="noopener noreferrer">
                         <div className={styles.githubIcon} style={{ float: 'right' }}></div>
                     </a>
-                    
+
                     {pukiwikiplugins.map((data, index) => {
-                        const custom = data.custom?? {};
+                        const custom = data.custom ?? {};
                         const images: string[] = (custom.images as string[]) ?? [];
                         const links: any = data.site ?? {};
 
@@ -222,7 +258,7 @@ export default function WorksPage() {
                                 <h3>
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
                                 </h3>
-                                <p style={{ marginBottom: '8px' }}>{data.description}</p>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
                                 {images.length > 0 && (
                                     <a href={images[0]} target="_blank" rel="noopener noreferrer">
                                         <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
@@ -240,7 +276,7 @@ export default function WorksPage() {
                             </div>
                         );
                     })}
-                    
+
 
                     <h3>一覧</h3>
                     <ul>
@@ -401,6 +437,10 @@ export default function WorksPage() {
                         <li>
                             <strong><a href="https://github.com/PTOM76/github-pitan76-star-counter" target="_blank" rel="noopener noreferrer">GitHub Star Counter</a></strong><br />
                             GitHubアカウントの合計スター数のカウンタ画像を出力するPHP製ツール。
+                        </li>
+                        <li>
+                            <strong><a href="./paint/">お絵描きまとめページ</a></strong><br />
+                            素人の私が描いた絵とか載せてます。
                         </li>
                     </ul>
                 </span>
