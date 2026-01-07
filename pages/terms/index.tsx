@@ -9,18 +9,18 @@ export default function TermsPage() {
                 <a href="/">root</a>/terms
             </span>
 
-            <h1>利用規約</h1>
-            <div className={styles.cardlist}>
-                <span className={styles.card}>
-                    <h2>知的財産権</h2>
-                    <p>
-                        当サイト(Pitan76.NET) の<a href="https://github.com/PTOM76/pitan76net-2025" target="_blank" rel="noopener noreferrer">ソースコード</a>はMITライセンスとします。<br />
-                        特別な記述がない限り、文章や画像などのコンテンツもMITライセンスが適用されます。<br />
-                        ただし、悪質な転載、利用はしないでください。
-                        <br />
-                        ただし、配布物の著作権はそれぞれのライセンスに従ってください。<br />
-                    </p>
-                </span>
+        <h1>利用規約</h1>
+        <div className={styles.cardlist}>
+            <span className={styles.card}>
+                <h2>知的財産権</h2>
+                <p>
+                    当サイト(Pitan76.NET) の<a href="https://github.com/PTOM76/pitan76-web-2025" target="_blank" rel="noopener noreferrer">ソースコード</a>はMITライセンスとします。<br />
+                    特別な記述がない限り、文章や画像などのコンテンツもMITライセンスが適用されます。<br />
+                    ただし、悪質な転載、利用はしないでください。
+                    <br />
+                    ただし、配布物の著作権はそれぞれのライセンスに従ってください。<br />
+                </p>
+            </span>
 
                 <span className={styles.card}>
                     <h2>禁止事項</h2>

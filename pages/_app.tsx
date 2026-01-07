@@ -21,6 +21,34 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <title>{title}</title>
       <meta name="description" content="Pitan76's website" />
       <link rel="icon" href="/favicon.ico" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content="Pitan76's website" />
+      <meta property="og:image" content="/image/mcmod/item-alchemy.png" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.pitan76.net/" />
+      <meta property="og:site_name" content="Pitan76.NET" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content="Pitan76's website" />
+      <meta name="twitter:image" content="/image/profile-icon.jpg" />
+      <script type="application/ld+json" dangerouslySetInnerHTML=
+{{__html: `{
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Pitan76.NET",
+  "url": "https://www.pitan76.net/",
+  "description": "Pitan76's website"
+}`}} />
+{
+  /*
+    "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.pitan76.net/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+  */
+}
     </Head>
 
     {loading && <div className={`loading${fadeOut ? ' fade-out' : ''}`}></div>}

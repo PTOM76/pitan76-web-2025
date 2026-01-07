@@ -104,14 +104,21 @@ div.cardlist {
 
 a.card {
     width: 75%;
-    max-width: 650px;
+    max-width: min(650px, 100% - 48px);
     padding: 1.5rem;
     text-align: left;
     color: inherit;
     text-decoration: none;
     border-radius: 10px;
-    /* backdrop-filter: blur(2px); */
     transition: box-shadow 0.2s ease;
+    border: 1px solid #afcfffe6;
+    background-color: #ffffff20;
+}
+
+@media (max-width: 1300px) {
+    a.card {    
+        margin: 0 24px;
+    }
 }
 
 a.card:nth-child(odd) {
@@ -123,7 +130,7 @@ a.card:nth-child(even) {
 }
 
 a.card:hover {
-    box-shadow: 0 0px 5px #afcfffe6;
+    box-shadow: 0 0 8px #afcfffe6;
 }
 
 a.card h2 {

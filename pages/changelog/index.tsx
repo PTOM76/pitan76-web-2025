@@ -9,16 +9,20 @@ export default function ChangelogPage() {
                 <a href="/">root</a>/changelog
             </span>
 
-            <div className={styles.cardlist}>
-                <span className={styles.card}>
-                    <h2>2025 - [<a href="https://pitan76.net/">pitan76.net</a>]</h2>
-                    TypeScript と Next.js で構築した個人サイト、GitHub Pages上でホスティング
-                    <br /><br />
-                    <ul>
-                        <li>2025.11.25 - 新規にトップページや変更履歴(changelog)などのページを作成</li>
-                        <li>2025.11.25 - Pitan76.NET のリニューアル。2022年のPitan's Noteに用いていたSF風デザインを復刻</li>
-                    </ul>
-                </span>
+        <div className={styles.cardlist}>
+            <span className={styles.card}>
+                <h2>2025 - [<a href="https://pitan76.net/">pitan76.net</a>]</h2>
+                TypeScript と Next.js で構築した個人サイト、GitHub Pages上でホスティング
+                <br /><br />
+                <ul>
+                    <li>2025.12.03 - <a href="/empty/">Empty</a> ページの追加</li>
+                    <li>2025.12.02 - <a href="/works/">作品</a> ページのjson化</li>
+                    <li>2025.12.02 - 背景に星空エフェクト、カーソルの軌跡エフェクトを追加</li>
+                    <li>2025.11.30 - <a href="/about/">詳細</a> ページの追加、バナーの作成</li>
+                    <li>2025.11.25 - 新規にトップページや変更履歴(changelog)などのページを作成</li>
+                    <li>2025.11.25 - Pitan76.NET のリニューアル。2022年のPitan's Noteに用いていたSF風デザインを復刻</li>
+                </ul>
+            </span>
 
                 <span className={styles.card}>
                     <h2>2023 - [<a href="https://2023.pitan76.net/">2023.pitan76.net</a>]</h2>
