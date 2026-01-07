@@ -73,7 +73,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       
       <a href="/terms/">Terms of Service & Privacy Policy</a> | <a href="/changelog/">Change Log</a>
       <br />
-      Copyright © 2020-2025 Pitan | E-mail admin@pitan76.net
+      Copyright © 2020-2026 Pitan | E-mail admin@pitan76.net
     </div>
   </>
 };
