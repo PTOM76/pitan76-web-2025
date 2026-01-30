@@ -2230,6 +2230,30 @@
         }
     },
     {
+        "id": "dokufarm",
+        "name": "DokuFarm",
+        "description": "無料で使えるウィキ、DokuWikiのホスティングサービス。",
+        "version": "",
+        "category": "other",
+        "author": "Pitan",
+        "url": "https://doku.wikichree.com/",
+        "license": "",
+        "createAt": "20260130",
+        "updateAt": "20260130",
+        "site": {
+            "website": "https://doku.wikichree.com/"
+        },
+        "tag": [
+            "web",
+            "webapp",
+            "dokuwiki",
+            "hosting"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/web/dokufarm.png"]
+        }
+    },
+    {
         "id": "vps-search",
         "name": "ボ対検索ツール",
         "description": "ボイパ対決という音MADに特化した検索ツール。",
