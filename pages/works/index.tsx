@@ -387,6 +387,13 @@ export default function WorksPage() {
                         -&gt; <a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">https://wikichree.com/</a>
                     </span>
 
+                    <h3>DokuFarm</h3>
+                    無料で使えるDokuWikiホスティングサービス。<br />
+                    <img src="/image/web/dokufarm.png" alt="DokuFarm スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='DokuFarm'>
+                        -&gt; <a href="https://doku.wikichree.com/" target="_blank" rel="noopener noreferrer">https://doku.wikichree.com/</a>
+                    </span>
+
                     <h3>ボ対検索ツール</h3>
                     ボイパ対決という音MADに特化した検索ツール。<br />
                     <img src="/image/web/vps-search.png" alt="ボ対検索ツール スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
