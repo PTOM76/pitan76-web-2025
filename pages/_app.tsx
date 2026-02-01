@@ -64,7 +64,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <div className={"banners"}>
         <a href="/"><img src="/image/banner88x31.png" alt="Banner" width={88} height={31} className={"banner"} title="Banner" data-lightbox="false"></img></a>
         <a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/image/wikichree88x31.png" alt="Wikichree" width={88} height={31} className={"banner"} title="Wikichree" data-lightbox="false"></img>
+          <img src="/image/wikichree88x31.png" alt="WikiChree.COM" width={88} height={31} className={"banner"} title="WikiChree.COM" data-lightbox="false"></img>
+        </a>
+        <a href="https://doku.wikichree.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/image/dokufarm88x31.png" alt="DokuFarm" width={88} height={31} className={"banner"} title="DokuFarm" data-lightbox="false"></img>
         </a>
         <a href="https://psnverse.pitan76.net/" target="_blank" rel="noopener noreferrer">
           <img src="/image/psnverse88x31.png" alt="PSNVerse" width={88} height={31} className={"banner"} title="PSNVerse" data-lightbox="false"></img>
