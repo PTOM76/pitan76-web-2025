@@ -1506,6 +1506,29 @@
         "custom": {}
     },
     {
+        "id": "mc_block_model_viewer",
+        "name": "Block Model Viewer",
+        "description": "jarファイルを読み込み、Minecraftのブロックのモデルを組み立てて描画、出力するツール。",
+        "version": "v0.0.2",
+        "author": "Pitan",
+        "url": "https://github.com/PTOM76/mc-block-model-viewer/releases/",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/Git-Account-Manager"
+        },
+        "tag": [
+            "tool",
+            "windows",
+            "mac",
+            "linux",
+            "minecraft",
+            "react",
+            "electron"
+        ],
+        "category": "other",
+        "custom": {}
+    },
+    {
         "id": "discord_turnstile_verify_bot",
         "name": "Turnstile Verify",
         "description": "TurnstileでDiscordのユーザー認証を行うためのDiscord用Bot<br />PHPのソースコードのみなので各自で環境を用意してください",
