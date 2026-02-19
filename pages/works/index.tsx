@@ -335,6 +335,16 @@ export default function WorksPage() {
 
                 <span className={styles.card}>
                     <h2>ツール/ソフトウェア</h2>
+                    いくつかのツール/ソフトウェアを公開しています。<br />
+
+                    <h3>Block Model Viewer [Windows/Mac/Linux]</h3>
+                    jarファイルを読み込み、Minecraftのブロックのモデルを組み立てて描画、出力するツール。<br />
+                    <img src="/image/tool/mcblockmodelviewer.png" alt="Block Model Viewer スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='Block Model Viewer'>
+                        -&gt; <a href="https://github.com/PTOM76/mc-block-model-viewer/releases/" target="_blank" rel="noopener noreferrer">https://github.com/PTOM76/mc-block-model-viewer/releases/</a>
+                    </span>
+
+                    <h3>一覧</h3>
                     <ul>
                         <li>
                             <strong><a href="https://github.com/PTOM76/MD2PKWK" target="_blank" rel="noopener noreferrer">MD2PKWK (PHP/CLI)</a></strong><br />
