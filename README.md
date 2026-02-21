@@ -1,4 +1,5 @@
 # Pitan76.NET
+Pitanのウェブサイト、2025年ver
 
 ## GitHub Pages へのデプロイ
 push時にGitHub Actionsで自動的にgh-pagesブランチへデプロイされます。<br>
