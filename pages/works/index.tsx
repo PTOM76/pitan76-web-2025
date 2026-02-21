@@ -11,6 +11,7 @@ export default function WorksPage() {
     const pukiwikiskins = worksData.filter(d => d.category === "pukiwikiskin");
     const mmdplugins = worksData.filter(d => d.category === "mmdplugin");
     const chromeexts = worksData.filter(d => d.category === "chrome-extension");
+    const apps = worksData.filter(d => d.category === "app");
 
     // pitan76.netならば相対パスにする
     worksData.forEach(data => {
@@ -57,9 +58,9 @@ export default function WorksPage() {
                             <div key={index}>
                                 <h3>
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
-                                    {tag.includes('fabric') && <img src="/image/fabric.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px' }} title="FabricMC" data-lightbox="false" ></img>}
-                                    {tag.includes('forge') && <img src="/image/forge.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px' }} title="Minecraft Forge" data-lightbox="false" ></img>}
-                                    {tag.includes('neoforge') && <img src="/image/neoforge.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px' }} title="NeoForge" data-lightbox="false" ></img>}
+                                    {tag.includes('fabric') && <img src="/image/fabric.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="FabricMC" data-lightbox="false" ></img>}
+                                    {tag.includes('forge') && <img src="/image/forge.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="Minecraft Forge" data-lightbox="false" ></img>}
+                                    {tag.includes('neoforge') && <img src="/image/neoforge.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="NeoForge" data-lightbox="false" ></img>}
                                 </h3>
 
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
@@ -110,7 +111,7 @@ export default function WorksPage() {
                             <div key={index}>
                                 <h3>
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
-                                    {tag.includes('r-e-p-o') && <img src="/image/repo.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px' }} title="R.E.P.O" data-lightbox="false" ></img>}
+                                    {tag.includes('r-e-p-o') && <img src="/image/repo.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="R.E.P.O" data-lightbox="false" ></img>}
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
                                 {images.length > 0 && (
@@ -150,7 +151,7 @@ export default function WorksPage() {
                             <div key={index}>
                                 <h3>
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
-                                    {tag.includes('chrome') && <img src="/image/chrome.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px' }} title="R.E.P.O" data-lightbox="false" ></img>}
+                                    {tag.includes('chrome') && <img src="/image/chrome.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="R.E.P.O" data-lightbox="false" ></img>}
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
                                 {images.length > 0 && (
@@ -334,15 +335,49 @@ export default function WorksPage() {
                 </span>
 
                 <span className={styles.card}>
-                    <h2>ツール/ソフトウェア</h2>
+                    <h2>アプリケーション</h2>
                     いくつかのツール/ソフトウェアを公開しています。<br />
 
-                    <h3>Block Model Viewer [Windows/Mac/Linux]</h3>
+                    {/* <h3>Block Model Viewer [Windows/Mac/Linux]</h3>
                     jarファイルを読み込み、Minecraftのブロックのモデルを組み立てて描画、出力するツール。<br />
                     <img src="/image/tool/mcblockmodelviewer.png" alt="Block Model Viewer スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
                     <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='Block Model Viewer'>
                         -&gt; <a href="https://github.com/PTOM76/mc-block-model-viewer/releases/" target="_blank" rel="noopener noreferrer">https://github.com/PTOM76/mc-block-model-viewer/releases/</a>
-                    </span>
+                    </span> */}
+
+                    {apps.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const tag: string[] = data.tag ?? [];
+                        const links: any = data.site ?? {};
+
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                    {tag.includes('windows') && <img src="/image/windows.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="Windows" data-lightbox="false" ></img>}
+                                    {tag.includes('macos') && <img src="/image/macos.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="macOS" data-lightbox="false" ></img>}
+                                    {tag.includes('linux') && <img src="/image/linux.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="Linux" data-lightbox="false" ></img>}
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                {images.length > 0 && (
+                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
+                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                                    </a>
+                                )}
+                                {Object.keys(links).length > 0 && (
+                                    <div>
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
 
                     <h3>一覧</h3>
                     <ul>
