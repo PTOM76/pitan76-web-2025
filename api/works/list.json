@@ -1500,7 +1500,8 @@
         },
         "tag": [
             "tool",
-            "windows"
+            "windows",
+            "vbnet"
         ],
         "category": "other",
         "custom": {}
@@ -1509,24 +1510,26 @@
         "id": "mc_block_model_viewer",
         "name": "Block Model Viewer",
         "description": "jarファイルを読み込み、Minecraftのブロックのモデルを組み立てて描画、出力するツール。",
-        "version": "v0.0.2",
+        "version": "v0.0.5",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/mc-block-model-viewer/releases/",
         "license": "MIT",
         "site": {
-            "github": "https://github.com/PTOM76/Git-Account-Manager"
+            "github": "https://github.com/PTOM76/mc-block-model-viewer"
         },
         "tag": [
             "tool",
             "windows",
-            "mac",
+            "macos",
             "linux",
             "minecraft",
             "react",
             "electron"
         ],
-        "category": "other",
-        "custom": {}
+        "category": "app",
+        "custom": {
+            "images": ["https://www.pitan76.net/image/tool/mcblockmodelviewer.png"]
+        }
     },
     {
         "id": "discord_turnstile_verify_bot",
