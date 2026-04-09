@@ -1318,6 +1318,7 @@
     {
         "id": "simplecables76",
         "alias": ["simplecables"],
+        "name": "Simple Cables",
         "description": "エネルギー伝送ケーブル単品を追加するFabricMC用のMod。",
         "version": "1.0.3",
         "author": "PitaQ",
@@ -1345,6 +1346,7 @@
     {
         "id": "littleobffallback",
         "alias": ["lof"],
+        "name": "Little Obf Fallback",
         "description": "26.1以降で難読化解除されたため、中間名のフォールバックを実装したobf互換レイヤーです。",
         "version": "0.3.4",
         "author": "PitaQ",
