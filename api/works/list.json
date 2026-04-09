@@ -1316,6 +1316,56 @@
         }
     },
     {
+        "id": "simplecables76",
+        "alias": ["simplecables"],
+        "description": "エネルギー伝送ケーブル単品を追加するFabricMC用のMod。",
+        "version": "1.0.3",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/simplecables76",
+        "license": "CC0-1.0",
+        "createAt": "2026/03/19",
+        "updateAt": "2026/04/06",
+        "site": {
+            "github": "https://github.com/PTOM76/simplecables76",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simplecables76",
+            "modrinth": "https://modrinth.com/mod/simplecables76"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "1.18-26.1.1",
+            "cf_projectid": 1491488,
+            "images": ["https://www.pitan76.net/image/mcmod/simplecables76.png"]
+        }
+    },
+    {
+        "id": "littleobffallback",
+        "alias": ["lof"],
+        "description": "26.1以降で難読化解除されたため、中間名のフォールバックを実装したobf互換レイヤーです。",
+        "version": "0.3.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/little-obf-fallback",
+        "license": "MIT",
+        "createAt": "2026/04/09",
+        "updateAt": "2026/04/04",
+        "site": {
+            "github": "https://github.com/Pitan76/little-obf-fallback"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "26.1-26.1.1"
+        }
+    },
+    {
         "id": "compatdatapacks",
         "name": "CompatDataPacks",
         "description": "データパックのバージョン互換を追加するMod。",
