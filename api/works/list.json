@@ -1344,18 +1344,18 @@
         }
     },
     {
-        "id": "littleobffallback",
-        "alias": ["lof"],
-        "name": "Little Obf Fallback",
+        "id": "littleintermediaryfallback",
+        "alias": ["lof", "littleobffallback", "little-obf-fallback", "lif"],
+        "name": "Little Intermediary Fallback",
         "description": "26.1以降で難読化解除されたため、中間名のフォールバックを実装したobf互換レイヤーです。",
-        "version": "0.3.4",
+        "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/little-obf-fallback",
+        "url": "https://github.com/Pitan76/little-intermediary-fallback",
         "license": "MIT",
-        "createAt": "2026/04/09",
-        "updateAt": "2026/04/04",
+        "createAt": "2026/04/04",
+        "updateAt": "2026/04/19",
         "site": {
-            "github": "https://github.com/Pitan76/little-obf-fallback"
+            "github": "https://github.com/Pitan76/little-intermediary-fallback"
         },
         "tag": [
             "minecraft",
