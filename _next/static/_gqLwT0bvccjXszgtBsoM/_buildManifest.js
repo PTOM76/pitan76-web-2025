@@ -24,7 +24,7 @@ self.__BUILD_MANIFEST = {
     "static/chunks/4f25b592c7304a43.js"
   ],
   "/works": [
-    "static/chunks/759a72595c81dbe7.js"
+    "static/chunks/c0c9610a47b9b5c0.js"
   ],
   "/works/paint": [
     "static/chunks/3768da83aed75eb0.js"

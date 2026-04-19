@@ -1996,7 +1996,7 @@
     {
         "id": "mcpitanlib",
         "name": "MCPitanLib",
-        "description": "自分用MOD開発ライブラリ<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)",
+        "description": "自分用MOD開発ライブラリ、MCバージョンの差異を吸収するクロスバージョン用のフレームワークみたいなもんです。<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)",
         "version": "2.2.4",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
