@@ -1364,7 +1364,31 @@
         ],
         "category": "mcmod",
         "custom": {
-            "mcversion": "26.1-26.1.1"
+            "mcversion": "26.1-26.1.2"
+        }
+    },
+    {
+        "id": "littleoldnamedfallback",
+        "alias": ["lonamedfallback", "little-old-named-fallback", "lonf"],
+        "name": "Little Oldnamed Fallback",
+        "description": "26.1以降で難読化解除されたため、旧命名のフォールバックを実装したobf互換レイヤーです。",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://github.com/Pitan76/little-oldnamed-fallback",
+        "license": "MIT",
+        "createAt": "2026/04/04",
+        "updateAt": "2026/04/19",
+        "site": {
+            "github": "https://github.com/Pitan76/little-oldnamed-fallback"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "neoforge"
+        ],
+        "category": "mcmod",
+        "custom": {
+            "mcversion": "26.1-26.1.2"
         }
     },
     {
