@@ -439,6 +439,13 @@ export default function WorksPage() {
                         -&gt; <a href="https://doku.wikichree.com/" target="_blank" rel="noopener noreferrer">https://doku.wikichree.com/</a>
                     </span>
 
+                    <h3>ModParks</h3>
+                    Minecraft Java Edition向けMod/Pluginプラットフォーム。<br />
+                    <img src="/image/web/modparks.png" alt="ModParks スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='ModParks'>
+                        -&gt; <a href="https://modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">https://modparks.pitan76.net/</a>
+                    </span>
+
                     <h3>ボ対検索ツール</h3>
                     ボイパ対決という音MADに特化した検索ツール。<br />
                     <img src="/image/web/vps-search.png" alt="ボ対検索ツール スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
@@ -451,6 +458,14 @@ export default function WorksPage() {
                         <li>
                             <strong><a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">WikiChree.COM</a></strong><br />
                             無料で使えるウィキ、PukiWikiのホスティングサービス。
+                        </li>
+                        <li>
+                            <strong><a href="https://doku.wikichree.com/" target="_blank" rel="noopener noreferrer">DokuFarm</a></strong><br />
+                            無料で使えるウィキ、DokuWikiのホスティングサービス。
+                        </li>
+                        <li>
+                            <strong><a href="https://modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">ModParks</a></strong><br />
+                            Minecraft Java Edition向けMod/Pluginプラットフォーム。
                         </li>
                         <li>
                             <strong><a href="https://vps-search.pitan76.net/" target="_blank" rel="noopener noreferrer">ボ対検索ツール</a></strong><br />
