@@ -2356,6 +2356,31 @@
         }
     },
     {
+        "id": "modparks",
+        "name": "ModParks",
+        "description": "Minecraft Java Edition向けMod/Pluginプラットフォーム",
+        "version": "",
+        "category": "other",
+        "author": "Pitan",
+        "url": "https://modparks.pitan76.net/",
+        "license": "MIT",
+        "createAt": "20260616",
+        "updateAt": "20260616",
+        "site": {
+            "website": "https://modparks.pitan76.net/"
+        },
+        "tag": [
+            "web",
+            "webapp",
+            "minecraft",
+            "mod",
+            "plugin"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/web/modparks.png"]
+        }
+    },
+    {
         "id": "vps-search",
         "name": "ボ対検索ツール",
         "description": "ボイパ対決という音MADに特化した検索ツール。",
