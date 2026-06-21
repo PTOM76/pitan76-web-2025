@@ -1608,6 +1608,30 @@
         }
     },
     {
+        "id": "modparks-cli",
+        "name": "ModParks CLI",
+        "description": "ModParksのCLI/TUIツール",
+        "version": "v0.0.1",
+        "author": "Pitan",
+        "url": "https://github.com/Pitan76/ModParks-CLI/releases/",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/Pitan76/ModParks-CLI"
+        },
+        "tag": [
+            "tool",
+            "windows",
+            "macos",
+            "linux",
+            "modparks",
+            "cli"
+        ],
+        "category": "app",
+        "custom": {
+            "images": ["https://www.pitan76.net/image/tool/modparks-cli.png"]
+        }
+    },
+    {
         "id": "discord_turnstile_verify_bot",
         "name": "Turnstile Verify",
         "description": "TurnstileでDiscordのユーザー認証を行うためのDiscord用Bot<br />PHPのソースコードのみなので各自で環境を用意してください",
@@ -2367,7 +2391,8 @@
         "createAt": "20260616",
         "updateAt": "20260616",
         "site": {
-            "website": "https://modparks.pitan76.net/"
+            "website": "https://modparks.pitan76.net/",
+            "github": "https://github.com/Pitan76/ModParks"
         },
         "tag": [
             "web",
