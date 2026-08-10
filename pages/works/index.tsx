@@ -82,6 +82,11 @@ export default function WorksPage() {
                                                 <div className={styles.modrinthIcon} title='Modrinth'></div>
                                             </a>
                                         )}
+                                        {links.modparks && (
+                                            <a href={links.modparks} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.modparksIcon} title='Modparks'></div>
+                                            </a>
+                                        )}
                                         {links.wiki && (
                                             <a href={links.wiki} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.wikichreeIcon} title='ウィキ'></div>
