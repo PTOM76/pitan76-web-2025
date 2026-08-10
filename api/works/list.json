@@ -198,7 +198,8 @@
             "minecraft",
             "mod",
             "fabric",
-            "forge"
+            "forge",
+            "neoforge"
         ],
         "category": "mcmod",
         "custom": {
@@ -1253,33 +1254,6 @@
         }
     },
     {
-        "id": "techhammers",
-        "alias": ["tech-hammers", "tech_hammers", "techexcavators", "tech-excavators", "tech_excavators", "tech_hammers_excavators", "tech-hammers-excavators"],
-        "name": "Tech Hammers & Excavators",
-        "description": "Vanilla Hammers/Excavators、TRのアドオンMOD<br />ルビー、電動などの3x3採掘ツールを追加します。, Tech Reborn, Vanilla Hammers/Excavators",
-        "version": "1.0.5",
-        "author": "Pitan",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
-        "license": "MIT",
-        "createAt": "2024/01/11",
-        "updateAt": "2024/02/15",
-        "site": {
-            "github": "https://github.com/PTOM76/tech-hammers",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
-            "modparks": "https://modparks.pitan76.net/projects/tech-hammers"
-        },
-        "tag": [
-            "minecraft",
-            "mod",
-            "fabric"
-        ],
-        "category": "mcmod",
-        "custom": {
-            "mcversion": "1.18.1-1.19.2",
-            "cf_projectid": 960741
-        }
-    },
-    {
         "id": "additionalsmallstairs",
         "alias": ["additional-small-stairs"],
         "name": "Additional Small Stairs",
@@ -1360,7 +1334,8 @@
             "minecraft",
             "mod",
             "fabric",
-            "forge"
+            "forge",
+            "neoforge"
         ],
         "category": "mcmod",
         "custom": {
@@ -1825,7 +1800,10 @@
         },
         "tag": [
             "minecraft",
-            "mod"
+            "mod",
+            "fabric",
+            "neoforge",
+            "forge"
         ],
         "custom": {}
     },
@@ -2014,7 +1992,8 @@
         },
         "tag": [
             "minecraft",
-            "fabric"
+            "fabric",
+            "mod"
         ],
         "custom": {}
     },
@@ -2037,21 +2016,25 @@
         },
         "tag": [
             "minecraft",
-            "fabric"
+            "fabric",
+            "forge",
+            "neoforge",
+            "mod"
         ],
         "custom": {}
     },
     {
-        "id": "tech_hammers",
+        "id": "techhammers",
+        "alias": ["tech-hammers", "tech_hammers", "techexcavators", "tech-excavators", "tech_excavators", "tech_hammers_excavators", "tech-hammers-excavators"],
         "name": "Tech Hammers & Excavators",
         "description": "ルビーハンマーや電動ハンマーなどを追加するTech RebornとVanilla Hammers/ExcavatorsのアドオンMod。",
-        "version": "",
+        "version": "1.0.5",
         "category": "mcmod",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
         "license": "MIT",
-        "createAt": "",
-        "updateAt": "",
+        "createAt": "2024/01/11",
+        "updateAt": "2024/02/15",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
             "modparks": "https://modparks.pitan76.net/projects/tech-hammers",
@@ -2059,9 +2042,13 @@
         },
         "tag": [
             "minecraft",
-            "mod"
+            "mod",
+            "fabric"
         ],
-        "custom": {}
+        "custom": {
+            "mcversion": "1.18.1-1.19.2",
+            "cf_projectid": 960741
+        }
     },
     {
         "id": "universal_wrench",
@@ -2083,7 +2070,10 @@
         },
         "tag": [
             "minecraft",
-            "mod"
+            "mod",
+            "fabric",
+            "neoforge",
+            "forge"
         ],
         "custom": {}
     },
