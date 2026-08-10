@@ -445,10 +445,17 @@ export default function WorksPage() {
                     </span>
 
                     <h3>ModParks</h3>
-                    Minecraft Java Edition向けMod/Pluginプラットフォーム。<br />
+                    Minecraft Java Edition向けMOD/プラグイン配布プラットフォーム。<br />
                     <img src="/image/web/modparks.png" alt="ModParks スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
                     <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='ModParks'>
                         -&gt; <a href="https://modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">https://modparks.pitan76.net/</a>
+                    </span>
+
+                    <h3>ModParks Recipe</h3>
+                    Minecraftのレシピを管理するツール/API、ModParksのレシピ機能としても利用している。<br />
+                    <img src="/image/web/modparks-recipe.png" alt="ModParks Recipe スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='ModParks Recipe'>
+                        -&gt; <a href="https://recipe.modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">https://recipe.modparks.pitan76.net/</a>
                     </span>
 
                     <h3>ボ対検索ツール</h3>
