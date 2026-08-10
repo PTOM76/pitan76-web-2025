@@ -470,7 +470,11 @@ export default function WorksPage() {
                         </li>
                         <li>
                             <strong><a href="https://modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">ModParks</a></strong><br />
-                            Minecraft Java Edition向けMod/Pluginプラットフォーム。
+                            Minecraft Java Edition向けMOD/プラグイン配布プラットフォーム。
+                        </li>
+                        <li>
+                            <strong><a href="https://recipe.modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">ModParks Recipe</a></strong><br />
+                            Minecraftのレシピを管理するツール/API、ModParksのレシピ機能としても利用している。
                         </li>
                         <li>
                             <strong><a href="https://vps-search.pitan76.net/" target="_blank" rel="noopener noreferrer">ボ対検索ツール</a></strong><br />
