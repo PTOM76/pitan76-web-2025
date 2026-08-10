@@ -375,7 +375,10 @@
         },
         "tag": [
             "minecraft",
-            "mod"
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/mcmod/storagebox-adapter.png"]
@@ -400,7 +403,10 @@
         },
         "tag": [
             "minecraft",
-            "mod"
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/mcmod/assetbridge.png"]
