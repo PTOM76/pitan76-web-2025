@@ -14,7 +14,8 @@
             "wiki": "https://wikichree.com/pitan76/?Item+Alchemy",
             "github": "https://github.com/Pitan76/item-alchemy",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric",
-            "modrinth": "https://modrinth.com/mod/item-alchemy"
+            "modrinth": "https://modrinth.com/mod/item-alchemy",
+            "modparks": "https://modparks.pitan76.net/projects/item-alchemy"
         },
         "tag": [
             "minecraft",
@@ -42,7 +43,8 @@
             "github": "https://github.com/Pitan76/AdvancedReborn",
             "wiki": "https://wikichree.com/pitan76/?AdvancedReborn",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn",
-            "modrinth": "https://modrinth.com/mod/advanced-reborn"
+            "modrinth": "https://modrinth.com/mod/advanced-reborn",
+            "modparks": "https://modparks.pitan76.net/projects/advancedreborn"
         },
         "tag": [
             "minecraft",
@@ -72,7 +74,8 @@
             "wiki": "https://wikichree.com/pitan76/?Enhanced+Quarries",
             "github": "https://github.com/PTOM76/EnhancedQuarries",
             "modrinth": "https://modrinth.com/mod/enhancedquarries",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries",
+            "modparks": "https://modparks.pitan76.net/projects/enhancedquarries"
         },
         "tag": [
             "minecraft",
@@ -101,7 +104,8 @@
             "github": "https://github.com/Pitan76/CubicTurret",
             "wiki": "https://wikichree.com/pitan76/?Cubic+Turret",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/cubicturret",
-            "modrinth": "https://modrinth.com/mod/cubicturret"
+            "modrinth": "https://modrinth.com/mod/cubicturret",
+            "modparks": "https://modparks.pitan76.net/projects/cubicturret"
         },
         "tag": [
             "minecraft",
@@ -126,7 +130,8 @@
         "site": {
             "github": "https://github.com/PTOM76/memory-usage-title",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/memory-usage-title",
-            "modrinth": "https://modrinth.com/mod/memory-usage-title"
+            "modrinth": "https://modrinth.com/mod/memory-usage-title",
+            "modparks": "https://modparks.pitan76.net/projects/memory-usage-title"
         },
         "tag": [
             "minecraft",
@@ -155,7 +160,8 @@
         "site": {
             "github": "https://github.com/PTOM76/mod-volume-options",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options",
-            "modrinth": "https://modrinth.com/mod/mod-volume-options"
+            "modrinth": "https://modrinth.com/mod/mod-volume-options",
+            "modparks": "https://modparks.pitan76.net/projects/mod-sound-volume-options"
         },
         "tag": [
             "minecraft",
@@ -185,7 +191,8 @@
         "site": {
             "github": "https://github.com/Pitan76/ordinary-crook",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook",
-            "modrinth": "https://modrinth.com/mod/ordinary-crook"
+            "modrinth": "https://modrinth.com/mod/ordinary-crook",
+            "modparks": "https://modparks.pitan76.net/projects/ordinary-crook"
         },
         "tag": [
             "minecraft",
@@ -214,6 +221,7 @@
             "wiki": "https://wikichree.com/pitan76/?Space+Cube",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/spacecube",
             "modrinth": "https://modrinth.com/mod/spacecube",
+            "modparks": "https://modparks.pitan76.net/projects/spacecube",
             "github": "https://github.com/Pitan76/spacecube"
         },
         "tag": [
@@ -242,7 +250,8 @@
             "github": "https://github.com/PTOM76/PipePlus",
             "wiki": "https://wikichree.com/pitan76/?PipePlus",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/pipeplus",
-            "modrinth": "https://modrinth.com/mod/pipeplus"
+            "modrinth": "https://modrinth.com/mod/pipeplus",
+            "modparks": "https://modparks.pitan76.net/projects/pipeplus"
         },
         "tag": [
             "minecraft",
@@ -270,6 +279,7 @@
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/more-harnesses",
             "modrinth": "https://modrinth.com/mod/more-harnesses",
+            "modparks": "https://modparks.pitan76.net/projects/more-harnesses",
             "wiki": "https://wikichree.com/pitan76/?More+Harnesses",
             "github": "https://github.com/Pitan76/MoreHarnesses"
         },
@@ -298,6 +308,7 @@
             "wiki": "https://wikichree.com/pitan76/?Simple+Uncrafting+Table",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric",
             "modrinth": "https://modrinth.com/mod/simple-uncrafting-table",
+            "modparks": "https://modparks.pitan76.net/projects/simple-uncrafting-table",
             "github": "https://github.com/Pitan76/uncraftingtable"
         },
         "tag": [
@@ -329,7 +340,8 @@
             "wiki": "https://wikichree.com/pitan76/?Storage+Box+for+Fabric",
             "github": "https://github.com/PTOM76/storagebox-fabric",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric",
-            "modrinth": "https://modrinth.com/mod/storagebox-fabric"
+            "modrinth": "https://modrinth.com/mod/storagebox-fabric",
+            "modparks": "https://modparks.pitan76.net/projects/storagebox-fabric"
         },
         "tag": [
             "minecraft",
@@ -357,6 +369,7 @@
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/storagebox-adapter",
             "modrinth": "https://modrinth.com/mod/storagebox-adapter",
+            "modparks": "https://modparks.pitan76.net/projects/storagebox-adapter",
             "wiki": "https://wikichree.com/pitan76/?StorageBox+Adapter",
             "github": "https://github.com/PTOM76/storagebox-adapter"
         },
@@ -366,6 +379,31 @@
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/mcmod/storagebox-adapter.png"]
+        }
+    },
+    {
+        "id": "assetbridge",
+        "name": "Asset Bridge",
+        "description": "取り込んだMODからブロックなどのアセットを読み込み、機能を持たず見た目だけのブロック、アイテムを利用するMOD",
+        "version": "",
+        "category": "mcmod",
+        "author": "Pitan",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/assetbridge",
+        "license": "MIT",
+        "createAt": "",
+        "updateAt": "",
+        "site": {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/assetbridge",
+            "modrinth": "https://modrinth.com/mod/assetbridge",
+            "modparks": "https://modparks.pitan76.net/projects/assetbridge",
+            "github": "https://github.com/Pitan76/assetbridge"
+        },
+        "tag": [
+            "minecraft",
+            "mod"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/mcmod/assetbridge.png"]
         }
     },
 
@@ -1215,7 +1253,8 @@
         "updateAt": "2024/02/15",
         "site": {
             "github": "https://github.com/PTOM76/tech-hammers",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
+            "modparks": "https://modparks.pitan76.net/projects/tech-hammers"
         },
         "tag": [
             "minecraft",
@@ -1242,7 +1281,8 @@
         "site": {
             "github": "https://github.com/PTOM76/additional-small-stairs",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/additional-small-stairs",
-            "modrinth": "https://modrinth.com/mod/additional-small-stairs"
+            "modrinth": "https://modrinth.com/mod/additional-small-stairs",
+            "modparks": "https://modparks.pitan76.net/projects/additional-small-stairs"
         },
         "tag": [
             "minecraft",
@@ -1272,7 +1312,8 @@
             "github": "https://github.com/PTOM76/EnderCane",
             "wiki": "https://wikichree.com/pitan76/?Ender+Cane",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ender-cane",
-            "modrinth": "https://modrinth.com/mod/ender-cane"
+            "modrinth": "https://modrinth.com/mod/ender-cane",
+            "modparks": "https://modparks.pitan76.net/projects/ender-cane"
         },
         "tag": [
             "minecraft",
@@ -1300,7 +1341,8 @@
         "site": {
             "github": "https://github.com/PTOM76/Solomons-Rod",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/solomons-rod-fabric",
-            "modrinth": "https://modrinth.com/mod/solomons-rod-fabric"
+            "modrinth": "https://modrinth.com/mod/solomons-rod-fabric",
+            "modparks": "https://modparks.pitan76.net/projects/solomons-rod-fabric"
         },
         "tag": [
             "minecraft",
@@ -1329,7 +1371,8 @@
         "site": {
             "github": "https://github.com/PTOM76/simplecables76",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simplecables76",
-            "modrinth": "https://modrinth.com/mod/simplecables76"
+            "modrinth": "https://modrinth.com/mod/simplecables76",
+            "modparks": "https://modparks.pitan76.net/projects/simplecables76"
         },
         "tag": [
             "minecraft",
@@ -1432,7 +1475,8 @@
         "site": {
             "github": "https://github.com/PTOM76/small-stairs119",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119",
-            "modrinth": "https://modrinth.com/mod/small-stairs119"
+            "modrinth": "https://modrinth.com/mod/small-stairs119",
+            "modparks": "https://modparks.pitan76.net/projects/small-stairs119"
         },
         "tag": [
             "minecraft",
@@ -1762,6 +1806,7 @@
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/bew76",
             "modrinth": "https://modrinth.com/mod/bew76",
+            "modparks": "https://modparks.pitan76.net/projects/bew76",
             "github": "https://github.com/PTOM76/block-entity-wrench"
         },
         "tag": [
@@ -1785,7 +1830,8 @@
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/legacyitemmodels",
             "modrinth": "https://modrinth.com/mod/legacyitems",
-            "github": "https://github.com/PTOM76/legacy-itemmodels"
+            "github": "https://github.com/PTOM76/legacy-itemmodels",
+            "modparks": "https://modparks.pitan76.net/projects/legacyitemmodels"
         },
         "tag": [
             "minecraft",
@@ -1807,7 +1853,8 @@
         "updateAt": "",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/pukiwiki-link",
-            "github": "https://github.com/PTOM76/MCPukiWiki-Link"
+            "github": "https://github.com/PTOM76/MCPukiWiki-Link",
+            "modparks": "https://modparks.pitan76.net/projects/pukiwiki-link"
         },
         "tag": [
             "minecraft",
@@ -1830,7 +1877,8 @@
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/modlistcmd76",
             "modrinth": "https://modrinth.com/mod/modlistcmd76",
-            "github": "https://github.com/PTOM76/mods-command"
+            "github": "https://github.com/PTOM76/mods-command",
+            "modparks": "https://modparks.pitan76.net/projects/modlistcmd76"
         },
         "tag": [
             "minecraft",
@@ -1853,6 +1901,7 @@
         "updateAt": "",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/qrblock76",
+            "modparks": "https://modparks.pitan76.net/projects/qrblock76",
             "github": "https://github.com/PTOM76/qrblock"
         },
         "tag": [
@@ -1873,7 +1922,8 @@
         "createAt": "",
         "updateAt": "",
         "site": {
-            "github": "https://github.com/PTOM76/RecipeImageExporter"
+            "github": "https://github.com/PTOM76/RecipeImageExporter",
+            "modparks": "https://modparks.pitan76.net/projects/rie76"
         },
         "tag": [
             "minecraft",
@@ -1897,6 +1947,7 @@
         "updateAt": "",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/remove-mcrealms",
+            "modparks": "https://modparks.pitan76.net/projects/remove-mcrealms",
             "github": "https://github.com/PTOM76/removemcrealms"
         },
         "tag": [
@@ -1965,6 +2016,7 @@
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/speedy-path",
             "modrinth": "https://modrinth.com/mod/speedy-path",
+            "modparks": "https://modparks.pitan76.net/projects/speedy-path",
             "github": "https://github.com/PTOM76/SpeedyPath"
         },
         "tag": [
@@ -1986,6 +2038,7 @@
         "updateAt": "",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
+            "modparks": "https://modparks.pitan76.net/projects/tech-hammers",
             "github": "https://github.com/PTOM76/tech-hammers"
         },
         "tag": [
@@ -2008,6 +2061,7 @@
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/universal-wrench",
             "modrinth": "https://modrinth.com/mod/universal-wrench",
+            "modparks": "https://modparks.pitan76.net/projects/universal-wrench",
             "wiki": "https://wikichree.com/pitan76/?Universal+Wrench",
             "github": "https://github.com/PTOM76/universal-wrench"
         },
@@ -2031,6 +2085,7 @@
             "github": "https://github.com/Pitan76/MCPitanLib",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
             "modrinth": "https://modrinth.com/mod/mcpitanlibarch",
+            "modparks": "https://modparks.pitan76.net/projects/mcpitanlib",
             "wiki": "https://wikichree.com/pitan76/?dev/MCPitanLib"
         },
         "tag": [
@@ -2382,7 +2437,7 @@
     {
         "id": "modparks",
         "name": "ModParks",
-        "description": "Minecraft Java Edition向けMod/Pluginプラットフォーム",
+        "description": "Minecraft Java Edition向けMOD/プラグイン配布プラットフォーム",
         "version": "",
         "category": "other",
         "author": "Pitan",
@@ -2403,6 +2458,33 @@
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/web/modparks.png"]
+        }
+    },
+    {
+        "id": "modparks-recipe",
+        "name": "ModParks Recipe",
+        "alias": ["mp-recipe"],
+        "description": "Minecraftのレシピを管理するツール/API、ModParksのレシピ機能としても利用している",
+        "version": "",
+        "category": "other",
+        "author": "Pitan",
+        "url": "https://recipe.modparks.pitan76.net/",
+        "license": "MIT",
+        "createAt": "20260714",
+        "updateAt": "20260714",
+        "site": {
+            "website": "https://recipe.modparks.pitan76.net/",
+            "github": "https://github.com/Pitan76/modparks-recipe"
+        },
+        "tag": [
+            "web",
+            "webapp",
+            "minecraft",
+            "mod",
+            "plugin"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/web/modparks-recipe.png"]
         }
     },
     {
