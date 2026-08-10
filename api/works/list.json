@@ -1128,7 +1128,9 @@
         "updateAt": "2024/03/05",
         "site": {
             "github": "https://github.com/Pitan76/YamatoGunMod",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/yamato-gun"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/yamato-gun",
+            "modrinth": "https://modrinth.com/mod/yamato-gun",
+            "modparks": "https://modparks.pitan76.net/projects/yamato-gun"
         },
         "tag": [
             "minecraft",
@@ -1156,7 +1158,9 @@
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/bedrock-tools76",
             "wiki": "https://wikichree.com/pitan76/?Bedrock+Tools76",
-            "github": "https://github.com/Pitan76/bedrock-tools76"
+            "github": "https://github.com/Pitan76/bedrock-tools76",
+            "modrinth": "https://modrinth.com/mod/bedrock-tools76",
+            "modparks": "https://modparks.pitan76.net/projects/bedrock-tools76"
         },
         "tag": [
             "minecraft",
@@ -1182,7 +1186,9 @@
         "updateAt": "2024/01/11",
         "site": {
             "github": "https://github.com/Pitan76/IgnisChat",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ignischat"
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ignischat",
+            "modrinth": "https://modrinth.com/mod/ignischat",
+            "modparks": "https://modparks.pitan76.net/projects/ignischat"
         },
         "tag": [
             "minecraft",
@@ -1404,7 +1410,8 @@
         "createAt": "2026/04/04",
         "updateAt": "2026/04/19",
         "site": {
-            "github": "https://github.com/Pitan76/little-intermediary-fallback"
+            "github": "https://github.com/Pitan76/little-intermediary-fallback",
+            "modparks": "https://modparks.pitan76.net/projects/little-intermediary-fallback"
         },
         "tag": [
             "minecraft",
@@ -1453,7 +1460,8 @@
         "site": {
             "github": "https://github.com/Pitan76/CompatDatapacks",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/compatdatapacks",
-            "modrinth": "https://modrinth.com/mod/compatdatapacks"
+            "modrinth": "https://modrinth.com/mod/compatdatapacks",
+            "modparks": "https://modparks.pitan76.net/projects/compatdatapacks"
         },
         "tag": [
             "minecraft",
@@ -1978,7 +1986,8 @@
         "updateAt": "",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/rubycraft-p",
-            "github": "https://github.com/PTOM76/RubyCraft"
+            "github": "https://github.com/PTOM76/RubyCraft",
+            "modparks": "https://modparks.pitan76.net/projects/rubycraft-p"
         },
         "tag": [
             "minecraft",
@@ -2000,7 +2009,8 @@
         "updateAt": "",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-better-batpack-fabric",
-            "github": "https://github.com/PTOM76/BetterBatpack-TR-Fabric"
+            "github": "https://github.com/PTOM76/BetterBatpack-TR-Fabric",
+            "modparks": "https://modparks.pitan76.net/projects/simple-better-batpack"
         },
         "tag": [
             "minecraft",
