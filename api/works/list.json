@@ -412,7 +412,9 @@
             "neoforge"
         ],
         "custom": {
-            "images": ["https://www.pitan76.net/image/mcmod/assetbridge.png"]
+            "images": ["https://www.pitan76.net/image/mcmod/assetbridge.png"],
+            "mcversion": "1.12.2-26.2",
+            "cf_projectid": 1644499
         }
     },
 
