@@ -259,7 +259,6 @@ function WorkCard({ work, activeTags, onToggleTag }: {
                 </div>
             )}
 
-            <div className={s.cardSpacer} />
             <LinkIcons work={work} />
         </div>
     );

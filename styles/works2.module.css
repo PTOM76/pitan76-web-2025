@@ -240,10 +240,6 @@
     margin-bottom: 10px;
 }
 
-.cardSpacer {
-    flex: 1 1 auto;
-}
-
 .links {
     display: flex;
     align-items: center;
