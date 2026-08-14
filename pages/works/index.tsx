@@ -7,11 +7,14 @@ export default function WorksPage() {
 
     const mcmods = worksData.filter(d => d.category === "mcmod");
     const repomods = worksData.filter(d => d.category === "repomod");
+    const mcplugins = worksData.filter(d => d.category === "mcplugin");
     const pukiwikiplugins = worksData.filter(d => d.category === "pukiwiki");
     const pukiwikiskins = worksData.filter(d => d.category === "pukiwikiskin");
     const mmdplugins = worksData.filter(d => d.category === "mmdplugin");
     const chromeexts = worksData.filter(d => d.category === "chrome-extension");
     const apps = worksData.filter(d => d.category === "app");
+    const webservices = worksData.filter(d => d.category === "web");
+    const misc = worksData.filter(d => d.category === "misc");
 
     // pitan76.netならば相対パスにする
     worksData.forEach(data => {
@@ -71,7 +74,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         {links.curseforge && (
                                             <a href={links.curseforge} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.curseforgeIcon} title='CurseForge'></div>
@@ -125,7 +128,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         {links.thunderstore && (
                                             <a href={links.thunderstore} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.thunderstoreIcon} title='Thunderstore'></div>
@@ -139,6 +142,39 @@ export default function WorksPage() {
                                         {links.github && (
                                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+                    {mcplugins.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                {images.length > 0 && (
+                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
+                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                                    </a>
+                                )}
+                                {Object.keys(links).length > 0 && (
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                        {links['bukkit.org'] && (
+                                            <a href={links['bukkit.org']} target="_blank" rel="noopener noreferrer" title='BukkitDev'>
+                                                <Icon icon="mdi:web" className={styles.downloadIcon} width={30} height={30}></Icon>
                                             </a>
                                         )}
                                     </div>
@@ -165,7 +201,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         {links.chromewebstore && (
                                             <a href={links.chromewebstore} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.chromewebstoreIcon} title='Chrome Web Store'></div>
@@ -182,37 +218,6 @@ export default function WorksPage() {
                         );
                     })}
 
-                    <h3>一覧</h3>
-                    <ul>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/reaper-video-script" target="_blank" rel="noopener noreferrer">Reaper Video Script</a></strong><br />
-                            REAPER動画プロセッサ用JSFXスクリプト。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/mcpitanlib-intellij-plugin" target="_blank" rel="noopener noreferrer">MCPitanLib IntelliJ Plugin</a></strong><br />
-                            MCPitanLib用のテンプレから自動でModの開発環境を構築するIntelliJプラグイン。
-                        </li>
-                        <li>
-                            <strong><a href="https://www.curseforge.com/minecraft/bukkit-plugins/clearvehicle" target="_blank" rel="noopener noreferrer">ClearVehicle</a></strong><br />
-                            乗り物(トロッコ、ボートなど)の数を制限するBukkitプラグイン。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/McSEmeGUI" target="_blank" rel="noopener noreferrer">McSEmeGUI</a></strong><br />
-                            初めてつくったBukkitプラグイン、GUIでマイクラのコンソールを操作できる。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/ellipsiSk" target="_blank" rel="noopener noreferrer">ellipsiSk</a></strong><br />
-                            試しにつくったSkriptプラグイン。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/SkVaniject" target="_blank" rel="noopener noreferrer">SkVaniject</a></strong><br />
-                            Skellettで代用できるらしいです、Objective操作のSkriptプラグイン。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/Skript" target="_blank" rel="noopener noreferrer">Skriptのスクリプト群</a></strong><br />
-                            作成したSkriptのスクリプト集。
-                        </li>
-                    </ul>
                 </span>
 
                 <span className={styles.card}>
@@ -239,14 +244,39 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         <a href={data.url} target="_blank" rel="noopener noreferrer" title='ダウンロード'>
                                             <Icon icon="mdi:download" className={styles.downloadIcon} width={30} height={30}></Icon>
                                         </a>
 
+                                        {links.wiki && (
+                                            <a href={links.wiki} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.wikichreeIcon} title='ウィキ'></div>
+                                            </a>
+                                        )}
                                         {links.github && (
                                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                        {links.pkom && (
+                                            <a href={links.pkom} target="_blank" rel="noopener noreferrer" title='PKOM'>
+                                                <Icon icon="mdi:web" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                            </a>
+                                        )}
+                                        {links['pukiwiki-official'] && (
+                                            <a href={links['pukiwiki-official']} target="_blank" rel="noopener noreferrer" title='PukiWiki公式'>
+                                                <Icon icon="mdi:file-document-outline" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                            </a>
+                                        )}
+                                        {links.gist && (
+                                            <a href={links.gist} target="_blank" rel="noopener noreferrer" title='Gist'>
+                                                <Icon icon="mdi:code-braces" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                            </a>
+                                        )}
+                                        {links['解説'] && (
+                                            <a href={links['解説']} target="_blank" rel="noopener noreferrer" title='解説'>
+                                                <Icon icon="mdi:information-outline" className={styles.downloadIcon} width={30} height={30}></Icon>
                                             </a>
                                         )}
                                     </div>
@@ -271,7 +301,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         {links.github && (
                                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.githubIcon} title='ソースコード'></div>
@@ -284,25 +314,6 @@ export default function WorksPage() {
                     })}
 
 
-                    <h3>一覧</h3>
-                    <ul>
-                        <li>
-                            <strong><a href="https://wikichree.com/?WikiChree.COM開発プラグイン" target="_blank" rel="noopener noreferrer">WikiChree.COM開発プラグイン群</a></strong><br />
-                            WikiChree.COMオリジナルのPukiWikiプラグイン群。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/PukiBot-Py" target="_blank" rel="noopener noreferrer">PukiBot-Py</a></strong><br />
-                            PukiWikiのボットを作成するためのPythonライブラリ。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/Mini-PukiBot-Py" target="_blank" rel="noopener noreferrer">Mini-PukiBot-Py</a></strong><br />
-                            PukiBot-Pyの軽量版ライブラリ。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/PukiBot-Java" target="_blank" rel="noopener noreferrer">PukiBot-Java</a></strong><br />
-                            PukiWikiのボットを作成するためのJavaライブラリ。
-                        </li>
-                    </ul>
                 </span>
 
                 <span className={styles.card}>
@@ -326,7 +337,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         {links.github && (
                                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.githubIcon} title='ソースコード'></div>
@@ -371,7 +382,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         {links.github && (
                                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.githubIcon} title='ソースコード'></div>
@@ -384,148 +395,90 @@ export default function WorksPage() {
                     })}
 
 
-                    <h3>一覧</h3>
-                    <ul>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/MD2PKWK" target="_blank" rel="noopener noreferrer">MD2PKWK (PHP/CLI)</a></strong><br />
-                            PHP-CLIで動作するMarkdown形式からPukiWiki形式に変換するツール。<br />
-                            PHPではあるが、CLIであることに注意、Webサーバでは基本的に動作しない。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/Git-Account-Manager" target="_blank" rel="noopener noreferrer">Git Account Manager (Windows)</a></strong><br />
-                            Gitアカウントを複数管理するためのWindows向けの支援ツール。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/discord-turnstile-verify-bot" target="_blank" rel="noopener noreferrer">Turnstile Verify (Discord Bot)</a></strong><br />
-                            Cloudflare TurnstileでDiscordのユーザ認証を行うためのBot。PHPで動作。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/PlayerRealmsServerChecker" target="_blank" rel="noopener noreferrer">PlayerRealms Server Checker (Discord Bot)</a></strong><br />
-                            Player Realmsの各サーバー情報を取得して表示するDiscordのボット。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/png-to-8bit-png-converter-php" target="_blank" rel="noopener noreferrer">PNG to 8bit PNG Converter (PHP/Web)</a></strong><br />
-                            PNG画像を8bit色のPNG画像に変換するPHP製のWebツール。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/my-tools-tool" target="_blank" rel="noopener noreferrer">My Tools Tool (Windows)</a></strong><br />
-                            PukiWikiのmytoolsプラグインで動くツールの詰め合わせ。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/MMDPluginInstallManager" target="_blank" rel="noopener noreferrer">MMD Plugin Install Manager (フォーク版)</a></strong><br />
-                            oigami様のMMD Plugin Install Managerを現時点で最新のv9.32に対応させたフォーク版。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/PaperMCDownloader" target="_blank" rel="noopener noreferrer">PaperMC Downloader (Java)</a></strong><br />
-                            PaperMCのサーバーのダウンロード支援ツール。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/MyBlogs" target="_blank" rel="noopener noreferrer">MyBlogs (PHP/Web)</a></strong><br />
-                            PHP製のシンプルなブログシステム。
-                        </li>
-                    </ul>
                 </span>
 
                 <span className={styles.card}>
                     <h2>Webサービス</h2>
                     いくつかのWebサービス/ツールを公開しています。<br />
 
-                    <h3>WikiChree.COM</h3>
-                    無料で使えるPukiWikiホスティングサービス。<br />
-                    <img src="/image/web/wikichree.png" alt="WikiChree.COM スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='WikiChree.COM'>
-                        -&gt; <a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">https://wikichree.com/</a>
-                    </span>
+                    {webservices.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
 
-                    <h3>DokuFarm</h3>
-                    無料で使えるDokuWikiホスティングサービス。<br />
-                    <img src="/image/web/dokufarm.png" alt="DokuFarm スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='DokuFarm'>
-                        -&gt; <a href="https://doku.wikichree.com/" target="_blank" rel="noopener noreferrer">https://doku.wikichree.com/</a>
-                    </span>
-
-                    <h3>ModParks</h3>
-                    Minecraft Java Edition向けMOD/プラグイン配布プラットフォーム。<br />
-                    <img src="/image/web/modparks.png" alt="ModParks スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='ModParks'>
-                        -&gt; <a href="https://modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">https://modparks.pitan76.net/</a>
-                    </span>
-
-                    <h3>ModParks Recipe</h3>
-                    Minecraftのレシピを管理するツール/API、ModParksのレシピ機能としても利用している。<br />
-                    <img src="/image/web/modparks-recipe.png" alt="ModParks Recipe スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='ModParks Recipe'>
-                        -&gt; <a href="https://recipe.modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">https://recipe.modparks.pitan76.net/</a>
-                    </span>
-
-                    <h3>ボ対検索ツール</h3>
-                    ボイパ対決という音MADに特化した検索ツール。<br />
-                    <img src="/image/web/vps-search.png" alt="ボ対検索ツール スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='ボ対検索ツール'>
-                        -&gt; <a href="https://vps-search.pitan76.net/" target="_blank" rel="noopener noreferrer">https://vps-search.pitan76.net/</a>
-                    </span>
-
-                    <h3>一覧</h3>
-                    <ul>
-                        <li>
-                            <strong><a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">WikiChree.COM</a></strong><br />
-                            無料で使えるウィキ、PukiWikiのホスティングサービス。
-                        </li>
-                        <li>
-                            <strong><a href="https://doku.wikichree.com/" target="_blank" rel="noopener noreferrer">DokuFarm</a></strong><br />
-                            無料で使えるウィキ、DokuWikiのホスティングサービス。
-                        </li>
-                        <li>
-                            <strong><a href="https://modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">ModParks</a></strong><br />
-                            Minecraft Java Edition向けMOD/プラグイン配布プラットフォーム。
-                        </li>
-                        <li>
-                            <strong><a href="https://recipe.modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">ModParks Recipe</a></strong><br />
-                            Minecraftのレシピを管理するツール/API、ModParksのレシピ機能としても利用している。
-                        </li>
-                        <li>
-                            <strong><a href="https://vps-search.pitan76.net/" target="_blank" rel="noopener noreferrer">ボ対検索ツール</a></strong><br />
-                            ボイパ対決という音MADに特化した検索ツール。
-                        </li>
-                        <li>
-                            <strong><a href="https://psnverse.pitan76.net/" target="_blank" rel="noopener noreferrer">Psnverse</a></strong><br />
-                            PlayStationの非公式掲示板コミュニティ。(2020年以来放置)
-                        </li>
-                        <li>
-                            <strong><a href="https://2023.pitan76.net/tools/toquiz/index.html" target="_blank" rel="noopener noreferrer">匿名クイズ</a></strong><br />
-                            匿名でクイズを作成できるWebツール。
-                        </li>
-                        <li>
-                            <strong><a href="https://2023.pitan76.net/tools/" target="_blank" rel="noopener noreferrer">2023.pitan76.net/tools/</a></strong><br />
-                            2023年に作成したWebツールのまとめページ。
-                        </li>
-                        <li>
-                            <strong><a href="https://pkom.pitan76.net/?Web%E3%83%84%E3%83%BC%E3%83%AB" target="_blank" rel="noopener noreferrer">2020.pitan76.net/?Webツール</a></strong><br />
-                            2020年に作成したWebツールのまとめページ。
-                        </li>
-                    </ul>
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                {images.length > 0 && (
+                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
+                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                                    </a>
+                                )}
+                                {(links.website || links.github) && (
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                        {links.website && (
+                                            <a href={links.website} target="_blank" rel="noopener noreferrer" title='Webサイト'>
+                                                <Icon icon="mdi:link-variant" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                            </a>
+                                        )}
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
                 </span>
 
                 <span className={styles.card}>
                     <h2>その他</h2>
-                    <ul>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/tuibian" target="_blank" rel="noopener noreferrer">Tuibian</a></strong><br />
-                            TUIベースのDebian派生カスタムLinuxディストリ/TUIアプリ。
-                        </li>
-                        <li>
-                            <strong><a href="https://maven.pitan76.net/" target="_blank" rel="noopener noreferrer">Mavenリポジトリ</a></strong><br />
-                            私のMavenリポジトリです。
-                        </li>
-                        <li>
-                            <strong><a href="https://github.com/PTOM76/github-pitan76-star-counter" target="_blank" rel="noopener noreferrer">GitHub Star Counter</a></strong><br />
-                            GitHubアカウントの合計スター数のカウンタ画像を出力するPHP製ツール。
-                        </li>
-                        <li>
-                            <strong><a href="./paint/">お絵描きまとめページ</a></strong><br />
-                            素人の私が描いた絵とか載せてます。
-                        </li>
-                    </ul>
+
+                    {misc.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
+
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                {images.length > 0 && (
+                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
+                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                                    </a>
+                                )}
+                                {(links.website || links.github) && (
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                        {links.website && (
+                                            <a href={links.website} target="_blank" rel="noopener noreferrer" title='Webサイト'>
+                                                <Icon icon="mdi:link-variant" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                            </a>
+                                        )}
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+                    <div>
+                        <h3>
+                            <a href="./paint/">お絵描きまとめページ</a>&nbsp;
+                        </h3>
+                        <p style={{ marginBottom: '8px' }}>素人の私が描いた絵とか載せてます。</p>
+                    </div>
                 </span>
             </div>
         </div>
