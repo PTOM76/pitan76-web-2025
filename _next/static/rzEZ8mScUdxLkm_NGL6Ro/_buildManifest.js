@@ -24,13 +24,13 @@ self.__BUILD_MANIFEST = {
     "static/chunks/5c8e3234e92a3b3b.js"
   ],
   "/works": [
-    "static/chunks/caa41b10b7d2b5ec.js"
+    "static/chunks/cf27dea7571b4f72.js"
   ],
   "/works/paint": [
     "static/chunks/1f9d21a16f810831.js"
   ],
   "/works0": [
-    "static/chunks/a711c1d2f631c571.js"
+    "static/chunks/59379668d7d7515c.js"
   ],
   "__rewrites": {
     "afterFiles": [],
