@@ -193,6 +193,8 @@ h1.title {
 
 .genericIcon {
     display: inline-block;
+    width: 36px;
+    height: 36px;
     margin-right: 12px;
     filter: drop-shadow(0 0 3px #eeecec);
     color: #eeecec;
@@ -200,6 +202,7 @@ h1.title {
 
 .curseforgeIcon, .modrinthIcon, .modparksIcon, .wikichreeIcon, .githubIcon, .thunderstoreIcon, .nexusmodsIcon, .chromewebstoreIcon, .genericIcon {
     transition: all 0.25s ease;
+    vertical-align: middle;
 }
 
 .curseforgeIcon:hover, .modrinthIcon:hover, .modparksIcon:hover, .wikichreeIcon:hover, .githubIcon:hover, .thunderstoreIcon:hover, .nexusmodsIcon:hover, .chromewebstoreIcon:hover, .genericIcon:hover {
