@@ -2465,7 +2465,10 @@
             "plugin"
         ],
         "custom": {
-            "images": ["https://www.pitan76.net/image/web/modparks.png"]
+            "images": [
+                "https://www.pitan76.net/image/web/modparks.png",
+                "https://www.pitan76.net/image/web/modparks-2.png"
+            ]
         }
     },
     {
