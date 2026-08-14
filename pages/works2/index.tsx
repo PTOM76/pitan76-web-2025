@@ -424,7 +424,7 @@ export default function Works2Page() {
 
                     <select className={s.select} value={sort} onChange={e => setSort(e.target.value as typeof sort)} aria-label="並び順">
                         <option value="category">カテゴリ順</option>
-                        <option value="updated">更新が新しい順</option>
+                        <option value="updated">更新日順</option>
                         <option value="name">名前順</option>
                     </select>
                 </div>
