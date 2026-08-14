@@ -223,7 +223,8 @@ function WorkCard({ work, activeTags, onToggleTag }: {
         : (created ? `${created} 作成` : '');
 
     const meta = [
-        work.version ? `v${work.version}` : '',
+        // list.json 側で v 付きに揃えてあるが、手書きで v 無しのものが来ても崩れないようにする
+        work.version ? (/^v/i.test(work.version) ? work.version : `v${work.version}`) : '',
         custom.mcversion ? `MC ${custom.mcversion}` : '',
         dates,
     ].filter(Boolean).join(' / ');
