@@ -213,7 +213,7 @@ function WorkCard({ work, activeTags, onToggleTag }: {
         work.version ? `v${work.version}` : '',
         custom.mcversion ? `MC ${custom.mcversion}` : '',
         formatDate(work.updateAt) ? `${formatDate(work.updateAt)} 更新` : '',
-    ].filter(Boolean).join(' ・ ');
+    ].filter(Boolean).join(' / ');
 
     // 絞り込み中のタグは省略対象でも必ず出す
     const shownTags = Array.from(new Set([
