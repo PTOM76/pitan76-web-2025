@@ -6,28 +6,28 @@ self.__BUILD_MANIFEST = {
     "static/chunks/cae91950528c7542.js"
   ],
   "/about": [
-    "static/chunks/a7ae55a1b8ef6a8c.js"
+    "static/chunks/7ef9024ffa880853.js"
   ],
   "/changelog": [
-    "static/chunks/96ec31749d401233.js"
+    "static/chunks/d75c08cfa1aaae51.js"
   ],
   "/empty": [
-    "static/chunks/37cdc740a165ebf3.js"
+    "static/chunks/850d40eb9acef8b7.js"
   ],
   "/links": [
-    "static/chunks/1e3780acfd7ae52d.js"
+    "static/chunks/6d5fa98918e497c8.js"
   ],
   "/sitemap": [
     "static/chunks/93939934c487abfc.js"
   ],
   "/terms": [
-    "static/chunks/3fdc17553b73f52b.js"
+    "static/chunks/72f55e337d2c5436.js"
   ],
   "/works": [
-    "static/chunks/cb1dd0e88d4eb41d.js"
+    "static/chunks/5f73448199acfa27.js"
   ],
   "/works/paint": [
-    "static/chunks/b133e1e0ed492f11.js"
+    "static/chunks/72b71a847c285067.js"
   ],
   "__rewrites": {
     "afterFiles": [],
