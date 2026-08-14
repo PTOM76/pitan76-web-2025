@@ -106,10 +106,12 @@ const toLocalImage = (url: string) =>
 /** "2024/03/25" と "20260130" の両方を 20240325 のような数値に正規化する */
 const parseDate = (value?: string): number => {
     if (!value) return 0;
+    let n = 0;
     const slashed = /^(\d{4})\/(\d{1,2})\/(\d{1,2})$/.exec(value);
-    if (slashed) return Number(`${slashed[1]}${slashed[2].padStart(2, '0')}${slashed[3].padStart(2, '0')}`);
-    if (/^\d{8}$/.test(value)) return Number(value);
-    return 0;
+    if (slashed) n = Number(`${slashed[1]}${slashed[2].padStart(2, '0')}${slashed[3].padStart(2, '0')}`);
+    else if (/^\d{8}$/.test(value)) n = Number(value);
+    // 1970/01/01 は日付不明のプレースホルダとして扱う
+    return n === 19700101 ? 0 : n;
 };
 
 const formatDate = (value?: string) => {
@@ -128,6 +130,7 @@ type Prepared = Work & {
     /** カード上に出すタグ。絞り込みや検索には tagList をそのまま使う */
     displayTags: string[];
     searchIndex: string;
+    createdAt: number;
     updatedAt: number;
     featured: boolean;
 };
@@ -170,6 +173,8 @@ const prepare = (list: Work[]): Prepared[] => {
             tagList,
             displayTags,
             searchIndex,
+            createdAt: parseDate(work.createAt),
+            // 更新日が無いものは作成日で代用して並べる
             updatedAt: Math.max(parseDate(work.updateAt), parseDate(work.createAt)),
             featured: custom.featured === true,
         };
@@ -209,10 +214,18 @@ function WorkCard({ work, activeTags, onToggleTag }: {
     const custom = work.custom ?? {};
     const badges = PLATFORM_BADGES.filter(b => work.tagList.includes(b.tag));
 
+    const created = formatDate(work.createAt);
+    const updated = formatDate(work.updateAt);
+
+    // 作成日と更新日が同じなら更新日だけ、更新日が無ければ作成日だけ出す
+    const dates = updated
+        ? (created && created !== updated ? `${created} 作成 / ${updated} 更新` : `${updated} 更新`)
+        : (created ? `${created} 作成` : '');
+
     const meta = [
         work.version ? `v${work.version}` : '',
         custom.mcversion ? `MC ${custom.mcversion}` : '',
-        formatDate(work.updateAt) ? `${formatDate(work.updateAt)} 更新` : '',
+        dates,
     ].filter(Boolean).join(' / ');
 
     // 絞り込み中のタグは省略対象でも必ず出す
@@ -271,7 +284,7 @@ export default function Works2Page() {
     const [query, setQuery] = useState('');
     const [category, setCategory] = useState('all');
     const [tags, setTags] = useState<string[]>([]);
-    const [sort, setSort] = useState<'category' | 'updated' | 'name'>('category');
+    const [sort, setSort] = useState<'category' | 'updated' | 'created' | 'name'>('category');
 
     const searchRef = useRef<HTMLInputElement>(null);
     const initialized = useRef(false);
@@ -284,7 +297,7 @@ export default function Works2Page() {
         if (get('cat')) setCategory(get('cat'));
         if (get('tag')) setTags(get('tag').split(',').filter(Boolean));
         const nextSort = get('sort');
-        if (nextSort === 'updated' || nextSort === 'name' || nextSort === 'category') setSort(nextSort);
+        if (nextSort === 'updated' || nextSort === 'created' || nextSort === 'name' || nextSort === 'category') setSort(nextSort);
         initialized.current = true;
     }, [router.isReady, router.query]);
 
@@ -351,6 +364,8 @@ export default function Works2Page() {
         } else if (sort === 'updated') {
             // 日付が無いものは後ろへ
             sorted.sort((a, b) => (b.updatedAt - a.updatedAt) || a.name.localeCompare(b.name, 'ja'));
+        } else if (sort === 'created') {
+            sorted.sort((a, b) => (b.createdAt - a.createdAt) || a.name.localeCompare(b.name, 'ja'));
         } else {
             sorted.sort((a, b) => {
                 if (a.featured !== b.featured) return a.featured ? -1 : 1;
@@ -398,8 +413,8 @@ export default function Works2Page() {
                 <a href="/">root</a>/works2
             </span>
 
-            <div className={styles.noticebox}>
-                従来の一覧は<a href="/works/">こちら</a>、旧サイトの作品ページは<a href="https://2023.pitan76.net/works.html" target="_blank" rel="noopener noreferrer">こちら</a>から。
+            <div className={s.noticebox}>
+                従来の一覧は<a href="/works/">こちら</a>、旧サイトの作品ページは<a href="https://2023.pitan76.net/works.html" target="_blank" rel="noopener noreferrer">こちら</a>から
             </div>
 
             <div className={s.toolbar}>
@@ -412,7 +427,7 @@ export default function Works2Page() {
                             className={s.searchInput}
                             value={query}
                             onChange={e => setQuery(e.target.value)}
-                            placeholder="名前・説明・タグで検索"
+                            placeholder="名前、説明、タグで検索"
                             aria-label="作品を検索"
                         />
                         {query && (
@@ -425,6 +440,7 @@ export default function Works2Page() {
                     <select className={s.select} value={sort} onChange={e => setSort(e.target.value as typeof sort)} aria-label="並び順">
                         <option value="category">カテゴリ順</option>
                         <option value="updated">更新日順</option>
+                        <option value="created">作成日順</option>
                         <option value="name">名前順</option>
                     </select>
                 </div>

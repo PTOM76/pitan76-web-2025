@@ -285,6 +285,18 @@
     text-decoration: underline;
 }
 
+.noticebox {
+    margin: 16px 0;
+    padding: 12px;
+    max-width: 100%;
+    border: #ffcc00 1px solid;
+    border-radius: 8px;
+    background-color: #66660066;
+    color: #ffff99;
+    font-size: 1rem;
+    text-shadow: 0px 0px 4px #ffff99;
+}
+
 @media (max-width: 640px) {
     .grid {
         grid-template-columns: 1fr;

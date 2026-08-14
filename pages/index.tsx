@@ -68,7 +68,7 @@ export default function TopPage() {
 
             <div className={styles.description}>
                 <div className={styles.cardlist}>
-                    <a href="/works/" className={styles.card} title="作品ページ">
+                    <a href="/works2/" className={styles.card} title="作品ページ">
                         <h2>Works</h2>
                         <p>
                             今までつくったものを紹介します。
