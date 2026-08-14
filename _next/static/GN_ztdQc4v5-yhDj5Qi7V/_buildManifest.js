@@ -1,36 +1,36 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "static/chunks/1b9402aa5f9cfca6.js"
+    "static/chunks/d1ac4d363fd0cb80.js"
   ],
   "/_error": [
     "static/chunks/6b6d316869f7b701.js"
   ],
   "/about": [
-    "static/chunks/8bf46d00809b26f3.js"
+    "static/chunks/e0e500138a11e57a.js"
   ],
   "/changelog": [
-    "static/chunks/e50420c370ebe61a.js"
+    "static/chunks/1c362adad1659f26.js"
   ],
   "/empty": [
-    "static/chunks/b7862f896d06ff64.js"
+    "static/chunks/1e53111c870558c2.js"
   ],
   "/links": [
-    "static/chunks/44b35c495c630796.js"
+    "static/chunks/817d1337e382be35.js"
   ],
   "/sitemap": [
     "static/chunks/ba1aae78f30cc71e.js"
   ],
   "/terms": [
-    "static/chunks/11d6a9c1e7e2b950.js"
+    "static/chunks/85259d64a74d0ccc.js"
   ],
   "/works": [
-    "static/chunks/7d445ceda99b4290.js"
+    "static/chunks/9b8c94248b9a5aec.js"
   ],
   "/works/paint": [
-    "static/chunks/c1c33e78548c88de.js"
+    "static/chunks/998947af5fe97c2f.js"
   ],
   "/works2": [
-    "static/chunks/203e5ee434cd45a6.js"
+    "static/chunks/30d430a9422d8c01.js"
   ],
   "__rewrites": {
     "afterFiles": [],
