@@ -191,19 +191,20 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 6px;
-}
-
-/* 見出しの体裁は globals.css の h3 に合わせ、余白だけ詰める */
-.cardTitle {
-    margin-top: 0;
     margin-bottom: 0.4rem;
 }
 
+/* 見出しの体裁は globals.css の h3 に合わせる。
+   下余白は cardHeader 側に持たせないと、アイコンとの中央揃えがずれる */
+.cardTitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .badge {
-    display: inline-block;
+    flex: none;
     width: 24px;
     height: 24px;
-    vertical-align: middle;
 }
 
 .featuredMark {
