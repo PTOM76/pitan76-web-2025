@@ -1,0 +1,442 @@
+import worksDataJson from "@/public/api/works/list.json" assert { type: "json" };
+import styles from '@/styles/page.module.css';
+import { Icon } from '@iconify/react';
+import ImageCarousel from '@/components/ImageCarousel';
+
+export default function WorksPage() {
+    let worksData: any[] = worksDataJson; // list.json
+
+    const mcmods = worksData.filter(d => d.category === "mcmod");
+    const repomods = worksData.filter(d => d.category === "repomod");
+    const mcplugins = worksData.filter(d => d.category === "mcplugin");
+    const pukiwikiplugins = worksData.filter(d => d.category === "pukiwiki");
+    const pukiwikiskins = worksData.filter(d => d.category === "pukiwikiskin");
+    const mmdplugins = worksData.filter(d => d.category === "mmdplugin");
+    const chromeexts = worksData.filter(d => d.category === "chrome-extension");
+    const apps = worksData.filter(d => d.category === "app");
+    const webservices = worksData.filter(d => d.category === "web");
+    const misc = worksData.filter(d => d.category === "misc");
+
+    // pitan76.netならば相対パスにする
+    worksData.forEach(data => {
+        const custom = data.custom ?? {};
+        const images: string[] = (custom.images as string[]) ?? [];
+
+        images.forEach((url: string, index: number) => {
+            if (!url.startsWith('https://www.pitan76.net/image/')) return;
+            images[index] = url.replace('https://www.pitan76.net/image/', '/image/');
+        });
+    });
+
+    return (
+        <div className={styles.container}>
+            <h1 className={styles.title}>$works0</h1>
+
+            <span className={styles.breadcrumb}>
+                <a href="/">root</a>/works0
+            </span>
+
+            <div className={styles.noticebox}>
+                旧サイトの作品ページは<a href="https://2023.pitan76.net/works.html" target="_blank" rel="noopener noreferrer">こちら</a>、もしくは<a href="https://2023.pitan76.net/distribution/" target="_blank" rel="noopener noreferrer">配布ページ一覧</a>から
+            </div>
+
+            <div className={styles.cardlist}>
+                <span className={styles.card}>
+                    <h2>MC Mods</h2>
+                    Minecraft Java Edition向けのModを開発、配布しています。<br />
+                    以下のサイトにてダウンロードできます。<br />
+                    <ul>
+                        <li><a href="https://www.curseforge.com/members/pitan76/projects">CurseForge</a></li>
+                        <li><a href="https://modrinth.com/user/pitan76">Modrinth</a></li>
+                    </ul>
+                    <br />
+                    ※かなり数が多いため、ここでは記載されていないModもあります。<br />
+
+                    {mcmods.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const tag: string[] = data.tag ?? [];
+                        const links: any = data.site ?? {};
+
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                    {tag.includes('fabric') && <img src="/image/fabric.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="FabricMC" data-lightbox="false" ></img>}
+                                    {tag.includes('forge') && <img src="/image/forge.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="Minecraft Forge" data-lightbox="false" ></img>}
+                                    {tag.includes('neoforge') && <img src="/image/neoforge.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="NeoForge" data-lightbox="false" ></img>}
+                                </h3>
+
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+
+                                <ImageCarousel images={images} name={data.name} />
+                                {Object.keys(links).length > 0 && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        {links.curseforge && (
+                                            <a href={links.curseforge} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.curseforgeIcon} title='CurseForge'></div>
+                                            </a>
+                                        )}
+                                        {links.modrinth && (
+                                            <a href={links.modrinth} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.modrinthIcon} title='Modrinth'></div>
+                                            </a>
+                                        )}
+                                        {links.modparks && (
+                                            <a href={links.modparks} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.modparksIcon} title='Modparks'></div>
+                                            </a>
+                                        )}
+                                        {links.wiki && (
+                                            <a href={links.wiki} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.wikichreeIcon} title='ウィキ'></div>
+                                            </a>
+                                        )}
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+                </span>
+
+                <span className={styles.card}>
+                    <h2>その他Mod/プラグイン/拡張機能など</h2>
+
+                    {repomods.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const tag: string[] = data.tag ?? [];
+                        const links: any = data.site ?? {};
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                    {tag.includes('r-e-p-o') && <img src="/image/repo.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="R.E.P.O" data-lightbox="false" ></img>}
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <ImageCarousel images={images} name={data.name} />
+                                {Object.keys(links).length > 0 && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        {links.thunderstore && (
+                                            <a href={links.thunderstore} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.thunderstoreIcon} title='Thunderstore'></div>
+                                            </a>
+                                        )}
+                                        {links.nexusmods && (
+                                            <a href={links.nexusmods} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.nexusmodsIcon} title='Nexus'></div>
+                                            </a>
+                                        )}
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+                    {mcplugins.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <ImageCarousel images={images} name={data.name} />
+                                {Object.keys(links).length > 0 && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                        {links['bukkit.org'] && (
+                                            <a href={links['bukkit.org']} target="_blank" rel="noopener noreferrer" title='BukkitDev'>
+                                                <Icon icon="mdi:web" className={styles.genericIcon} width={36} height={36}></Icon>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+                    {chromeexts.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const tag: string[] = data.tag ?? [];
+                        const links: any = data.site ?? {};
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                    {tag.includes('chrome') && <img src="/image/chrome.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="R.E.P.O" data-lightbox="false" ></img>}
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <ImageCarousel images={images} name={data.name} />
+                                {Object.keys(links).length > 0 && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        {links.chromewebstore && (
+                                            <a href={links.chromewebstore} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.chromewebstoreIcon} title='Chrome Web Store'></div>
+                                            </a>
+                                        )}
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+                </span>
+
+                <span className={styles.card}>
+                    <h2>PukiWikiプラグイン/スキン</h2>
+
+                    <a href="https://github.com/PTOM76/PukiWiki-Plugins/" title="ソースコード" target="_blank" rel="noopener noreferrer">
+                        <div className={styles.githubIcon} style={{ float: 'right' }}></div>
+                    </a>
+
+                    {pukiwikiplugins.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
+
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <ImageCarousel images={images} name={data.name} />
+                                {Object.keys(links).length > 0 && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        <a href={data.url} target="_blank" rel="noopener noreferrer" title='ダウンロード'>
+                                            <Icon icon="mdi:download" className={styles.genericIcon} width={36} height={36}></Icon>
+                                        </a>
+
+                                        {links.wiki && (
+                                            <a href={links.wiki} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.wikichreeIcon} title='ウィキ'></div>
+                                            </a>
+                                        )}
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                        {links.pkom && (
+                                            <a href={links.pkom} target="_blank" rel="noopener noreferrer" title='PKOM'>
+                                                <Icon icon="mdi:web" className={styles.genericIcon} width={36} height={36}></Icon>
+                                            </a>
+                                        )}
+                                        {links['pukiwiki-official'] && (
+                                            <a href={links['pukiwiki-official']} target="_blank" rel="noopener noreferrer" title='PukiWiki公式'>
+                                                <Icon icon="mdi:file-document-outline" className={styles.genericIcon} width={36} height={36}></Icon>
+                                            </a>
+                                        )}
+                                        {links.gist && (
+                                            <a href={links.gist} target="_blank" rel="noopener noreferrer" title='Gist'>
+                                                <Icon icon="mdi:code-braces" className={styles.genericIcon} width={36} height={36}></Icon>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+                    {pukiwikiskins.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <ImageCarousel images={images} name={data.name} />
+                                {Object.keys(links).length > 0 && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+
+                </span>
+
+                <span className={styles.card}>
+                    <h2>MMDプラグイン</h2>
+                    ほとんどのMMDプラグインはMMDPluginを前提とします。<br />
+
+                    {mmdplugins.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
+
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <ImageCarousel images={images} name={data.name} />
+                                {Object.keys(links).length > 0 && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+                </span>
+
+                <span className={styles.card}>
+                    <h2>アプリケーション</h2>
+                    いくつかのツール/ソフトウェアを公開しています。<br />
+
+                    {/* <h3>Block Model Viewer [Windows/Mac/Linux]</h3>
+                    jarファイルを読み込み、Minecraftのブロックのモデルを組み立てて描画、出力するツール。<br />
+                    <img src="/image/tool/mcblockmodelviewer.png" alt="Block Model Viewer スクリーンショット" style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
+                    <span style={{ fontSize: '20px', fontWeight: 'bold' }} title='Block Model Viewer'>
+                        -&gt; <a href="https://github.com/PTOM76/mc-block-model-viewer/releases/" target="_blank" rel="noopener noreferrer">https://github.com/PTOM76/mc-block-model-viewer/releases/</a>
+                    </span> */}
+
+                    {apps.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const tag: string[] = data.tag ?? [];
+                        const links: any = data.site ?? {};
+
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                    {tag.includes('windows') && <img src="/image/windows.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="Windows" data-lightbox="false" ></img>}
+                                    {tag.includes('macos') && <img src="/image/macos.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="macOS" data-lightbox="false" ></img>}
+                                    {tag.includes('linux') && <img src="/image/linux.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="Linux" data-lightbox="false" ></img>}
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <ImageCarousel images={images} name={data.name} />
+                                {Object.keys(links).length > 0 && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+
+                </span>
+
+                <span className={styles.card}>
+                    <h2>Webサービス</h2>
+                    いくつかのWebサービス/ツールを公開しています。<br />
+
+                    {webservices.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
+
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <ImageCarousel images={images} name={data.name} />
+                                {(links.website || links.github) && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        {links.website && (
+                                            <a href={links.website} target="_blank" rel="noopener noreferrer" title='Webサイト'>
+                                                <Icon icon="mdi:link-variant" className={styles.genericIcon} width={36} height={36}></Icon>
+                                            </a>
+                                        )}
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+                </span>
+
+                <span className={styles.card}>
+                    <h2>その他</h2>
+
+                    {misc.map((data, index) => {
+                        const custom = data.custom ?? {};
+                        const images: string[] = (custom.images as string[]) ?? [];
+                        const links: any = data.site ?? {};
+
+                        return (
+                            <div key={index}>
+                                <h3>
+                                    <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
+                                </h3>
+                                <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
+                                <ImageCarousel images={images} name={data.name} />
+                                {(links.website || links.github) && (
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        {links.website && (
+                                            <a href={links.website} target="_blank" rel="noopener noreferrer" title='Webサイト'>
+                                                <Icon icon="mdi:link-variant" className={styles.genericIcon} width={36} height={36}></Icon>
+                                            </a>
+                                        )}
+                                        {links.github && (
+                                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                                                <div className={styles.githubIcon} title='ソースコード'></div>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+
+                    <div>
+                        <h3>
+                            <a href="/works/paint/">お絵描きまとめページ</a>&nbsp;
+                        </h3>
+                        <p style={{ marginBottom: '8px' }}>素人の私が描いた絵とか載せてます。</p>
+                    </div>
+                </span>
+            </div>
+        </div>
+    )
+};
