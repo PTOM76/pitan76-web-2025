@@ -551,6 +551,8 @@ export default function Works2Page() {
                     ))}
                 </div>
             )}
+
+            This page was Created with AI.<br /><br />
         </div>
     );
 }
