@@ -618,7 +618,7 @@
         "license": "LGPLv2.1",
         "site": {
             "pkom": "https://pkom.pitan76.net/?プラグイン/bot.inc.php",
-            "解説": "https://gist.github.com/PTOM76/c618a7ca97c7da3510970f7d0764a765"
+            "gist": "https://gist.github.com/PTOM76/c618a7ca97c7da3510970f7d0764a765"
         },
         "tag": [
             "pukiwiki",
