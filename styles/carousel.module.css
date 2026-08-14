@@ -28,12 +28,6 @@
     border-radius: 4px;
 }
 
-.compact .image {
-    max-height: 220px;
-    object-fit: contain;
-    background-color: #0a0f26;
-}
-
 /* 前後ボタン */
 .nav {
     position: absolute;

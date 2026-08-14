@@ -34,16 +34,38 @@ const CATEGORY_ORDER = [
 ];
 
 const CATEGORY_META: Record<string, { label: string }> = {
-    mcmod: { label: 'Minecraft Mod' },
-    mcplugin: { label: 'Minecraft プラグイン' },
+    mcmod: { label: 'MC Mods' },
+    mcplugin: { label: 'MCプラグイン' },
     repomod: { label: 'R.E.P.O Mod' },
-    pukiwiki: { label: 'PukiWiki プラグイン' },
-    pukiwikiskin: { label: 'PukiWiki スキン' },
-    mmdplugin: { label: 'MMD プラグイン' },
-    'chrome-extension': { label: 'Chrome 拡張機能' },
-    app: { label: 'アプリ / ツール' },
+    pukiwiki: { label: 'PukiWikiプラグイン' },
+    pukiwikiskin: { label: 'PukiWikiスキン' },
+    mmdplugin: { label: 'MMDプラグイン' },
+    'chrome-extension': { label: 'Chrome拡張機能' },
+    app: { label: 'アプリケーション' },
     web: { label: 'Webサービス' },
     misc: { label: 'その他' },
+};
+
+/** 元のworksページにあった補足。情報として意味のあるものだけ引き継ぐ */
+const SECTION_NOTES: Record<string, React.ReactNode> = {
+    mcmod: (
+        <>
+            Minecraft Java Edition向けのModを開発、配布しています。<br />
+            <a href="https://www.curseforge.com/members/pitan76/projects" target="_blank" rel="noopener noreferrer">CurseForge</a>
+            {' / '}
+            <a href="https://modrinth.com/user/pitan76" target="_blank" rel="noopener noreferrer">Modrinth</a>
+            {' / '}
+            <a href="https://modparks.pitan76.net/profile/pitan76" target="_blank" rel="noopener noreferrer">ModParks</a>
+        </>
+    ),
+    pukiwiki: (
+        <>
+            ソースコードは
+            <a href="https://github.com/PTOM76/PukiWiki-Plugins/" target="_blank" rel="noopener noreferrer">PukiWiki-Plugins</a>
+            にまとめています。
+        </>
+    ),
+    mmdplugin: <>ほとんどのMMDプラグインはMMDPluginを前提とします。</>,
 };
 
 /** site のキーごとの表示定義。ここに足せば全カテゴリで自動的に表示される */
@@ -103,33 +125,56 @@ const isDownloadUrl = (url: string) => /\.(zip|php|jar)$/i.test(url);
 type Prepared = Work & {
     images: string[];
     tagList: string[];
+    /** カード上に出すタグ。絞り込みや検索には tagList をそのまま使う */
+    displayTags: string[];
     searchIndex: string;
     updatedAt: number;
     featured: boolean;
 };
 
-const prepare = (list: Work[]): Prepared[] => list.map(work => {
-    const custom = work.custom ?? {};
-    const images = (custom.images ?? []).map(toLocalImage);
-    const tagList = work.tag ?? [];
-    const aliases = Array.isArray(work.alias) ? work.alias : work.alias ? [work.alias] : [];
-    const categoryLabel = CATEGORY_META[work.category]?.label ?? work.category;
+const prepare = (list: Work[]): Prepared[] => {
+    // カテゴリ内のほとんどが持つタグは、そのカテゴリでは区別に役立たないので
+    // カード上では省く (例: MC Modsの "minecraft" "mod" "fabric")
+    const sizeByCategory: Record<string, number> = {};
+    const tagCountByCategory: Record<string, Record<string, number>> = {};
+    list.forEach(work => {
+        sizeByCategory[work.category] = (sizeByCategory[work.category] ?? 0) + 1;
+        const counts = tagCountByCategory[work.category] ?? (tagCountByCategory[work.category] = {});
+        (work.tag ?? []).forEach(tag => { counts[tag] = (counts[tag] ?? 0) + 1; });
+    });
 
-    const searchIndex = [
-        work.name, work.id, ...aliases, stripHtml(work.description ?? ''),
-        ...tagList, work.author ?? '', work.category, categoryLabel,
-        custom.mcversion ?? '',
-    ].join(' ').toLowerCase();
+    const badgeTags = new Set(PLATFORM_BADGES.map(badge => badge.tag));
 
-    return {
-        ...work,
-        images,
-        tagList,
-        searchIndex,
-        updatedAt: Math.max(parseDate(work.updateAt), parseDate(work.createAt)),
-        featured: custom.featured === true,
-    };
-});
+    return list.map(work => {
+        const custom = work.custom ?? {};
+        const images = (custom.images ?? []).map(toLocalImage);
+        const tagList = work.tag ?? [];
+        const aliases = Array.isArray(work.alias) ? work.alias : work.alias ? [work.alias] : [];
+        const categoryLabel = CATEGORY_META[work.category]?.label ?? work.category;
+
+        const total = sizeByCategory[work.category] ?? 1;
+        const counts = tagCountByCategory[work.category] ?? {};
+        const displayTags = tagList.filter(tag =>
+            !badgeTags.has(tag) && (counts[tag] ?? 0) / total <= 0.6
+        );
+
+        const searchIndex = [
+            work.name, work.id, ...aliases, stripHtml(work.description ?? ''),
+            ...tagList, work.author ?? '', work.category, categoryLabel,
+            custom.mcversion ?? '',
+        ].join(' ').toLowerCase();
+
+        return {
+            ...work,
+            images,
+            tagList,
+            displayTags,
+            searchIndex,
+            updatedAt: Math.max(parseDate(work.updateAt), parseDate(work.createAt)),
+            featured: custom.featured === true,
+        };
+    });
+};
 
 function LinkIcons({ work }: { work: Prepared }) {
     const links = work.site ?? {};
@@ -163,10 +208,22 @@ function WorkCard({ work, activeTags, onToggleTag }: {
 }) {
     const custom = work.custom ?? {};
     const badges = PLATFORM_BADGES.filter(b => work.tagList.includes(b.tag));
-    const updated = formatDate(work.updateAt);
+
+    const meta = [
+        work.version ? `v${work.version}` : '',
+        custom.mcversion ? `MC ${custom.mcversion}` : '',
+        formatDate(work.updateAt) ? `${formatDate(work.updateAt)} 更新` : '',
+    ].filter(Boolean).join(' ・ ');
+
+    // 絞り込み中のタグは省略対象でも必ず出す
+    const shownTags = Array.from(new Set([
+        ...work.displayTags,
+        ...activeTags.filter(tag => work.tagList.includes(tag)),
+    ]));
+    const visibleTags = shownTags.slice(0, 4);
 
     return (
-        <div className={work.featured ? `${s.card} ${s.cardFeatured}` : s.card}>
+        <div className={s.card}>
             <div className={s.cardHeader}>
                 <h3 className={s.cardTitle}>
                     <a href={work.url} target="_blank" rel="noopener noreferrer">{work.name}</a>
@@ -179,18 +236,13 @@ function WorkCard({ work, activeTags, onToggleTag }: {
 
             <p className={s.cardDesc} dangerouslySetInnerHTML={{ __html: work.description }} />
 
-            <ImageCarousel images={work.images} name={work.name} compact />
+            <ImageCarousel images={work.images} name={work.name} />
 
-            <div className={s.meta}>
-                {work.version && <span className={s.metaItem}><b>v</b>{work.version}</span>}
-                {custom.mcversion && <span className={s.metaItem}><b>MC</b> {custom.mcversion}</span>}
-                {work.license && <span className={s.metaItem}>{work.license}</span>}
-                {updated && <span className={s.metaItem}>更新 {updated}</span>}
-            </div>
+            {meta && <div className={s.meta}>{meta}</div>}
 
-            {work.tagList.length > 0 && (
+            {visibleTags.length > 0 && (
                 <div className={s.cardTags}>
-                    {work.tagList.map(tag => (
+                    {visibleTags.map(tag => (
                         <button
                             key={tag}
                             type="button"
@@ -201,6 +253,9 @@ function WorkCard({ work, activeTags, onToggleTag }: {
                             #{tag}
                         </button>
                     ))}
+                    {shownTags.length > visibleTags.length && (
+                        <span className={s.tagMore}>+{shownTags.length - visibleTags.length}</span>
+                    )}
                 </div>
             )}
 
@@ -448,10 +503,7 @@ export default function Works2Page() {
             {/* custom.featured を立てた作品はカテゴリ順のときだけ先頭にまとめる */}
             {grouped && featured.length > 0 && (
                 <section className={s.section}>
-                    <div className={s.sectionHeader}>
-                        <h2 className={s.sectionTitle}>ピックアップ</h2>
-                        <span className={s.sectionCount}>{featured.length} 件</span>
-                    </div>
+                    <h2>ピックアップ <span className={s.sectionCount}>{featured.length} 件</span></h2>
                     <div className={s.grid}>
                         {featured.map(work => (
                             <WorkCard key={`pick-${work.id}`} work={work} activeTags={tags} onToggleTag={toggleTag} />
@@ -462,10 +514,13 @@ export default function Works2Page() {
 
             {grouped?.map(group => (
                 <section key={group.cat} id={`cat-${group.cat}`} className={s.section}>
-                    <div className={s.sectionHeader}>
-                        <h2 className={s.sectionTitle}>{CATEGORY_META[group.cat]?.label ?? group.cat}</h2>
-                        <span className={s.sectionCount}>{group.items.length} 件</span>
-                    </div>
+                    <h2>
+                        {CATEGORY_META[group.cat]?.label ?? group.cat}
+                        {' '}<span className={s.sectionCount}>{group.items.length} 件</span>
+                    </h2>
+                    {SECTION_NOTES[group.cat] && (
+                        <p className={s.sectionNote}>{SECTION_NOTES[group.cat]}</p>
+                    )}
                     <div className={s.grid}>
                         {group.items.map(work => (
                             <WorkCard key={work.id} work={work} activeTags={tags} onToggleTag={toggleTag} />

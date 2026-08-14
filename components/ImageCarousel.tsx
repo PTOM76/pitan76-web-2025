@@ -4,15 +4,13 @@ import s from '@/styles/carousel.module.css';
 type Props = {
     images: string[];
     name: string;
-    /** カード内など、高さを抑えたい場所で使う */
-    compact?: boolean;
 };
 
 /**
  * 画像が1枚のときは単純な画像、複数枚のときはカルーセルとして表示する。
  * 画像はすべてDOM上に残すため、ライトボックスからは全枚数を辿れる。
  */
-export default function ImageCarousel({ images, name, compact }: Props) {
+export default function ImageCarousel({ images, name }: Props) {
     const [index, setIndex] = useState(0);
     const touchStartX = useRef<number | null>(null);
 
@@ -33,7 +31,7 @@ export default function ImageCarousel({ images, name, compact }: Props) {
     };
 
     return (
-        <div className={compact ? `${s.carousel} ${s.compact}` : s.carousel}>
+        <div className={s.carousel}>
             <div className={s.viewport} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
                 <div className={s.track} style={{ transform: `translateX(-${index * 100}%)` }}>
                     {images.map((src, i) => (

@@ -160,24 +160,17 @@
     scroll-margin-top: 12px;
 }
 
-.sectionHeader {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding-bottom: 6px;
-    border-bottom: #afcfffe6 1px solid;
-}
-
-.sectionTitle {
-    margin: 0;
-    font-size: 1.35rem;
-    color: #25ddffdf;
-}
-
+/* 見出しの下線は globals.css の h2 のものをそのまま使う */
 .sectionCount {
     font-size: 0.85rem;
     color: #7fa8d0;
+    text-shadow: none;
+}
+
+.sectionNote {
+    margin: -0.5rem 0 0;
+    font-size: 0.85rem;
+    color: #9fc0dd;
 }
 
 /* ---- グリッド ---- */
@@ -191,19 +184,6 @@
 .card {
     display: flex;
     flex-direction: column;
-    padding: 14px;
-    border: #4a6f9e 1px solid;
-    border-radius: 8px;
-    background-color: #001fff14;
-}
-
-.card:hover {
-    border-color: #afcfffe6;
-}
-
-.cardFeatured {
-    border-color: #ffcc0088;
-    background-color: #66660022;
 }
 
 .cardHeader {
@@ -213,19 +193,10 @@
     gap: 6px;
 }
 
+/* 見出しの体裁は globals.css の h3 に合わせ、余白だけ詰める */
 .cardTitle {
-    margin: 0;
-    font-size: 1.08rem;
-    line-height: 1.35;
-}
-
-.cardTitle a {
-    color: #ccecfc;
-    text-decoration: none;
-}
-
-.cardTitle a:hover {
-    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 0.4rem;
 }
 
 .badge {
@@ -251,21 +222,15 @@
 }
 
 .meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px 10px;
     margin: 4px 0 8px;
-    font-size: 0.76rem;
+    font-size: 0.78rem;
     color: #8fb0cc;
 }
 
-.metaItem {
-    white-space: nowrap;
-}
-
-.metaItem b {
-    color: #a8cbe6;
-    font-weight: normal;
+.tagMore {
+    align-self: center;
+    font-size: 0.78rem;
+    color: #7fa8d0;
 }
 
 .cardTags {
