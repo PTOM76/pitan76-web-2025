@@ -63,6 +63,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <div className={"footer"}>
       <div className={"banners"}>
         <a href="/"><img src="/image/banner88x31.png" alt="Banner" width={88} height={31} className={"banner"} title="Banner" data-lightbox="false"></img></a>
+        <a href="https://modparks.pitan76.net/" target="_blank" rel="noopener noreferrer">
+          <img src="/image/modparks88x31.png" alt="ModParks" width={88} height={31} className={"banner"} title="ModParks" data-lightbox="false"></img>
+        </a>
         <a href="https://wikichree.com/" target="_blank" rel="noopener noreferrer">
           <img src="/image/wikichree88x31.png" alt="WikiChree.COM" width={88} height={31} className={"banner"} title="WikiChree.COM" data-lightbox="false"></img>
         </a>
