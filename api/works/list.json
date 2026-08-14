@@ -2796,6 +2796,29 @@
         }
     },
     {
+        "id": "paint",
+        "alias": ["oekaki", "お絵描き"],
+        "name": "お絵描きまとめページ",
+        "description": "素人の私が描いた絵とか載せてます。",
+        "version": "",
+        "category": "misc",
+        "author": "Pitan",
+        "url": "/works/paint/",
+        "license": "",
+        "createAt": "",
+        "updateAt": "",
+        "site": {
+            "website": "/works/paint/"
+        },
+        "tag": [
+            "paint",
+            "illust"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/profile-icon.jpg"]
+        }
+    },
+    {
         "id": "pukiwiki-supporter",
         "alias": ["pukiwiki-supporter-chrome-extension", "chromeextension-pukiwiki-supporter"],
         "name": "PukiWiki Supporter",
