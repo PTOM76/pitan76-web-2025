@@ -191,11 +191,18 @@ h1.title {
     filter: drop-shadow(0 0 3px #f6f6f6);
 }
 
-.curseforgeIcon, .modrinthIcon, .modparksIcon, .wikichreeIcon, .githubIcon, .thunderstoreIcon, .nexusmodsIcon, .chromewebstoreIcon {
+.genericIcon {
+    display: inline-block;
+    margin-right: 12px;
+    filter: drop-shadow(0 0 3px #eeecec);
+    color: #eeecec;
+}
+
+.curseforgeIcon, .modrinthIcon, .modparksIcon, .wikichreeIcon, .githubIcon, .thunderstoreIcon, .nexusmodsIcon, .chromewebstoreIcon, .genericIcon {
     transition: all 0.25s ease;
 }
 
-.curseforgeIcon:hover, .modrinthIcon:hover, .modparksIcon:hover, .wikichreeIcon:hover, .githubIcon:hover, .thunderstoreIcon:hover, .nexusmodsIcon:hover, .chromewebstoreIcon:hover {
+.curseforgeIcon:hover, .modrinthIcon:hover, .modparksIcon:hover, .wikichreeIcon:hover, .githubIcon:hover, .thunderstoreIcon:hover, .nexusmodsIcon:hover, .chromewebstoreIcon:hover, .genericIcon:hover {
     transform: scale(1.1);
 }
 

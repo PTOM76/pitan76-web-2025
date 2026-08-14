@@ -174,7 +174,7 @@ export default function WorksPage() {
                                         )}
                                         {links['bukkit.org'] && (
                                             <a href={links['bukkit.org']} target="_blank" rel="noopener noreferrer" title='BukkitDev'>
-                                                <Icon icon="mdi:web" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                                <Icon icon="mdi:web" className={styles.genericIcon} width={36} height={36}></Icon>
                                             </a>
                                         )}
                                     </div>
@@ -246,7 +246,7 @@ export default function WorksPage() {
                                 {Object.keys(links).length > 0 && (
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         <a href={data.url} target="_blank" rel="noopener noreferrer" title='ダウンロード'>
-                                            <Icon icon="mdi:download" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                            <Icon icon="mdi:download" className={styles.genericIcon} width={36} height={36}></Icon>
                                         </a>
 
                                         {links.wiki && (
@@ -261,22 +261,17 @@ export default function WorksPage() {
                                         )}
                                         {links.pkom && (
                                             <a href={links.pkom} target="_blank" rel="noopener noreferrer" title='PKOM'>
-                                                <Icon icon="mdi:web" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                                <Icon icon="mdi:web" className={styles.genericIcon} width={36} height={36}></Icon>
                                             </a>
                                         )}
                                         {links['pukiwiki-official'] && (
                                             <a href={links['pukiwiki-official']} target="_blank" rel="noopener noreferrer" title='PukiWiki公式'>
-                                                <Icon icon="mdi:file-document-outline" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                                <Icon icon="mdi:file-document-outline" className={styles.genericIcon} width={36} height={36}></Icon>
                                             </a>
                                         )}
                                         {links.gist && (
                                             <a href={links.gist} target="_blank" rel="noopener noreferrer" title='Gist'>
-                                                <Icon icon="mdi:code-braces" className={styles.downloadIcon} width={30} height={30}></Icon>
-                                            </a>
-                                        )}
-                                        {links['解説'] && (
-                                            <a href={links['解説']} target="_blank" rel="noopener noreferrer" title='解説'>
-                                                <Icon icon="mdi:information-outline" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                                <Icon icon="mdi:code-braces" className={styles.genericIcon} width={36} height={36}></Icon>
                                             </a>
                                         )}
                                     </div>
@@ -421,7 +416,7 @@ export default function WorksPage() {
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         {links.website && (
                                             <a href={links.website} target="_blank" rel="noopener noreferrer" title='Webサイト'>
-                                                <Icon icon="mdi:link-variant" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                                <Icon icon="mdi:link-variant" className={styles.genericIcon} width={36} height={36}></Icon>
                                             </a>
                                         )}
                                         {links.github && (
@@ -459,7 +454,7 @@ export default function WorksPage() {
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                                         {links.website && (
                                             <a href={links.website} target="_blank" rel="noopener noreferrer" title='Webサイト'>
-                                                <Icon icon="mdi:link-variant" className={styles.downloadIcon} width={30} height={30}></Icon>
+                                                <Icon icon="mdi:link-variant" className={styles.genericIcon} width={36} height={36}></Icon>
                                             </a>
                                         )}
                                         {links.github && (
