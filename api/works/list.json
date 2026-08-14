@@ -1520,7 +1520,7 @@
             "mmd",
             "tool"
         ],
-        "category": "other",
+        "category": "app",
         "custom": {}
     },
     {
@@ -1612,7 +1612,7 @@
             "windows",
             "vbnet"
         ],
-        "category": "other",
+        "category": "app",
         "custom": {}
     },
     {
@@ -1679,7 +1679,7 @@
             "discord",
             "bot"
         ],
-        "category": "other",
+        "category": "app",
         "custom": {}
     },
     {
@@ -1696,7 +1696,7 @@
         "tag": [
             "tool"
         ],
-        "category": "other",
+        "category": "app",
         "custom": {
             "mcversion": "-"
         }
@@ -1721,7 +1721,7 @@
             "php",
             "cli"
         ],
-        "category": "other",
+        "category": "app",
         "custom": {}
     },
     {
@@ -1738,7 +1738,7 @@
         "tag": [
             "tool"
         ],
-        "category": "other",
+        "category": "app",
         "custom": {}
     },
     {
@@ -1755,7 +1755,7 @@
         "tag": [
             "tool"
         ],
-        "category": "other",
+        "category": "app",
         "custom": {}
     },
     {
@@ -1776,7 +1776,7 @@
         ],
         "createAt": "1970/01/01",
         "updateAt": "1970/01/01",
-        "category": "other",
+        "category": "mcplugin",
         "custom": {
             "mcversion": "*"
         }
@@ -2137,7 +2137,7 @@
         "name": "Reaper Video Script",
         "description": "REAPER動画プロセッサ用JSFXスクリプト。",
         "version": "",
-        "category": "other",
+        "category": "misc",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/reaper-video-script",
         "license": "",
@@ -2158,7 +2158,7 @@
         "name": "MCPitanLib IntelliJ Plugin",
         "description": "MCPitanLib用のテンプレから自動でModの開発環境を構築するIntelliJプラグイン。",
         "version": "",
-        "category": "other",
+        "category": "misc",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/mcpitanlib-intellij-plugin",
         "license": "",
@@ -2223,7 +2223,7 @@
         "name": "Skriptのスクリプト群",
         "description": "作成したSkriptのスクリプト集。",
         "version": "",
-        "category": "other",
+        "category": "misc",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/Skript",
         "license": "",
@@ -2266,7 +2266,7 @@
         "name": "WikiChree.COM開発プラグイン群",
         "description": "WikiChree.COMオリジナルのPukiWikiプラグイン群。",
         "version": "",
-        "category": "other",
+        "category": "pukiwiki",
         "author": "Pitan",
         "url": "https://wikichree.com/?WikiChree.COM開発プラグイン",
         "license": "",
@@ -2286,9 +2286,9 @@
     {
         "id": "pukiwiki_bot",
         "name": "PukiWiki-Bot",
-        "description": "PukiWikiのボットとやり取りするためのPukiWikiプラグイン。",
+        "description": "PukiBot API(bot.inc.php)とPukiBot-Pyをまとめたセット。PukiWikiのボットとやり取りするためのプラグイン。",
         "version": "",
-        "category": "other",
+        "category": "pukiwiki",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/PukiWiki-Bot",
         "license": "",
@@ -2299,7 +2299,9 @@
         },
         "tag": [
             "pukiwiki",
-            "plugin"
+            "plugin",
+            "bot",
+            "bundle"
         ],
         "custom": {}
     },
@@ -2308,7 +2310,7 @@
         "name": "Mini-PukiBot-Py",
         "description": "PukiBot-Pyの軽量版ライブラリ。",
         "version": "",
-        "category": "other",
+        "category": "pukiwiki",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/Mini-PukiBot-Py",
         "license": "",
@@ -2331,7 +2333,7 @@
         "name": "PukiBot-Java",
         "description": "PukiWikiのボットを作成するためのJavaライブラリ。",
         "version": "",
-        "category": "other",
+        "category": "pukiwiki",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/PukiBot-Java",
         "license": "",
@@ -2354,7 +2356,7 @@
         "name": "PlayerRealms Server Checker",
         "description": "Player Realmsの各サーバー情報を取得して表示するDiscordのボット。",
         "version": "",
-        "category": "other",
+        "category": "app",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/PlayerRealmsServerChecker",
         "license": "",
@@ -2376,7 +2378,7 @@
         "name": "MyBlogs",
         "description": "PHP製のシンプルなブログシステム。",
         "version": "",
-        "category": "other",
+        "category": "app",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/MyBlogs",
         "license": "",
@@ -2397,7 +2399,7 @@
         "name": "WikiChree.COM",
         "description": "無料で使えるウィキ、PukiWikiのホスティングサービス。",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://wikichree.com/",
         "license": "",
@@ -2421,7 +2423,7 @@
         "name": "DokuFarm",
         "description": "無料で使えるウィキ、DokuWikiのホスティングサービス。",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://doku.wikichree.com/",
         "license": "",
@@ -2445,7 +2447,7 @@
         "name": "ModParks",
         "description": "Minecraft Java Edition向けMOD/プラグイン配布プラットフォーム",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://modparks.pitan76.net/",
         "license": "MIT",
@@ -2472,7 +2474,7 @@
         "alias": ["mp-recipe"],
         "description": "Minecraftのレシピを管理するツール/API、ModParksのレシピ機能としても利用している",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://recipe.modparks.pitan76.net/",
         "license": "MIT",
@@ -2498,7 +2500,7 @@
         "name": "ボ対検索ツール",
         "description": "ボイパ対決という音MADに特化した検索ツール。",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://vps-search.pitan76.net/",
         "license": "",
@@ -2520,7 +2522,7 @@
         "name": "Psnverseコミュニティ",
         "description": "PlayStationの非公式掲示板コミュニティ。(2020年以来放置)",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://psnverse.pitan76.net/",
         "license": "",
@@ -2540,7 +2542,7 @@
         "name": "匿名クイズ",
         "description": "匿名でクイズを作成できるWebツール。",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://2023.pitan76.net/tools/toquiz/index.html",
         "license": "",
@@ -2560,7 +2562,7 @@
         "name": "2023.pitan76.net/tools/",
         "description": "2023年に作成したWebツールのまとめページ。",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://2023.pitan76.net/tools/",
         "license": "",
@@ -2580,7 +2582,7 @@
         "name": "2020.pitan76.net/?Webツール",
         "description": "2020年に作成したWebツールのまとめページ。",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://pkom.pitan76.net/?Web%E3%83%84%E3%83%BC%E3%83%AB",
         "license": "",
@@ -2600,7 +2602,7 @@
         "name": "Tuibian",
         "description": "TUIベースのDebian派生カスタムLinuxディストリ/TUIアプリ。",
         "version": "",
-        "category": "other",
+        "category": "misc",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/tuibian",
         "license": "",
@@ -2623,7 +2625,7 @@
         "name": "Mavenリポジトリ",
         "description": "私のMavenリポジトリです。",
         "version": "",
-        "category": "other",
+        "category": "misc",
         "author": "Pitan",
         "url": "https://maven.pitan76.net/",
         "license": "",
@@ -2644,7 +2646,7 @@
         "name": "GitHub Star Counter",
         "description": "GitHubアカウントの合計スター数のカウンタ画像を出力するPHP製ツール。",
         "version": "",
-        "category": "other",
+        "category": "misc",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/github-pitan76-star-counter",
         "license": "",
@@ -2665,7 +2667,7 @@
         "name": "HTML置き場",
         "description": "私だけがアップロードできるHTMLファイル置き場。",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://html.pitan76.net/",
         "license": "",
@@ -2685,7 +2687,7 @@
         "name": "自作MOD開発状況チェッカー",
         "description": "AIに生成してもらった自作MODの開発状況チェッカー。",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://html.pitan76.net/4b9733627a16fcc445f55b4f4d9f2bd2",
         "license": "",
@@ -2706,7 +2708,7 @@
         "name": "HTML Viewer",
         "description": "HTMLビューワー",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://html.pitan76.net/html-viewer",
         "license": "",
@@ -2727,7 +2729,7 @@
         "name": "Gemini AIが生成したHTML資料群",
         "description": "教材、資料などのHTMLファイル一覧",
         "version": "",
-        "category": "other",
+        "category": "web",
         "author": "Pitan",
         "url": "https://pitan76.github.io/docs/",
         "license": "",
@@ -2749,7 +2751,7 @@
         "name": "Tuibian Menu",
         "description": "TUIで作られたTuibian用ランチャーメニュー。",
         "version": "",
-        "category": "other",
+        "category": "misc",
         "author": "Pitan",
         "url": "https://github.com/PTOM76/tuibian-menu",
         "license": "MIT",
