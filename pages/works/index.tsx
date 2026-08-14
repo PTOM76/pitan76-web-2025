@@ -1,6 +1,7 @@
 import worksDataJson from "@/public/api/works/list.json" assert { type: "json" };
 import styles from '@/styles/page.module.css';
 import { Icon } from '@iconify/react';
+import ImageCarousel from '@/components/ImageCarousel';
 
 export default function WorksPage() {
     let worksData: any[] = worksDataJson; // list.json
@@ -68,11 +69,7 @@ export default function WorksPage() {
 
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
 
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {Object.keys(links).length > 0 && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.curseforge && (
@@ -122,11 +119,7 @@ export default function WorksPage() {
                                     {tag.includes('r-e-p-o') && <img src="/image/repo.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="R.E.P.O" data-lightbox="false" ></img>}
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {Object.keys(links).length > 0 && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.thunderstore && (
@@ -160,11 +153,7 @@ export default function WorksPage() {
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {Object.keys(links).length > 0 && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.github && (
@@ -195,11 +184,7 @@ export default function WorksPage() {
                                     {tag.includes('chrome') && <img src="/image/chrome.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="R.E.P.O" data-lightbox="false" ></img>}
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {Object.keys(links).length > 0 && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.chromewebstore && (
@@ -238,11 +223,7 @@ export default function WorksPage() {
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {Object.keys(links).length > 0 && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         <a href={data.url} target="_blank" rel="noopener noreferrer" title='ダウンロード'>
@@ -290,11 +271,7 @@ export default function WorksPage() {
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {Object.keys(links).length > 0 && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.github && (
@@ -326,11 +303,7 @@ export default function WorksPage() {
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {Object.keys(links).length > 0 && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.github && (
@@ -371,11 +344,7 @@ export default function WorksPage() {
                                     {tag.includes('linux') && <img src="/image/linux.png" style={{ display: 'inline', width: '30px', height: '30px', marginTop: '-5px', marginRight: '3px' }} title="Linux" data-lightbox="false" ></img>}
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {Object.keys(links).length > 0 && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.github && (
@@ -407,11 +376,7 @@ export default function WorksPage() {
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {(links.website || links.github) && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.website && (
@@ -445,11 +410,7 @@ export default function WorksPage() {
                                     <a href={data.url} target="_blank" rel="noopener noreferrer">{data.name}</a>&nbsp;
                                 </h3>
                                 <p style={{ marginBottom: '8px' }} dangerouslySetInnerHTML={{ __html: data.description }} />
-                                {images.length > 0 && (
-                                    <a href={images[0]} target="_blank" rel="noopener noreferrer">
-                                        <img src={images[0]} alt={`Screenshot of ${data.name}`} style={{ maxWidth: '100%', height: 'auto', border: '2px solid #ccc', borderRadius: '4px', marginBottom: '16px' }} />
-                                    </a>
-                                )}
+                                <ImageCarousel images={images} name={data.name} />
                                 {(links.website || links.github) && (
                                     <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.website && (
