@@ -74,7 +74,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.curseforge && (
                                             <a href={links.curseforge} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.curseforgeIcon} title='CurseForge'></div>
@@ -128,7 +128,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.thunderstore && (
                                             <a href={links.thunderstore} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.thunderstoreIcon} title='Thunderstore'></div>
@@ -166,7 +166,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.github && (
                                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.githubIcon} title='ソースコード'></div>
@@ -201,7 +201,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.chromewebstore && (
                                             <a href={links.chromewebstore} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.chromewebstoreIcon} title='Chrome Web Store'></div>
@@ -244,7 +244,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         <a href={data.url} target="_blank" rel="noopener noreferrer" title='ダウンロード'>
                                             <Icon icon="mdi:download" className={styles.genericIcon} width={36} height={36}></Icon>
                                         </a>
@@ -296,7 +296,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.github && (
                                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.githubIcon} title='ソースコード'></div>
@@ -332,7 +332,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.github && (
                                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.githubIcon} title='ソースコード'></div>
@@ -377,7 +377,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {Object.keys(links).length > 0 && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.github && (
                                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                                 <div className={styles.githubIcon} title='ソースコード'></div>
@@ -413,7 +413,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {(links.website || links.github) && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.website && (
                                             <a href={links.website} target="_blank" rel="noopener noreferrer" title='Webサイト'>
                                                 <Icon icon="mdi:link-variant" className={styles.genericIcon} width={36} height={36}></Icon>
@@ -451,7 +451,7 @@ export default function WorksPage() {
                                     </a>
                                 )}
                                 {(links.website || links.github) && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
                                         {links.website && (
                                             <a href={links.website} target="_blank" rel="noopener noreferrer" title='Webサイト'>
                                                 <Icon icon="mdi:link-variant" className={styles.genericIcon} width={36} height={36}></Icon>
