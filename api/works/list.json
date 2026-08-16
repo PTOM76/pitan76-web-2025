@@ -33,7 +33,7 @@
         "id": "advancedreborn",
         "name": "AdvancedReborn",
         "description": "Tech Rebornのアドオンで数個のマシンと充電パッドなど僕がほしいなと思ったものを追加しています。",
-        "version": "v1.3.0",
+        "version": "v1.4.0",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn",
         "license": "MIT",
@@ -142,7 +142,7 @@
         ],
         "category": "mcmod",
         "custom": {
-            "mcversion": "1.15-26.1.2",
+            "mcversion": "1.15-26.2",
             "cf_projectid": 973764,
             "images": ["https://www.pitan76.net/image/mcmod/memory-usage-title.png"]
         }
@@ -292,7 +292,8 @@
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/mcmod/more-harnesses.png"],
-            "mcversion": "1.21.6-26.1.2"
+            "mcversion": "1.21.6-26.1.2",
+            "cf_projectid": 1323049
         }
     },
     {
@@ -352,7 +353,7 @@
         ],
         "category": "mcmod",
         "custom": {
-            "mcversion": "1.12.2-26.1.2",
+            "mcversion": "1.12.2-26.2",
             "cf_projectid": 517673,
             "images": ["https://www.pitan76.net/image/mcmod/storagebox-fabric.png"]
         }
@@ -384,20 +385,21 @@
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/mcmod/storagebox-adapter.png"],
-            "mcversion": "1.18-26.1.2"
+            "mcversion": "1.18-26.1.2",
+            "cf_projectid": 1383824
         }
     },
     {
         "id": "assetbridge",
         "name": "Asset Bridge",
         "description": "取り込んだMODからブロックなどのアセットを読み込み、機能を持たず見た目だけのブロック、アイテムを利用するMOD",
-        "version": "v0.0.2",
+        "version": "v0.1.2",
         "category": "mcmod",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/assetbridge",
         "license": "MIT",
         "createAt": "2026/08/08",
-        "updateAt": "2026/08/14",
+        "updateAt": "2026/08/16",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/assetbridge",
             "modrinth": "https://modrinth.com/mod/assetbridge",
@@ -1835,7 +1837,8 @@
             "forge"
         ],
         "custom": {
-            "mcversion": "1.18-26.1.2"
+            "mcversion": "1.18-26.1.2",
+            "cf_projectid": 1106172
         }
     },
     {
@@ -1861,7 +1864,8 @@
             "fabric"
         ],
         "custom": {
-            "mcversion": "1.12.2-1.20.1"
+            "mcversion": "1.12.2-26.1.2",
+            "cf_projectid": 1232472
         }
     },
     {
@@ -1869,13 +1873,13 @@
         "alias": ["pukiwiki-link", "pukiwikilink"],
         "name": "PukiWiki Link",
         "description": "MinecraftとPukiWikiを連携させるMod。",
-        "version": "",
+        "version": "v0.0.2",
         "category": "mcmod",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/pukiwiki-link",
         "license": "MIT",
         "createAt": "2025/03/20",
-        "updateAt": "2025/10/18",
+        "updateAt": "2026/02/11",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/pukiwiki-link",
             "github": "https://github.com/PTOM76/MCPukiWiki-Link",
@@ -1886,7 +1890,10 @@
             "mod",
             "fabric"
         ],
-        "custom": {}
+        "custom": {
+            "mcversion": "1.18-26.1.2",
+            "cf_projectid": 1287694
+        }
     },
     {
         "id": "modlistcmd76",
@@ -1912,20 +1919,21 @@
             "neoforge"
         ],
         "custom": {
-            "mcversion": "1.18-26.1.2"
+            "mcversion": "1.16.4-26.1.2",
+            "cf_projectid": 1103376
         }
     },
     {
         "id": "qrblock",
         "name": "QRBlock",
         "description": "QRコードのブロックを追加するMod。",
-        "version": "",
+        "version": "v1.0.1",
         "category": "mcmod",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/qrblock76",
         "license": "",
         "createAt": "2025/06/08",
-        "updateAt": "2025/10/24",
+        "updateAt": "2026/02/11",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/qrblock76",
             "modparks": "https://modparks.pitan76.net/projects/qrblock76",
@@ -1935,7 +1943,10 @@
             "minecraft",
             "fabric"
         ],
-        "custom": {}
+        "custom": {
+            "mcversion": "1.18.1-1.21.11",
+            "cf_projectid": 1287685
+        }
     },
     {
         "id": "recipe_image_exporter",
@@ -1965,13 +1976,13 @@
         "id": "remove_mcrealms",
         "name": "Remove MCRealms",
         "description": "タイトル画面からMinecraft Realmsボタンを削除するMod。",
-        "version": "",
+        "version": "v1.0.0.214",
         "category": "mcmod",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/remove-mcrealms",
         "license": "",
         "createAt": "2025/04/29",
-        "updateAt": "2025/05/13",
+        "updateAt": "2025/05/08",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/remove-mcrealms",
             "modparks": "https://modparks.pitan76.net/projects/remove-mcrealms",
@@ -1984,19 +1995,22 @@
             "forge",
             "neoforge"
         ],
-        "custom": {}
+        "custom": {
+            "mcversion": "1.21-1.21.4",
+            "cf_projectid": 1254556
+        }
     },
     {
         "id": "rubycraft_p",
         "name": "RubyCraft",
         "description": "既に開発終了である、初期あたりに試作でつくったMod。",
-        "version": "v0.2.0",
+        "version": "v0.3.0",
         "category": "mcmod",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/rubycraft-p",
         "license": "",
         "createAt": "2021/08/06",
-        "updateAt": "2021/08/07",
+        "updateAt": "2021/08/11",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/rubycraft-p",
             "github": "https://github.com/PTOM76/RubyCraft",
@@ -2007,19 +2021,22 @@
             "mod",
             "fabric"
         ],
-        "custom": {}
+        "custom": {
+            "mcversion": "1.16.5",
+            "cf_projectid": 511758
+        }
     },
     {
         "id": "simple_better_batpack",
         "name": "Simple Better BatPack",
         "description": "さまざまなバッテリーパックを追加するTechRebornのアドオンMod。Advanced Rebornに統合したため、開発終了。",
-        "version": "",
+        "version": "v1.0.0",
         "category": "mcmod",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/simple-better-batpack-fabric",
         "license": "",
         "createAt": "2021/09/25",
-        "updateAt": "2021/09/25",
+        "updateAt": "2021/09/30",
         "site": {
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-better-batpack-fabric",
             "github": "https://github.com/PTOM76/BetterBatpack-TR-Fabric",
@@ -2030,7 +2047,10 @@
             "fabric",
             "mod"
         ],
-        "custom": {}
+        "custom": {
+            "mcversion": "1.16-1.17.1",
+            "cf_projectid": 531135
+        }
     },
     {
         "id": "speedy_path",
@@ -2057,7 +2077,8 @@
             "mod"
         ],
         "custom": {
-            "mcversion": "1.18-1.21.3"
+            "mcversion": "1.18-1.21.3",
+            "cf_projectid": 1102702
         }
     },
     {
@@ -2113,7 +2134,8 @@
             "forge"
         ],
         "custom": {
-            "mcversion": "1.16.4-26.1.2"
+            "mcversion": "1.16.4-26.1.2",
+            "cf_projectid": 1107294
         }
     },
     {
@@ -2491,7 +2513,7 @@
         "url": "https://modparks.pitan76.net/",
         "license": "MIT",
         "createAt": "20260616",
-        "updateAt": "2026/08/14",
+        "updateAt": "2026/08/16",
         "site": {
             "website": "https://modparks.pitan76.net/",
             "github": "https://github.com/Pitan76/ModParks"
