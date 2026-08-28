@@ -4,12 +4,12 @@
         "alias": ["item-alchemy", "item_alchemy", "item-alchemy-fabric", "item_alchemy_fabric"],
         "name": "Item Alchemy",
         "description": "このMODはFabric用にProjectEのようなEMCや等価交換できる賢者の石などを追加します。",
-        "version": "v1.3.3",
+        "version": "v1.3.9",
         "author": "Pitan, mymai1208, OffsetMonkey538, anthonymendez, Murderman25, 54sda",
         "url": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric",
         "license": "MIT",
         "createAt": "2022/11/05",
-        "updateAt": "2026/06/22",
+        "updateAt": "2026/08/24",
         "site": {
             "wiki": "https://wikichree.com/pitan76/?Item+Alchemy",
             "github": "https://github.com/Pitan76/item-alchemy",
@@ -24,7 +24,7 @@
         ],
         "category": "mcmod",
         "custom": {
-            "mcversion": "1.17-26.1.2",
+            "mcversion": "1.17-26.2",
             "cf_projectid": 697926,
             "images": ["https://www.pitan76.net/image/mcmod/item-alchemy.png"]
         }
@@ -33,12 +33,12 @@
         "id": "advancedreborn",
         "name": "AdvancedReborn",
         "description": "Tech Rebornのアドオンで数個のマシンと充電パッドなど僕がほしいなと思ったものを追加しています。",
-        "version": "v1.4.0",
+        "version": "v1.4.1",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn",
         "license": "MIT",
         "createAt": "2021/10/31",
-        "updateAt": "2026/06/06",
+        "updateAt": "2026/08/27",
         "site": {
             "github": "https://github.com/Pitan76/AdvancedReborn",
             "wiki": "https://wikichree.com/pitan76/?AdvancedReborn",
@@ -50,11 +50,13 @@
             "minecraft",
             "mod",
             "fabric",
-            "techreborn"
+            "techreborn",
+            "technology",
+            "addon"
         ],
         "category": "mcmod",
         "custom": {
-            "mcversion": "1.16.1-26.1.2",
+            "mcversion": "1.16.1-26.2",
             "cf_projectid": 543089,
             "images": ["https://www.pitan76.net/image/mcmod/advancedreborn.png"]
         }
@@ -64,12 +66,12 @@
         "alias": ["enhanced-quarries"],
         "name": "Enhanced Quarries",
         "description": "FabricにBuildCraft風のクァーリーやフィラーを追加するModです。",
-        "version": "v1.6.10",
+        "version": "v1.7.4",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries",
         "license": "MPLv2",
         "createAt": "2021/09/18",
-        "updateAt": "2026/04/06",
+        "updateAt": "2026/08/26",
         "site": {
             "wiki": "https://wikichree.com/pitan76/?Enhanced+Quarries",
             "github": "https://github.com/PTOM76/EnhancedQuarries",
@@ -80,11 +82,14 @@
         "tag": [
             "minecraft",
             "mod",
-            "fabric"
+            "fabric",
+            "neoforge",
+            "forge",
+            "technology"
         ],
         "category": "mcmod",
         "custom": {
-            "mcversion": "1.16-26.1.2",
+            "mcversion": "1.16-26.2",
             "cf_projectid": 528338,
             "images": ["https://www.pitan76.net/image/mcmod/enhancedquarries.png"]
         }
@@ -257,7 +262,8 @@
         "tag": [
             "minecraft",
             "mod",
-            "fabric"
+            "fabric",
+            "addon"
         ],
         "category": "mcmod",
         "custom": {
@@ -381,7 +387,8 @@
             "mod",
             "fabric",
             "forge",
-            "neoforge"
+            "neoforge",
+            "addon"
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/mcmod/storagebox-adapter.png"],
@@ -2142,12 +2149,12 @@
         "id": "mcpitanlib",
         "name": "MCPitanLib",
         "description": "自分用MOD開発ライブラリ、MCバージョンの差異を吸収するクロスバージョン用のフレームワークみたいなもんです。<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)",
-        "version": "v3.7.2-fix.1-fabric",
+        "version": "v4.0.7-fix.1-fabric",
         "author": "Pitan",
         "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
         "license": "MIT",
         "createAt": "2022/09/27",
-        "updateAt": "2026/06/26",
+        "updateAt": "2026/08/27",
         "site": {
             "github": "https://github.com/Pitan76/MCPitanLib",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
@@ -2165,7 +2172,7 @@
         ],
         "category": "mcmod",
         "custom": {
-            "mcversion": "1.16-26.1.2",
+            "mcversion": "1.16-26.2",
             "cf_projectid": 682213
         }
     },
