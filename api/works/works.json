@@ -1264,5 +1264,38 @@
         ],
         "createAt": "1970\/01\/01",
         "updateAt": "1970\/01\/01"
+    },
+    "pkript": {
+        "name": "Pkript",
+        "description": "PukiWikiのプラグインをJavaScript風の構文で書くためのPukiWiki DSLスクリプト言語<br \/>PukiWikiのプラグインとして動作します (汎用化中)",
+        "author": "PitaQ",
+        "url": "https:\/\/github.com\/TeamWikiChree-COM\/Pkript",
+        "license": "MIT",
+        "site": {
+            "github": "https:\/\/github.com\/TeamWikiChree-COM\/Pkript",
+            "wiki": "https:\/\/wikichree.com\/guide\/?Pkript"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin",
+            "script",
+            "programming-language"
+        ]
+    },
+    "pkript-transplier": {
+        "name": "Pkript Transplier",
+        "description": "Pkript(PukiWiki DSL/JS風スクリプト言語)をPHPに変換するトランスパイラ<br \/>PkriptスクリプトをPukiWikiプラグイン化したい場合に使用します",
+        "author": "PitaQ",
+        "url": "https:\/\/github.com\/TeamWikiChree-COM\/Pkript-Transplier",
+        "license": "MIT",
+        "site": {
+            "github": "https:\/\/github.com\/TeamWikiChree-COM\/Pkript-Transplier"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin",
+            "script",
+            "programming-language"
+        ]
     }
 }
