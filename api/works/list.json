@@ -2907,5 +2907,53 @@
             "extension"
         ],
         "custom": {}
+    },
+    
+    {
+        "id": "pkript",
+        "name": "Pkript",
+        "description": "PukiWikiのプラグインをJavaScript風の構文で書くためのPukiWiki DSLスクリプト言語<br />PukiWikiのプラグインとして動作します (汎用化中)",
+        "version": "v0.5",
+        "category": "pukiwiki",
+        "author": "PitaQ",
+        "url": "https://github.com/TeamWikiChree-COM/Pkript",
+        "license": "MIT",
+        "createAt": "2026/08/29",
+        "updateAt": "2026/09/02",
+        "site": {
+            "github": "https://github.com/TeamWikiChree-COM/Pkript",
+            "wiki": "https://wikichree.com/guide/?Pkript"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin",
+            "script",
+            "programming-language"
+        ],
+        "custom": {
+        }
+    },
+    {
+        "id": "pkript-transplier",
+        "name": "Pkript Transplier",
+        "description": "Pkript(PukiWiki DSL/JS風スクリプト言語)をPHPに変換するトランスパイラ<br />PkriptスクリプトをPukiWikiプラグイン化したい場合に使用します",
+        "version": "v0.5",
+        "category": "misc",
+        "author": "PitaQ",
+        "url": "https://github.com/TeamWikiChree-COM/Pkript-Transplier",
+        "license": "MIT",
+        "createAt": "2026/09/02",
+        "updateAt": "2026/09/02",
+        "site": {
+            "github": "https://github.com/TeamWikiChree-COM/Pkript-Transplier"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin",
+            "script",
+            "programming-language"
+        ],
+        "custom": {
+        }
     }
 ]
