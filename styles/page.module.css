@@ -200,12 +200,24 @@ h1.title {
     color: #a6faff;
 }
 
-.curseforgeIcon, .modrinthIcon, .modparksIcon, .wikichreeIcon, .githubIcon, .thunderstoreIcon, .nexusmodsIcon, .chromewebstoreIcon, .genericIcon {
+.npmIcon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('/image/svg/npm.svg');
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+    filter: drop-shadow(0 0 3px #cb3837);
+}
+
+.curseforgeIcon, .modrinthIcon, .modparksIcon, .wikichreeIcon, .githubIcon, .thunderstoreIcon, .nexusmodsIcon, .chromewebstoreIcon, .genericIcon, .npmIcon {
     transition: all 0.25s ease;
     vertical-align: middle;
 }
 
-.curseforgeIcon:hover, .modrinthIcon:hover, .modparksIcon:hover, .wikichreeIcon:hover, .githubIcon:hover, .thunderstoreIcon:hover, .nexusmodsIcon:hover, .chromewebstoreIcon:hover, .genericIcon:hover {
+.curseforgeIcon:hover, .modrinthIcon:hover, .modparksIcon:hover, .wikichreeIcon:hover, .githubIcon:hover, .thunderstoreIcon:hover, .nexusmodsIcon:hover, .chromewebstoreIcon:hover, .genericIcon:hover, .npmIcon:hover {
     transform: scale(1.1);
 }
 

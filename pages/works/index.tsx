@@ -83,6 +83,7 @@ const LINK_DEFS: { key: string; title: string; cls?: string; icon?: string }[] =
     { key: 'bukkit.org', title: 'BukkitDev', icon: 'mdi:web' },
     { key: 'pukiwiki-official', title: 'PukiWiki公式', icon: 'mdi:file-document-outline' },
     { key: 'gist', title: 'Gist', icon: 'mdi:code-braces' },
+    { key: 'npm', title: 'npm', cls: 'npmIcon' },
 ];
 
 const PLATFORM_BADGES: { tag: string; src: string; title: string }[] = [
