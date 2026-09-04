@@ -2955,5 +2955,31 @@
         ],
         "custom": {
         }
+    },
+    {
+        "id": "pukibot-mcp",
+        "name": "PukiBot MCP",
+        "description": "bot.inc.php を用いたPukiWikiのウィキ編集AIエージェントを作成するためのMCPサーバ",
+        "version": "v1.0.0",
+        "category": "misc",
+        "author": "PitaQ",
+        "url": "https://www.npmjs.com/package/pukibot-mcp",
+        "license": "MIT",
+        "createAt": "2026/09/02",
+        "updateAt": "2026/09/02",
+        "site": {
+            "github": "https://github.com/PTOM76/pukibot-mcp",
+            "npm": "https://www.npmjs.com/package/pukibot-mcp"
+        },
+        "tag": [
+            "pukiwiki",
+            "bot",
+            "ai",
+            "mcp",
+            "nodejs",
+            "npm"
+        ],
+        "custom": {
+        }
     }
 ]
