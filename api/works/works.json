@@ -1297,5 +1297,11 @@
             "script",
             "programming-language"
         ]
+    },
+    "chreeid": {
+        "name": "ChreeID",
+        "description": "ChreeIDはそれぞれのサービスに認証システムを持たないようにする認証基盤です。<br \/>ChreeIDを利用することで、サービス側は認証システムを持たずにユーザー認証を行うことができます。",
+        "author": "PitaQ",
+        "url": "https:\/\/"
     }
 }
