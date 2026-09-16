@@ -68,7 +68,7 @@ export default function AboutPage() {
                     <h3>過去のプロフィール</h3>
                     <ul>
                         <li><a href="https://2023.pitan76.net/" target="_blank" rel="noopener noreferrer">2023年のプロフィール</a></li>
-                        <li><a href="https://pkom.pitan76.net/?K" target="_blank" rel="noopener noreferrer">2020年のプロフィール</a></li>
+                        {/* <li><a href="https://pkom.pitan76.net/?K" target="_blank" rel="noopener noreferrer">2020年のプロフィール</a></li> */}
                     </ul>
                 </span>
 
@@ -84,7 +84,7 @@ export default function AboutPage() {
                     </ul>
 
                     <h3>フレームワーク</h3>
-                    なし、あまり使えこなせていません。<br />
+                    なし、あまり使えこなせていません。、といいつつ最近ではLaravelとかReactとか...<br />
                     生で書く派です（笑）(このサイトを除いて)
 
                     <h3>ツール</h3>
@@ -192,13 +192,12 @@ export default function AboutPage() {
 
                     <h3>過去の名前</h3>
                     <ul>
-                        <li>かお/Kao_766 (〜2018年)</li>
-                        <li>ボタピカ/Botapica (2018年〜2019年)</li>
-                        <li>ぴたん/Pitan, Kee/K, かおなろろ/Kao_766 (2019年〜2020年)</li>
+                        <li>かお/Kao_766 (〜2019年)</li>
+                        <li>ぴたん/Pitan, Kee/K, Kao_766 (2019年〜2020年)</li>
                         <li>ぴたん/Pitan (2020年〜現在)</li>
                     </ul>
                     <br />
-                    かつてはKao_766やBotapica、Kなどの名前を使っていました。<br />
+                    かつてはKao_766やKなどの名前を使っていました。<br />
                     今でも、Kao_766を名乗ることがあります。
                 </span>
 
