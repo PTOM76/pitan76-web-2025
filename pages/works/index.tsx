@@ -84,6 +84,7 @@ const LINK_DEFS: { key: string; title: string; cls?: string; icon?: string }[] =
     { key: 'pukiwiki-official', title: 'PukiWiki公式', icon: 'mdi:file-document-outline' },
     { key: 'gist', title: 'Gist', icon: 'mdi:code-braces' },
     { key: 'npm', title: 'npm', cls: 'npmIcon' },
+    { key: 'packagist', title: 'Packagist', icon: 'mdi:web' },
 ];
 
 const PLATFORM_BADGES: { tag: string; src: string; title: string }[] = [
