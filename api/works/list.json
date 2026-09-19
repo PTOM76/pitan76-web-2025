@@ -3006,5 +3006,30 @@
         ],
         "custom": {
         }
+    },
+    {
+        "id": "todofile",
+        "name": "Todofile",
+        "description": "PHP製CLIツール、Makefileのようなコマンド実行のタスクランナーです。",
+        "version": "v0.0.7",
+        "category": "misc",
+        "author": "PitaQ",
+        "url": "https://packagist.org/packages/pitan76/todofile",
+        "license": "MIT",
+        "createAt": "2026/09/16",
+        "updateAt": "2026/09/19",
+        "site": {
+            "github": "https://github.com/Pitan76/Todofile",
+            "packagist": "https://packagist.org/packages/pitan76/todofile"
+        },
+        "tag": [
+            "php",
+            "cli",
+            "tool",
+            "task-runner"
+        ],
+        "custom": {
+        }
     }
+    
 ]
