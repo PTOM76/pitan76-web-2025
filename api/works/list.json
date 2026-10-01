@@ -3035,13 +3035,13 @@
         "id": "wevocalsynth",
         "name": "WeVocalSynth",
         "description": "Web上で音声の音程や時間を編集する音声加工ツール",
-        "version": "v1.0.6",
+        "version": "v1.0.7",
         "category": "web",
         "author": "PitaQ",
         "url": "https://wevocalsynth.pitan76.net/",
         "license": "MIT",
         "createAt": "2026/09/28",
-        "updateAt": "2026/09/28",
+        "updateAt": "2026/10/01",
         "site": {
             "github": "https://github.com/PTOM76/wevocalsynth"
         },
@@ -3052,6 +3052,29 @@
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/web/wevocalsynth.png"]
+        }
+    },
+    {
+        "id": "wevocalextractor",
+        "name": "WeVocalExtractor",
+        "description": "Webブラウザ上で曲からボーカルと伴奏を抽出するライブラリ兼音源分離ツール",
+        "version": "v1.0.1",
+        "category": "web",
+        "author": "PitaQ",
+        "url": "https://wevocalextractor.pitan76.net/",
+        "license": "MIT",
+        "createAt": "2026/10/01",
+        "updateAt": "2026/10/01",
+        "site": {
+            "github": "https://github.com/PTOM76/wevocalextractor"
+        },
+        "tag": [
+            "web",
+            "tools",
+            "webapp"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/web/wevocalextractor.png"]
         }
     }
 ]
