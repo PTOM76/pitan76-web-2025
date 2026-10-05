@@ -3078,6 +3078,50 @@
         }
     },
     {
+        "id": "wevocalconverter",
+        "name": "WeVocalConverter",
+        "description": "Webブラウザ上で曲からボーカルと伴奏を抽出するライブラリ兼音源分離ツール",
+        "version": "v1.0.0",
+        "category": "web",
+        "author": "PitaQ",
+        "url": "https://wevocalconverter.pitan76.net/",
+        "license": "MIT",
+        "createAt": "2026/10/05",
+        "updateAt": "2026/10/05",
+        "site": {
+            "github": "https://github.com/PTOM76/wevocalconverter"
+        },
+        "tag": [
+            "web",
+            "tools",
+            "webapp"
+        ],
+        "custom": {
+        }
+    },
+    {
+        "id": "wevocalanalyzer",
+        "name": "WeVocalAnalyzer",
+        "description": "Webブラウザ上で曲からボーカルと伴奏を抽出するライブラリ兼音源分離ツール",
+        "version": "v1.0.0",
+        "category": "web",
+        "author": "PitaQ",
+        "url": "https://wevocalanalyzer.pitan76.net/",
+        "license": "MIT",
+        "createAt": "2026/10/05",
+        "updateAt": "2026/10/05",
+        "site": {
+            "github": "https://github.com/PTOM76/wevocalanalyzer"
+        },
+        "tag": [
+            "web",
+            "tools",
+            "webapp"
+        ],
+        "custom": {
+        }
+    },
+    {
         "id": "wevocal-lib",
         "name": "WeVocal Lib",
         "description": "WeVocalシリーズで共通利用する信号処理ライブラリ",
