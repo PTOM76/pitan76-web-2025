@@ -2496,7 +2496,7 @@
         "url": "https://doku.wikichree.com/",
         "license": "",
         "createAt": "20260130",
-        "updateAt": "20260130",
+        "updateAt": "20260926",
         "site": {
             "website": "https://doku.wikichree.com/"
         },
@@ -3035,13 +3035,13 @@
         "id": "wevocalsynth",
         "name": "WeVocalSynth",
         "description": "Web上で音声の音程や時間を編集する音声加工ツール",
-        "version": "v1.0.7",
+        "version": "v1.4.3",
         "category": "web",
         "author": "PitaQ",
         "url": "https://wevocalsynth.pitan76.net/",
         "license": "MIT",
         "createAt": "2026/09/28",
-        "updateAt": "2026/10/01",
+        "updateAt": "2026/10/05",
         "site": {
             "github": "https://github.com/PTOM76/wevocalsynth"
         },
@@ -3058,13 +3058,13 @@
         "id": "wevocalextractor",
         "name": "WeVocalExtractor",
         "description": "Webブラウザ上で曲からボーカルと伴奏を抽出するライブラリ兼音源分離ツール",
-        "version": "v1.0.1",
+        "version": "v1.2.3",
         "category": "web",
         "author": "PitaQ",
         "url": "https://wevocalextractor.pitan76.net/",
         "license": "MIT",
         "createAt": "2026/10/01",
-        "updateAt": "2026/10/01",
+        "updateAt": "2026/10/05",
         "site": {
             "github": "https://github.com/PTOM76/wevocalextractor"
         },
@@ -3076,5 +3076,50 @@
         "custom": {
             "images": ["https://www.pitan76.net/image/web/wevocalextractor.png"]
         }
+    },
+    {
+        "id": "wevocal-lib",
+        "name": "WeVocal Lib",
+        "description": "WeVocalシリーズで共通利用する信号処理ライブラリ",
+        "version": "v1.0.0",
+        "category": "web",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/wevocal-lib",
+        "license": "MIT",
+        "createAt": "2026/10/01",
+        "updateAt": "2026/10/05",
+        "site": {
+            "github": "https://github.com/PTOM76/wevocal-lib"
+        },
+        "tag": [
+            "web",
+            "webapp",
+            "library"
+        ],
+        "custom": {
+        }
+    },
+    {
+        "id": "pevenmui",
+        "name": "PevenMUI",
+        "description": "MUI をベースに、ブラウザで動くツール向けのUI部品集",
+        "version": "v1.0.0",
+        "category": "web",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/pevenmui",
+        "license": "MIT",
+        "createAt": "2026/10/01",
+        "updateAt": "2026/10/05",
+        "site": {
+            "github": "https://github.com/PTOM76/pevenmui"
+        },
+        "tag": [
+            "web",
+            "webapp",
+            "library"
+        ],
+        "custom": {
+        }
     }
+
 ]
