@@ -3057,7 +3057,7 @@
     {
         "id": "wevocalextractor",
         "name": "WeVocalExtractor",
-        "description": "Webブラウザ上で曲からボーカルと伴奏を抽出するライブラリ兼音源分離ツール",
+        "description": "Web上で曲からボーカルと伴奏を抽出するライブラリ兼音源分離ツール",
         "version": "v1.2.3",
         "category": "web",
         "author": "PitaQ",
@@ -3080,7 +3080,7 @@
     {
         "id": "wevocalconverter",
         "name": "WeVocalConverter",
-        "description": "Webブラウザ上で曲からボーカルと伴奏を抽出するライブラリ兼音源分離ツール",
+        "description": "Web上での音声ファイル形式変換ツール",
         "version": "v1.0.0",
         "category": "web",
         "author": "PitaQ",
@@ -3102,7 +3102,7 @@
     {
         "id": "wevocalanalyzer",
         "name": "WeVocalAnalyzer",
-        "description": "Webブラウザ上で曲からボーカルと伴奏を抽出するライブラリ兼音源分離ツール",
+        "description": "Web上で音声を解析するためのライブラリ兼音源解析ツール",
         "version": "v1.0.0",
         "category": "web",
         "author": "PitaQ",
