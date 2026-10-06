@@ -3035,20 +3035,23 @@
         "id": "wevocalsynth",
         "name": "WeVocalSynth",
         "description": "Web上で音声の音程や時間を編集する音声加工ツール",
-        "version": "v1.4.3",
+        "version": "v1.4.7",
         "category": "web",
         "author": "PitaQ",
         "url": "https://wevocalsynth.pitan76.net/",
         "license": "MIT",
         "createAt": "2026/09/28",
-        "updateAt": "2026/10/05",
+        "updateAt": "2026/10/06",
         "site": {
-            "github": "https://github.com/PTOM76/wevocalsynth"
+            "website": "https://wevocalsynth.pitan76.net/",
+            "github": "https://github.com/PTOM76/wevocalsynth",
+            "wiki": "https://doku.wikichree.com/wevocalsynth/start"
         },
         "tag": [
             "web",
             "tools",
-            "webapp"
+            "webapp",
+            "wevocal"
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/web/wevocalsynth.png"]
@@ -3058,20 +3061,22 @@
         "id": "wevocalextractor",
         "name": "WeVocalExtractor",
         "description": "Web上で曲からボーカルと伴奏を抽出するライブラリ兼音源分離ツール",
-        "version": "v1.2.3",
+        "version": "v1.2.5",
         "category": "web",
         "author": "PitaQ",
         "url": "https://wevocalextractor.pitan76.net/",
         "license": "MIT",
         "createAt": "2026/10/01",
-        "updateAt": "2026/10/05",
+        "updateAt": "2026/10/06",
         "site": {
+            "website": "https://wevocalextractor.pitan76.net/",
             "github": "https://github.com/PTOM76/wevocalextractor"
         },
         "tag": [
             "web",
             "tools",
-            "webapp"
+            "webapp",
+            "wevocal"
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/web/wevocalextractor.png"]
@@ -3081,20 +3086,22 @@
         "id": "wevocalconverter",
         "name": "WeVocalConverter",
         "description": "Web上での音声ファイル形式変換ツール",
-        "version": "v1.0.0",
+        "version": "v1.0.2",
         "category": "web",
         "author": "PitaQ",
         "url": "https://wevocalconverter.pitan76.net/",
         "license": "MIT",
         "createAt": "2026/10/05",
-        "updateAt": "2026/10/05",
+        "updateAt": "2026/10/06",
         "site": {
+            "website": "https://wevocalconverter.pitan76.net/",
             "github": "https://github.com/PTOM76/wevocalconverter"
         },
         "tag": [
             "web",
             "tools",
-            "webapp"
+            "webapp",
+            "wevocal"
         ],
         "custom": {
         }
@@ -3103,20 +3110,22 @@
         "id": "wevocalanalyzer",
         "name": "WeVocalAnalyzer",
         "description": "Web上で音声を解析するためのライブラリ兼音源解析ツール",
-        "version": "v1.0.0",
+        "version": "v1.0.2",
         "category": "web",
         "author": "PitaQ",
         "url": "https://wevocalanalyzer.pitan76.net/",
         "license": "MIT",
         "createAt": "2026/10/05",
-        "updateAt": "2026/10/05",
+        "updateAt": "2026/10/06",
         "site": {
+            "website": "https://wevocalanalyzer.pitan76.net/",
             "github": "https://github.com/PTOM76/wevocalanalyzer"
         },
         "tag": [
             "web",
             "tools",
-            "webapp"
+            "webapp",
+            "wevocal"
         ],
         "custom": {
         }
@@ -3138,7 +3147,8 @@
         "tag": [
             "web",
             "webapp",
-            "library"
+            "library",
+            "wevocal"
         ],
         "custom": {
         }
