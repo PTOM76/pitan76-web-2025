@@ -3056,7 +3056,7 @@
         "site": {
             "website": "https://wevocalsynth.pitan76.net/",
             "github": "https://github.com/PTOM76/wevocalsynth",
-            "wiki": "https://doku.wikichree.com/wevocalsynth/start"
+            "wiki": "https://doku.wikichree.com/wevocal/synth:start"
         },
         "tag": [
             "web",
@@ -3081,7 +3081,8 @@
         "updateAt": "2026/10/06",
         "site": {
             "website": "https://wevocalextractor.pitan76.net/",
-            "github": "https://github.com/PTOM76/wevocalextractor"
+            "github": "https://github.com/PTOM76/wevocalextractor",
+            "wiki": "https://doku.wikichree.com/wevocal/extractor:start"
         },
         "tag": [
             "web",
@@ -3106,7 +3107,8 @@
         "updateAt": "2026/10/06",
         "site": {
             "website": "https://wevocalconverter.pitan76.net/",
-            "github": "https://github.com/PTOM76/wevocalconverter"
+            "github": "https://github.com/PTOM76/wevocalconverter",
+            "wiki": "https://doku.wikichree.com/wevocal/converter:start"
         },
         "tag": [
             "web",
@@ -3131,7 +3133,8 @@
         "updateAt": "2026/10/06",
         "site": {
             "website": "https://wevocalanalyzer.pitan76.net/",
-            "github": "https://github.com/PTOM76/wevocalanalyzer"
+            "github": "https://github.com/PTOM76/wevocalanalyzer",
+            "wiki": "https://doku.wikichree.com/wevocal/analyzer:start"
         },
         "tag": [
             "web",
@@ -3156,7 +3159,8 @@
         "updateAt": "2026/10/10",
         "site": {
             "website": "https://wevocalstudio.pitan76.net/",
-            "github": "https://github.com/PTOM76/wevocalstudio"
+            "github": "https://github.com/PTOM76/wevocalstudio",
+            "wiki": "https://doku.wikichree.com/wevocal/studio:start"
         },
         "tag": [
             "web",
@@ -3166,6 +3170,31 @@
         ],
         "custom": {
             "images": ["https://www.pitan76.net/image/web/wevocalstudio.png"]
+        }
+    },
+    {
+        "id": "wevocal-plugin-packages",
+        "name": "WeVocal Plugin Packages",
+        "description": "WeVocal/WAM/VSTプラグインをまとめてWeVocalシリーズ用に管理するためのリポジトリ",
+        "version": "v1.0.0",
+        "category": "web",
+        "author": "PitaQ",
+        "url": "https://plugins.wevocal.pitan76.net/",
+        "license": "MIT",
+        "createAt": "2026/10/01",
+        "updateAt": "2026/10/05",
+        "site": {
+            "website": "https://plugins.wevocal.pitan76.net/",
+            "github": "https://github.com/PTOM76/wevocal-plugin-packages"
+        },
+        "tag": [
+            "web",
+            "tools",
+            "webapp",
+            "wevocal"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/web/wevocal-plugin-packages.png"]
         }
     },
     {
@@ -3189,6 +3218,56 @@
             "wevocal"
         ],
         "custom": {
+        }
+    },
+    {
+        "id": "formant-drift",
+        "name": "Formant Drift",
+        "alias": ["formantdrift", "wam-formantdrift"],
+        "description": "フォルマントの3つのピークが、設定した周波数を中心にゆっくり揺らぎながら変わっていくエフェクトWAMプラグイン",
+        "version": "v1.0.3",
+        "category": "misc",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/wam-formantdrift",
+        "license": "MIT",
+        "createAt": "2026/10/22",
+        "updateAt": "2026/10/23",
+        "site": {
+            "website": "https://ptom76.github.io/wam-formantdrift/",
+            "github": "https://github.com/PTOM76/wam-formantdrift"
+        },
+        "tag": [
+            "web",
+            "tools",
+            "webapp",
+            "webaudiomodules"
+        ],
+        "custom": {
+            "images": ["https://www.pitan76.net/image/wam/formant-drift.png"]
+        }
+    },
+    {
+        "id": "wevocal-vstbridge",
+        "name": "WeVocal VSTBridge",
+        "description": "Web上でWindows向けのVSTプラグインをWASMで動作させるためのエミュレータ、ライブラリ",
+        "version": "v0.1.0",
+        "category": "misc",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/wevocal-vstbridge",
+        "license": "MPLv2",
+        "createAt": "2026/10/01",
+        "updateAt": "2026/10/05",
+        "site": {
+            "github": "https://github.com/PTOM76/wevocal-vstbridge"
+        },
+        "tag": [
+            "web",
+            "tools",
+            "wevocal",
+            "vst"
+        ],
+        "custom": {
+            "images": ["https://github.com/PTOM76/wevocal-vstbridge/raw/main/docs/images/sh-1_graphic_eq_gui.png"]
         }
     },
     {
